@@ -1,0 +1,166 @@
+{
+  "target": "shala_score_v1",
+  "n_samples": 288,
+  "n_features": 12,
+  "cv_mean_mae": 2.081315625552315,
+  "cv_std_mae": 0.2556050909520563,
+  "cv_mean_rmse": 2.64864500556856,
+  "cv_mean_r2": 0.9490055580729514,
+  "cv_min_r2": 0.9352522741050626,
+  "cv_max_r2": 0.9682148473876637,
+  "model": "RandomForestRegressor",
+  "n_estimators": 300,
+  "max_depth": 8,
+  "min_samples_leaf": 3,
+  "max_features": 0.7,
+  "random_state": 42,
+  "validation": "5-fold KFold (shuffle=True, random_state=42)",
+  "note": "This model identifies indicators ASSOCIATED with educational conditions (Shala Score). It does NOT predict dropout \u2014 no dropout data exists in the dataset. Feature importance indicates statistical association, not proven causation.",
+  "feature_importance": [
+    {
+      "feature": "good_classroom_pct_raw",
+      "importance": 0.3301363530422065,
+      "std": 0.2957109151117787,
+      "rank": 1
+    },
+    {
+      "feature": "facility_classrooms_needing_repair_pct",
+      "importance": 0.2535537662609544,
+      "std": 0.2842817648906364,
+      "rank": 2
+    },
+    {
+      "feature": "functional_toilet_pct_raw",
+      "importance": 0.13382467536344483,
+      "std": 0.05172069810357028,
+      "rank": 3
+    },
+    {
+      "feature": "ptr_students_per_teacher_raw",
+      "importance": 0.11756136719857412,
+      "std": 0.03903236209374681,
+      "rank": 4
+    },
+    {
+      "feature": "digital_devices_per_school_raw",
+      "importance": 0.08786232403570889,
+      "std": 0.1504348066809849,
+      "rank": 5
+    },
+    {
+      "feature": "district_female_teacher_pct",
+      "importance": 0.03625386145660799,
+      "std": 0.04575907183326124,
+      "rank": 6
+    },
+    {
+      "feature": "school_count",
+      "importance": 0.00959655375024857,
+      "std": 0.015842985057945097,
+      "rank": 7
+    },
+    {
+      "feature": "district_computer_trained_teacher_pct",
+      "importance": 0.007070762173318165,
+      "std": 0.00877888907003374,
+      "rank": 8
+    },
+    {
+      "feature": "district_contract_teacher_pct",
+      "importance": 0.006945147597175074,
+      "std": 0.01213184496570967,
+      "rank": 9
+    },
+    {
+      "feature": "enrollment_reported_student_total",
+      "importance": 0.006457925307173263,
+      "std": 0.00866348302170843,
+      "rank": 10
+    },
+    {
+      "feature": "score_teacher_total_derived",
+      "importance": 0.005485694383052588,
+      "std": 0.02145454691822775,
+      "rank": 11
+    },
+    {
+      "feature": "district_regular_teacher_pct",
+      "importance": 0.005251569431535619,
+      "std": 0.012970897507928536,
+      "rank": 12
+    }
+  ],
+  "imputation_values": {
+    "district_female_teacher_pct": 40.2845,
+    "district_regular_teacher_pct": 91.52799999999999,
+    "district_contract_teacher_pct": 7.888,
+    "district_computer_trained_teacher_pct": 57.4775
+  },
+  "missing_report": {
+    "school_count": {
+      "missing": 0,
+      "total": 288,
+      "missing_pct": 0.0
+    },
+    "enrollment_reported_student_total": {
+      "missing": 0,
+      "total": 288,
+      "missing_pct": 0.0
+    },
+    "score_teacher_total_derived": {
+      "missing": 0,
+      "total": 288,
+      "missing_pct": 0.0
+    },
+    "ptr_students_per_teacher_raw": {
+      "missing": 0,
+      "total": 288,
+      "missing_pct": 0.0
+    },
+    "functional_toilet_pct_raw": {
+      "missing": 0,
+      "total": 288,
+      "missing_pct": 0.0
+    },
+    "good_classroom_pct_raw": {
+      "missing": 0,
+      "total": 288,
+      "missing_pct": 0.0
+    },
+    "digital_devices_per_school_raw": {
+      "missing": 0,
+      "total": 288,
+      "missing_pct": 0.0
+    },
+    "facility_classrooms_needing_repair_pct": {
+      "missing": 0,
+      "total": 288,
+      "missing_pct": 0.0
+    },
+    "district_female_teacher_pct": {
+      "missing": 144,
+      "total": 288,
+      "missing_pct": 50.0
+    },
+    "district_regular_teacher_pct": {
+      "missing": 144,
+      "total": 288,
+      "missing_pct": 50.0
+    },
+    "district_contract_teacher_pct": {
+      "missing": 144,
+      "total": 288,
+      "missing_pct": 50.0
+    },
+    "district_computer_trained_teacher_pct": {
+      "missing": 144,
+      "total": 288,
+      "missing_pct": 50.0
+    },
+    "shala_score_v1": {
+      "missing": 0,
+      "total": 288,
+      "missing_pct": 0.0
+    }
+  }
+}

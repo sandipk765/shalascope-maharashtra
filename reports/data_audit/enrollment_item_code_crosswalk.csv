@@ -1,0 +1,352 @@
+﻿academic_year,file_name,item_group,item_id,item_desc,record_count,file_part,feature_category,canonical_label,mapping_status,mapping_source,mapping_note
+2018-19,127_enr1.csv,,,Aadhar,109942,ENR1,SOURCE_LABELLED_ITEM,Aadhar,SOURCE_LABEL_ONLY,Original UDISE Enrollment item description,Retained from source label; no extra decoding
+2018-19,127_enr1.csv,,,BPL,109942,ENR1,SOURCE_LABELLED_ITEM,BPL,SOURCE_LABEL_ONLY,Original UDISE Enrollment item description,Retained from source label; no extra decoding
+2018-19,127_enr1.csv,,,Buddhist,109942,ENR1,SOURCE_LABELLED_ITEM,Buddhist,SOURCE_LABEL_ONLY,Original UDISE Enrollment item description,Retained from source label; no extra decoding
+2018-19,127_enr1.csv,,,Christian,109942,ENR1,SOURCE_LABELLED_ITEM,Christian,SOURCE_LABEL_ONLY,Original UDISE Enrollment item description,Retained from source label; no extra decoding
+2018-19,127_enr1.csv,,,General,109942,ENR1,SOURCE_LABELLED_ITEM,General,SOURCE_LABEL_ONLY,Original UDISE Enrollment item description,Retained from source label; no extra decoding
+2018-19,127_enr1.csv,,,Jain,109942,ENR1,SOURCE_LABELLED_ITEM,Jain,SOURCE_LABEL_ONLY,Original UDISE Enrollment item description,Retained from source label; no extra decoding
+2018-19,127_enr1.csv,,,Muslim,109942,ENR1,SOURCE_LABELLED_ITEM,Muslim,SOURCE_LABEL_ONLY,Original UDISE Enrollment item description,Retained from source label; no extra decoding
+2018-19,127_enr1.csv,,,OBC,109942,ENR1,SOURCE_LABELLED_ITEM,OBC,SOURCE_LABEL_ONLY,Original UDISE Enrollment item description,Retained from source label; no extra decoding
+2018-19,127_enr1.csv,,,Others,109942,ENR1,SOURCE_LABELLED_ITEM,Others,SOURCE_LABEL_ONLY,Original UDISE Enrollment item description,Retained from source label; no extra decoding
+2018-19,127_enr1.csv,,,Parsi,109942,ENR1,SOURCE_LABELLED_ITEM,Parsi,SOURCE_LABEL_ONLY,Original UDISE Enrollment item description,Retained from source label; no extra decoding
+2018-19,127_enr1.csv,,,SC,109942,ENR1,SOURCE_LABELLED_ITEM,SC,SOURCE_LABEL_ONLY,Original UDISE Enrollment item description,Retained from source label; no extra decoding
+2018-19,127_enr1.csv,,,ST,109942,ENR1,SOURCE_LABELLED_ITEM,ST,SOURCE_LABEL_ONLY,Original UDISE Enrollment item description,Retained from source label; no extra decoding
+2018-19,127_enr1.csv,,,Sikh,109942,ENR1,SOURCE_LABELLED_ITEM,Sikh,SOURCE_LABEL_ONLY,Original UDISE Enrollment item description,Retained from source label; no extra decoding
+2018-19,127_enr2.csv,,,Age10,109942,ENR2,SOURCE_LABELLED_ITEM,Age10,SOURCE_LABEL_ONLY,Original UDISE Enrollment item description,Retained from source label; no extra decoding
+2018-19,127_enr2.csv,,,Age11,109942,ENR2,SOURCE_LABELLED_ITEM,Age11,SOURCE_LABEL_ONLY,Original UDISE Enrollment item description,Retained from source label; no extra decoding
+2018-19,127_enr2.csv,,,Age12,109942,ENR2,SOURCE_LABELLED_ITEM,Age12,SOURCE_LABEL_ONLY,Original UDISE Enrollment item description,Retained from source label; no extra decoding
+2018-19,127_enr2.csv,,,Age13,109942,ENR2,SOURCE_LABELLED_ITEM,Age13,SOURCE_LABEL_ONLY,Original UDISE Enrollment item description,Retained from source label; no extra decoding
+2018-19,127_enr2.csv,,,Age14,109942,ENR2,SOURCE_LABELLED_ITEM,Age14,SOURCE_LABEL_ONLY,Original UDISE Enrollment item description,Retained from source label; no extra decoding
+2018-19,127_enr2.csv,,,Age15,109942,ENR2,SOURCE_LABELLED_ITEM,Age15,SOURCE_LABEL_ONLY,Original UDISE Enrollment item description,Retained from source label; no extra decoding
+2018-19,127_enr2.csv,,,Age16,109942,ENR2,SOURCE_LABELLED_ITEM,Age16,SOURCE_LABEL_ONLY,Original UDISE Enrollment item description,Retained from source label; no extra decoding
+2018-19,127_enr2.csv,,,Age17,109942,ENR2,SOURCE_LABELLED_ITEM,Age17,SOURCE_LABEL_ONLY,Original UDISE Enrollment item description,Retained from source label; no extra decoding
+2018-19,127_enr2.csv,,,Age18,109942,ENR2,SOURCE_LABELLED_ITEM,Age18,SOURCE_LABEL_ONLY,Original UDISE Enrollment item description,Retained from source label; no extra decoding
+2018-19,127_enr2.csv,,,Age19,109942,ENR2,SOURCE_LABELLED_ITEM,Age19,SOURCE_LABEL_ONLY,Original UDISE Enrollment item description,Retained from source label; no extra decoding
+2018-19,127_enr2.csv,,,Age20,109942,ENR2,SOURCE_LABELLED_ITEM,Age20,SOURCE_LABEL_ONLY,Original UDISE Enrollment item description,Retained from source label; no extra decoding
+2018-19,127_enr2.csv,,,Age21,109942,ENR2,SOURCE_LABELLED_ITEM,Age21,SOURCE_LABEL_ONLY,Original UDISE Enrollment item description,Retained from source label; no extra decoding
+2018-19,127_enr2.csv,,,Age22,109942,ENR2,SOURCE_LABELLED_ITEM,Age22,SOURCE_LABEL_ONLY,Original UDISE Enrollment item description,Retained from source label; no extra decoding
+2018-19,127_enr2.csv,,,Age23,109942,ENR2,SOURCE_LABELLED_ITEM,Age23,SOURCE_LABEL_ONLY,Original UDISE Enrollment item description,Retained from source label; no extra decoding
+2018-19,127_enr2.csv,,,Age5,109942,ENR2,SOURCE_LABELLED_ITEM,Age5,SOURCE_LABEL_ONLY,Original UDISE Enrollment item description,Retained from source label; no extra decoding
+2018-19,127_enr2.csv,,,Age6,109942,ENR2,SOURCE_LABELLED_ITEM,Age6,SOURCE_LABEL_ONLY,Original UDISE Enrollment item description,Retained from source label; no extra decoding
+2018-19,127_enr2.csv,,,Age7,109942,ENR2,SOURCE_LABELLED_ITEM,Age7,SOURCE_LABEL_ONLY,Original UDISE Enrollment item description,Retained from source label; no extra decoding
+2018-19,127_enr2.csv,,,Age8,109942,ENR2,SOURCE_LABELLED_ITEM,Age8,SOURCE_LABEL_ONLY,Original UDISE Enrollment item description,Retained from source label; no extra decoding
+2018-19,127_enr2.csv,,,Age9,109942,ENR2,SOURCE_LABELLED_ITEM,Age9,SOURCE_LABEL_ONLY,Original UDISE Enrollment item description,Retained from source label; no extra decoding
+2018-19,127_enr2.csv,,,Age<5,109942,ENR2,SOURCE_LABELLED_ITEM,Age<5,SOURCE_LABEL_ONLY,Original UDISE Enrollment item description,Retained from source label; no extra decoding
+2019-20,127_enr1.csv,,,Aadhar,110229,ENR1,SOURCE_LABELLED_ITEM,Aadhar,SOURCE_LABEL_ONLY,Original UDISE Enrollment item description,Retained from source label; no extra decoding
+2019-20,127_enr1.csv,,,BPL,110229,ENR1,SOURCE_LABELLED_ITEM,BPL,SOURCE_LABEL_ONLY,Original UDISE Enrollment item description,Retained from source label; no extra decoding
+2019-20,127_enr1.csv,,,Buddhist,110229,ENR1,SOURCE_LABELLED_ITEM,Buddhist,SOURCE_LABEL_ONLY,Original UDISE Enrollment item description,Retained from source label; no extra decoding
+2019-20,127_enr1.csv,,,Christian,110229,ENR1,SOURCE_LABELLED_ITEM,Christian,SOURCE_LABEL_ONLY,Original UDISE Enrollment item description,Retained from source label; no extra decoding
+2019-20,127_enr1.csv,,,General,110229,ENR1,SOURCE_LABELLED_ITEM,General,SOURCE_LABEL_ONLY,Original UDISE Enrollment item description,Retained from source label; no extra decoding
+2019-20,127_enr1.csv,,,Jain,110229,ENR1,SOURCE_LABELLED_ITEM,Jain,SOURCE_LABEL_ONLY,Original UDISE Enrollment item description,Retained from source label; no extra decoding
+2019-20,127_enr1.csv,,,Muslim,110229,ENR1,SOURCE_LABELLED_ITEM,Muslim,SOURCE_LABEL_ONLY,Original UDISE Enrollment item description,Retained from source label; no extra decoding
+2019-20,127_enr1.csv,,,OBC,110229,ENR1,SOURCE_LABELLED_ITEM,OBC,SOURCE_LABEL_ONLY,Original UDISE Enrollment item description,Retained from source label; no extra decoding
+2019-20,127_enr1.csv,,,Others,110229,ENR1,SOURCE_LABELLED_ITEM,Others,SOURCE_LABEL_ONLY,Original UDISE Enrollment item description,Retained from source label; no extra decoding
+2019-20,127_enr1.csv,,,Parsi,110229,ENR1,SOURCE_LABELLED_ITEM,Parsi,SOURCE_LABEL_ONLY,Original UDISE Enrollment item description,Retained from source label; no extra decoding
+2019-20,127_enr1.csv,,,SC,110229,ENR1,SOURCE_LABELLED_ITEM,SC,SOURCE_LABEL_ONLY,Original UDISE Enrollment item description,Retained from source label; no extra decoding
+2019-20,127_enr1.csv,,,ST,110229,ENR1,SOURCE_LABELLED_ITEM,ST,SOURCE_LABEL_ONLY,Original UDISE Enrollment item description,Retained from source label; no extra decoding
+2019-20,127_enr1.csv,,,Sikh,110229,ENR1,SOURCE_LABELLED_ITEM,Sikh,SOURCE_LABEL_ONLY,Original UDISE Enrollment item description,Retained from source label; no extra decoding
+2019-20,127_enr1.csv,,,Total CWSN,110229,ENR1,SOURCE_LABELLED_ITEM,Total CWSN,SOURCE_LABEL_ONLY,Original UDISE Enrollment item description,Retained from source label; no extra decoding
+2019-20,127_enr2.csv,,,Age10,110229,ENR2,SOURCE_LABELLED_ITEM,Age10,SOURCE_LABEL_ONLY,Original UDISE Enrollment item description,Retained from source label; no extra decoding
+2019-20,127_enr2.csv,,,Age11,110229,ENR2,SOURCE_LABELLED_ITEM,Age11,SOURCE_LABEL_ONLY,Original UDISE Enrollment item description,Retained from source label; no extra decoding
+2019-20,127_enr2.csv,,,Age12,110229,ENR2,SOURCE_LABELLED_ITEM,Age12,SOURCE_LABEL_ONLY,Original UDISE Enrollment item description,Retained from source label; no extra decoding
+2019-20,127_enr2.csv,,,Age13,110229,ENR2,SOURCE_LABELLED_ITEM,Age13,SOURCE_LABEL_ONLY,Original UDISE Enrollment item description,Retained from source label; no extra decoding
+2019-20,127_enr2.csv,,,Age14,110229,ENR2,SOURCE_LABELLED_ITEM,Age14,SOURCE_LABEL_ONLY,Original UDISE Enrollment item description,Retained from source label; no extra decoding
+2019-20,127_enr2.csv,,,Age15,110229,ENR2,SOURCE_LABELLED_ITEM,Age15,SOURCE_LABEL_ONLY,Original UDISE Enrollment item description,Retained from source label; no extra decoding
+2019-20,127_enr2.csv,,,Age16,110229,ENR2,SOURCE_LABELLED_ITEM,Age16,SOURCE_LABEL_ONLY,Original UDISE Enrollment item description,Retained from source label; no extra decoding
+2019-20,127_enr2.csv,,,Age17,110229,ENR2,SOURCE_LABELLED_ITEM,Age17,SOURCE_LABEL_ONLY,Original UDISE Enrollment item description,Retained from source label; no extra decoding
+2019-20,127_enr2.csv,,,Age18,110229,ENR2,SOURCE_LABELLED_ITEM,Age18,SOURCE_LABEL_ONLY,Original UDISE Enrollment item description,Retained from source label; no extra decoding
+2019-20,127_enr2.csv,,,Age19,110229,ENR2,SOURCE_LABELLED_ITEM,Age19,SOURCE_LABEL_ONLY,Original UDISE Enrollment item description,Retained from source label; no extra decoding
+2019-20,127_enr2.csv,,,Age20,110229,ENR2,SOURCE_LABELLED_ITEM,Age20,SOURCE_LABEL_ONLY,Original UDISE Enrollment item description,Retained from source label; no extra decoding
+2019-20,127_enr2.csv,,,Age21,110229,ENR2,SOURCE_LABELLED_ITEM,Age21,SOURCE_LABEL_ONLY,Original UDISE Enrollment item description,Retained from source label; no extra decoding
+2019-20,127_enr2.csv,,,Age22,110229,ENR2,SOURCE_LABELLED_ITEM,Age22,SOURCE_LABEL_ONLY,Original UDISE Enrollment item description,Retained from source label; no extra decoding
+2019-20,127_enr2.csv,,,Age23,110229,ENR2,SOURCE_LABELLED_ITEM,Age23,SOURCE_LABEL_ONLY,Original UDISE Enrollment item description,Retained from source label; no extra decoding
+2019-20,127_enr2.csv,,,Age5,110229,ENR2,SOURCE_LABELLED_ITEM,Age5,SOURCE_LABEL_ONLY,Original UDISE Enrollment item description,Retained from source label; no extra decoding
+2019-20,127_enr2.csv,,,Age6,110229,ENR2,SOURCE_LABELLED_ITEM,Age6,SOURCE_LABEL_ONLY,Original UDISE Enrollment item description,Retained from source label; no extra decoding
+2019-20,127_enr2.csv,,,Age7,110229,ENR2,SOURCE_LABELLED_ITEM,Age7,SOURCE_LABEL_ONLY,Original UDISE Enrollment item description,Retained from source label; no extra decoding
+2019-20,127_enr2.csv,,,Age8,110229,ENR2,SOURCE_LABELLED_ITEM,Age8,SOURCE_LABEL_ONLY,Original UDISE Enrollment item description,Retained from source label; no extra decoding
+2019-20,127_enr2.csv,,,Age9,110229,ENR2,SOURCE_LABELLED_ITEM,Age9,SOURCE_LABEL_ONLY,Original UDISE Enrollment item description,Retained from source label; no extra decoding
+2019-20,127_enr2.csv,,,Age<5,110229,ENR2,SOURCE_LABELLED_ITEM,Age<5,SOURCE_LABEL_ONLY,Original UDISE Enrollment item description,Retained from source label; no extra decoding
+2020-21,127_enr1.csv,,,Aadhar,110114,ENR1,SOURCE_LABELLED_ITEM,Aadhar,SOURCE_LABEL_ONLY,Original UDISE Enrollment item description,Retained from source label; no extra decoding
+2020-21,127_enr1.csv,,,BPL,110114,ENR1,SOURCE_LABELLED_ITEM,BPL,SOURCE_LABEL_ONLY,Original UDISE Enrollment item description,Retained from source label; no extra decoding
+2020-21,127_enr1.csv,,,Buddhist,110114,ENR1,SOURCE_LABELLED_ITEM,Buddhist,SOURCE_LABEL_ONLY,Original UDISE Enrollment item description,Retained from source label; no extra decoding
+2020-21,127_enr1.csv,,,Christian,110114,ENR1,SOURCE_LABELLED_ITEM,Christian,SOURCE_LABEL_ONLY,Original UDISE Enrollment item description,Retained from source label; no extra decoding
+2020-21,127_enr1.csv,,,General,110114,ENR1,SOURCE_LABELLED_ITEM,General,SOURCE_LABEL_ONLY,Original UDISE Enrollment item description,Retained from source label; no extra decoding
+2020-21,127_enr1.csv,,,Jain,110114,ENR1,SOURCE_LABELLED_ITEM,Jain,SOURCE_LABEL_ONLY,Original UDISE Enrollment item description,Retained from source label; no extra decoding
+2020-21,127_enr1.csv,,,Muslim,110114,ENR1,SOURCE_LABELLED_ITEM,Muslim,SOURCE_LABEL_ONLY,Original UDISE Enrollment item description,Retained from source label; no extra decoding
+2020-21,127_enr1.csv,,,OBC,110114,ENR1,SOURCE_LABELLED_ITEM,OBC,SOURCE_LABEL_ONLY,Original UDISE Enrollment item description,Retained from source label; no extra decoding
+2020-21,127_enr1.csv,,,Others,110114,ENR1,SOURCE_LABELLED_ITEM,Others,SOURCE_LABEL_ONLY,Original UDISE Enrollment item description,Retained from source label; no extra decoding
+2020-21,127_enr1.csv,,,Parsi,110114,ENR1,SOURCE_LABELLED_ITEM,Parsi,SOURCE_LABEL_ONLY,Original UDISE Enrollment item description,Retained from source label; no extra decoding
+2020-21,127_enr1.csv,,,SC,110114,ENR1,SOURCE_LABELLED_ITEM,SC,SOURCE_LABEL_ONLY,Original UDISE Enrollment item description,Retained from source label; no extra decoding
+2020-21,127_enr1.csv,,,ST,110114,ENR1,SOURCE_LABELLED_ITEM,ST,SOURCE_LABEL_ONLY,Original UDISE Enrollment item description,Retained from source label; no extra decoding
+2020-21,127_enr1.csv,,,Sikh,110114,ENR1,SOURCE_LABELLED_ITEM,Sikh,SOURCE_LABEL_ONLY,Original UDISE Enrollment item description,Retained from source label; no extra decoding
+2020-21,127_enr1.csv,,,Total CWSN,110114,ENR1,SOURCE_LABELLED_ITEM,Total CWSN,SOURCE_LABEL_ONLY,Original UDISE Enrollment item description,Retained from source label; no extra decoding
+2020-21,127_enr1.csv,,,Total repeaters,110114,ENR1,SOURCE_LABELLED_ITEM,Total repeaters,SOURCE_LABEL_ONLY,Original UDISE Enrollment item description,Retained from source label; no extra decoding
+2020-21,127_enr2.csv,,,Age10,110114,ENR2,SOURCE_LABELLED_ITEM,Age10,SOURCE_LABEL_ONLY,Original UDISE Enrollment item description,Retained from source label; no extra decoding
+2020-21,127_enr2.csv,,,Age11,110114,ENR2,SOURCE_LABELLED_ITEM,Age11,SOURCE_LABEL_ONLY,Original UDISE Enrollment item description,Retained from source label; no extra decoding
+2020-21,127_enr2.csv,,,Age12,110114,ENR2,SOURCE_LABELLED_ITEM,Age12,SOURCE_LABEL_ONLY,Original UDISE Enrollment item description,Retained from source label; no extra decoding
+2020-21,127_enr2.csv,,,Age13,110114,ENR2,SOURCE_LABELLED_ITEM,Age13,SOURCE_LABEL_ONLY,Original UDISE Enrollment item description,Retained from source label; no extra decoding
+2020-21,127_enr2.csv,,,Age14,110114,ENR2,SOURCE_LABELLED_ITEM,Age14,SOURCE_LABEL_ONLY,Original UDISE Enrollment item description,Retained from source label; no extra decoding
+2020-21,127_enr2.csv,,,Age15,110114,ENR2,SOURCE_LABELLED_ITEM,Age15,SOURCE_LABEL_ONLY,Original UDISE Enrollment item description,Retained from source label; no extra decoding
+2020-21,127_enr2.csv,,,Age16,110114,ENR2,SOURCE_LABELLED_ITEM,Age16,SOURCE_LABEL_ONLY,Original UDISE Enrollment item description,Retained from source label; no extra decoding
+2020-21,127_enr2.csv,,,Age17,110114,ENR2,SOURCE_LABELLED_ITEM,Age17,SOURCE_LABEL_ONLY,Original UDISE Enrollment item description,Retained from source label; no extra decoding
+2020-21,127_enr2.csv,,,Age18,110114,ENR2,SOURCE_LABELLED_ITEM,Age18,SOURCE_LABEL_ONLY,Original UDISE Enrollment item description,Retained from source label; no extra decoding
+2020-21,127_enr2.csv,,,Age19,110114,ENR2,SOURCE_LABELLED_ITEM,Age19,SOURCE_LABEL_ONLY,Original UDISE Enrollment item description,Retained from source label; no extra decoding
+2020-21,127_enr2.csv,,,Age20,110114,ENR2,SOURCE_LABELLED_ITEM,Age20,SOURCE_LABEL_ONLY,Original UDISE Enrollment item description,Retained from source label; no extra decoding
+2020-21,127_enr2.csv,,,Age21,110114,ENR2,SOURCE_LABELLED_ITEM,Age21,SOURCE_LABEL_ONLY,Original UDISE Enrollment item description,Retained from source label; no extra decoding
+2020-21,127_enr2.csv,,,Age22,110114,ENR2,SOURCE_LABELLED_ITEM,Age22,SOURCE_LABEL_ONLY,Original UDISE Enrollment item description,Retained from source label; no extra decoding
+2020-21,127_enr2.csv,,,Age23,110114,ENR2,SOURCE_LABELLED_ITEM,Age23,SOURCE_LABEL_ONLY,Original UDISE Enrollment item description,Retained from source label; no extra decoding
+2020-21,127_enr2.csv,,,Age5,110114,ENR2,SOURCE_LABELLED_ITEM,Age5,SOURCE_LABEL_ONLY,Original UDISE Enrollment item description,Retained from source label; no extra decoding
+2020-21,127_enr2.csv,,,Age6,110114,ENR2,SOURCE_LABELLED_ITEM,Age6,SOURCE_LABEL_ONLY,Original UDISE Enrollment item description,Retained from source label; no extra decoding
+2020-21,127_enr2.csv,,,Age7,110114,ENR2,SOURCE_LABELLED_ITEM,Age7,SOURCE_LABEL_ONLY,Original UDISE Enrollment item description,Retained from source label; no extra decoding
+2020-21,127_enr2.csv,,,Age8,110114,ENR2,SOURCE_LABELLED_ITEM,Age8,SOURCE_LABEL_ONLY,Original UDISE Enrollment item description,Retained from source label; no extra decoding
+2020-21,127_enr2.csv,,,Age9,110114,ENR2,SOURCE_LABELLED_ITEM,Age9,SOURCE_LABEL_ONLY,Original UDISE Enrollment item description,Retained from source label; no extra decoding
+2020-21,127_enr2.csv,,,Age<5,110114,ENR2,SOURCE_LABELLED_ITEM,Age<5,SOURCE_LABEL_ONLY,Original UDISE Enrollment item description,Retained from source label; no extra decoding
+2021-22,127_enr1.csv,,,Aadhar,109605,ENR1,SOURCE_LABELLED_ITEM,Aadhar,SOURCE_LABEL_ONLY,Original UDISE Enrollment item description,Retained from source label; no extra decoding
+2021-22,127_enr1.csv,,,BPL,109605,ENR1,SOURCE_LABELLED_ITEM,BPL,SOURCE_LABEL_ONLY,Original UDISE Enrollment item description,Retained from source label; no extra decoding
+2021-22,127_enr1.csv,,,Buddhist,109605,ENR1,SOURCE_LABELLED_ITEM,Buddhist,SOURCE_LABEL_ONLY,Original UDISE Enrollment item description,Retained from source label; no extra decoding
+2021-22,127_enr1.csv,,,Christian,109605,ENR1,SOURCE_LABELLED_ITEM,Christian,SOURCE_LABEL_ONLY,Original UDISE Enrollment item description,Retained from source label; no extra decoding
+2021-22,127_enr1.csv,,,General,109605,ENR1,SOURCE_LABELLED_ITEM,General,SOURCE_LABEL_ONLY,Original UDISE Enrollment item description,Retained from source label; no extra decoding
+2021-22,127_enr1.csv,,,Jain,109605,ENR1,SOURCE_LABELLED_ITEM,Jain,SOURCE_LABEL_ONLY,Original UDISE Enrollment item description,Retained from source label; no extra decoding
+2021-22,127_enr1.csv,,,Muslim,109605,ENR1,SOURCE_LABELLED_ITEM,Muslim,SOURCE_LABEL_ONLY,Original UDISE Enrollment item description,Retained from source label; no extra decoding
+2021-22,127_enr1.csv,,,OBC,109605,ENR1,SOURCE_LABELLED_ITEM,OBC,SOURCE_LABEL_ONLY,Original UDISE Enrollment item description,Retained from source label; no extra decoding
+2021-22,127_enr1.csv,,,Parsi,109605,ENR1,SOURCE_LABELLED_ITEM,Parsi,SOURCE_LABEL_ONLY,Original UDISE Enrollment item description,Retained from source label; no extra decoding
+2021-22,127_enr1.csv,,,SC,109605,ENR1,SOURCE_LABELLED_ITEM,SC,SOURCE_LABEL_ONLY,Original UDISE Enrollment item description,Retained from source label; no extra decoding
+2021-22,127_enr1.csv,,,ST,109605,ENR1,SOURCE_LABELLED_ITEM,ST,SOURCE_LABEL_ONLY,Original UDISE Enrollment item description,Retained from source label; no extra decoding
+2021-22,127_enr1.csv,,,Sikh,109605,ENR1,SOURCE_LABELLED_ITEM,Sikh,SOURCE_LABEL_ONLY,Original UDISE Enrollment item description,Retained from source label; no extra decoding
+2021-22,127_enr1.csv,,,Total CWSN,109605,ENR1,SOURCE_LABELLED_ITEM,Total CWSN,SOURCE_LABEL_ONLY,Original UDISE Enrollment item description,Retained from source label; no extra decoding
+2021-22,127_enr1.csv,,,Total repeaters,109605,ENR1,SOURCE_LABELLED_ITEM,Total repeaters,SOURCE_LABEL_ONLY,Original UDISE Enrollment item description,Retained from source label; no extra decoding
+2021-22,127_enr2.csv,,,Age10,109605,ENR2,SOURCE_LABELLED_ITEM,Age10,SOURCE_LABEL_ONLY,Original UDISE Enrollment item description,Retained from source label; no extra decoding
+2021-22,127_enr2.csv,,,Age11,109605,ENR2,SOURCE_LABELLED_ITEM,Age11,SOURCE_LABEL_ONLY,Original UDISE Enrollment item description,Retained from source label; no extra decoding
+2021-22,127_enr2.csv,,,Age12,109605,ENR2,SOURCE_LABELLED_ITEM,Age12,SOURCE_LABEL_ONLY,Original UDISE Enrollment item description,Retained from source label; no extra decoding
+2021-22,127_enr2.csv,,,Age13,109605,ENR2,SOURCE_LABELLED_ITEM,Age13,SOURCE_LABEL_ONLY,Original UDISE Enrollment item description,Retained from source label; no extra decoding
+2021-22,127_enr2.csv,,,Age14,109605,ENR2,SOURCE_LABELLED_ITEM,Age14,SOURCE_LABEL_ONLY,Original UDISE Enrollment item description,Retained from source label; no extra decoding
+2021-22,127_enr2.csv,,,Age15,109605,ENR2,SOURCE_LABELLED_ITEM,Age15,SOURCE_LABEL_ONLY,Original UDISE Enrollment item description,Retained from source label; no extra decoding
+2021-22,127_enr2.csv,,,Age16,109605,ENR2,SOURCE_LABELLED_ITEM,Age16,SOURCE_LABEL_ONLY,Original UDISE Enrollment item description,Retained from source label; no extra decoding
+2021-22,127_enr2.csv,,,Age17,109605,ENR2,SOURCE_LABELLED_ITEM,Age17,SOURCE_LABEL_ONLY,Original UDISE Enrollment item description,Retained from source label; no extra decoding
+2021-22,127_enr2.csv,,,Age18,109605,ENR2,SOURCE_LABELLED_ITEM,Age18,SOURCE_LABEL_ONLY,Original UDISE Enrollment item description,Retained from source label; no extra decoding
+2021-22,127_enr2.csv,,,Age19,109605,ENR2,SOURCE_LABELLED_ITEM,Age19,SOURCE_LABEL_ONLY,Original UDISE Enrollment item description,Retained from source label; no extra decoding
+2021-22,127_enr2.csv,,,Age20,109605,ENR2,SOURCE_LABELLED_ITEM,Age20,SOURCE_LABEL_ONLY,Original UDISE Enrollment item description,Retained from source label; no extra decoding
+2021-22,127_enr2.csv,,,Age21,109605,ENR2,SOURCE_LABELLED_ITEM,Age21,SOURCE_LABEL_ONLY,Original UDISE Enrollment item description,Retained from source label; no extra decoding
+2021-22,127_enr2.csv,,,Age22,109605,ENR2,SOURCE_LABELLED_ITEM,Age22,SOURCE_LABEL_ONLY,Original UDISE Enrollment item description,Retained from source label; no extra decoding
+2021-22,127_enr2.csv,,,Age5,109605,ENR2,SOURCE_LABELLED_ITEM,Age5,SOURCE_LABEL_ONLY,Original UDISE Enrollment item description,Retained from source label; no extra decoding
+2021-22,127_enr2.csv,,,Age6,109605,ENR2,SOURCE_LABELLED_ITEM,Age6,SOURCE_LABEL_ONLY,Original UDISE Enrollment item description,Retained from source label; no extra decoding
+2021-22,127_enr2.csv,,,Age7,109605,ENR2,SOURCE_LABELLED_ITEM,Age7,SOURCE_LABEL_ONLY,Original UDISE Enrollment item description,Retained from source label; no extra decoding
+2021-22,127_enr2.csv,,,Age8,109605,ENR2,SOURCE_LABELLED_ITEM,Age8,SOURCE_LABEL_ONLY,Original UDISE Enrollment item description,Retained from source label; no extra decoding
+2021-22,127_enr2.csv,,,Age9,109605,ENR2,SOURCE_LABELLED_ITEM,Age9,SOURCE_LABEL_ONLY,Original UDISE Enrollment item description,Retained from source label; no extra decoding
+2021-22,127_enr2.csv,,,Age<5,109605,ENR2,SOURCE_LABELLED_ITEM,Age<5,SOURCE_LABEL_ONLY,Original UDISE Enrollment item description,Retained from source label; no extra decoding
+2021-22,127_enr2.csv,,,,109605,ENR2,UNKNOWN,UNMAPPED,UNMAPPED,No source description or code mapping found,Blank source item
+2022-23,27_enr1.csv,1,1,,81590,ENR1,SOCIAL_CATEGORY,General,SCHEMA_MAPPED,UDISE+ Data Sharing Portal Schema - School Enrolment_1,Mapped using the documented item_group/item_id definition
+2022-23,27_enr1.csv,1,2,,76729,ENR1,SOCIAL_CATEGORY,SC,SCHEMA_MAPPED,UDISE+ Data Sharing Portal Schema - School Enrolment_1,Mapped using the documented item_group/item_id definition
+2022-23,27_enr1.csv,1,3,,67403,ENR1,SOCIAL_CATEGORY,ST,SCHEMA_MAPPED,UDISE+ Data Sharing Portal Schema - School Enrolment_1,Mapped using the documented item_group/item_id definition
+2022-23,27_enr1.csv,1,4,,91377,ENR1,SOCIAL_CATEGORY,OBC,SCHEMA_MAPPED,UDISE+ Data Sharing Portal Schema - School Enrolment_1,Mapped using the documented item_group/item_id definition
+2022-23,27_enr1.csv,2,10,,19875,ENR1,MINORITY_GROUP,Jain,SCHEMA_MAPPED,UDISE+ Data Sharing Portal Schema - School Enrolment_1,Mapped using the documented item_group/item_id definition
+2022-23,27_enr1.csv,2,5,,54946,ENR1,MINORITY_GROUP,Muslim,SCHEMA_MAPPED,UDISE+ Data Sharing Portal Schema - School Enrolment_1,Mapped using the documented item_group/item_id definition
+2022-23,27_enr1.csv,2,6,,10095,ENR1,MINORITY_GROUP,Christian,SCHEMA_MAPPED,UDISE+ Data Sharing Portal Schema - School Enrolment_1,Mapped using the documented item_group/item_id definition
+2022-23,27_enr1.csv,2,7,,5147,ENR1,MINORITY_GROUP,Sikh,SCHEMA_MAPPED,UDISE+ Data Sharing Portal Schema - School Enrolment_1,Mapped using the documented item_group/item_id definition
+2022-23,27_enr1.csv,2,8,,39280,ENR1,MINORITY_GROUP,Buddhist,SCHEMA_MAPPED,UDISE+ Data Sharing Portal Schema - School Enrolment_1,Mapped using the documented item_group/item_id definition
+2022-23,27_enr1.csv,2,9,,1836,ENR1,MINORITY_GROUP,Parsi,SCHEMA_MAPPED,UDISE+ Data Sharing Portal Schema - School Enrolment_1,Mapped using the documented item_group/item_id definition
+2022-23,27_enr1.csv,3,13,,67118,ENR1,BENEFICIARY_CATEGORY,BPL,SCHEMA_MAPPED,UDISE+ Data Sharing Portal Schema - School Enrolment_1,Mapped using the documented item_group/item_id definition
+2022-23,27_enr1.csv,4,1,,2471,ENR1,CWSN_DISABILITY,Blindness,SCHEMA_MAPPED,UDISE+ Data Sharing Portal Schema - School Enrolment_1,Mapped using the documented item_group/item_id definition
+2022-23,27_enr1.csv,4,10,,6126,ENR1,CWSN_DISABILITY,Multiple Disability Including Deaf-Blindness,SCHEMA_MAPPED,UDISE+ Data Sharing Portal Schema - School Enrolment_1,Mapped using the documented item_group/item_id definition
+2022-23,27_enr1.csv,4,11,,140,ENR1,CWSN_DISABILITY,Leprosy Cured,SCHEMA_MAPPED,UDISE+ Data Sharing Portal Schema - School Enrolment_1,Mapped using the documented item_group/item_id definition
+2022-23,27_enr1.csv,4,12,,1456,ENR1,CWSN_DISABILITY,Dwarfism,SCHEMA_MAPPED,UDISE+ Data Sharing Portal Schema - School Enrolment_1,Mapped using the documented item_group/item_id definition
+2022-23,27_enr1.csv,4,13,,18802,ENR1,CWSN_DISABILITY,Intellectual Disability,SCHEMA_MAPPED,UDISE+ Data Sharing Portal Schema - School Enrolment_1,Mapped using the documented item_group/item_id definition
+2022-23,27_enr1.csv,4,14,,2090,ENR1,CWSN_DISABILITY,Muscular Dystrophy,SCHEMA_MAPPED,UDISE+ Data Sharing Portal Schema - School Enrolment_1,Mapped using the documented item_group/item_id definition
+2022-23,27_enr1.csv,4,15,,486,ENR1,CWSN_DISABILITY,Chronic Neurological Conditions,SCHEMA_MAPPED,UDISE+ Data Sharing Portal Schema - School Enrolment_1,Mapped using the documented item_group/item_id definition
+2022-23,27_enr1.csv,4,16,,304,ENR1,CWSN_DISABILITY,Multiple Sclerosis,SCHEMA_MAPPED,UDISE+ Data Sharing Portal Schema - School Enrolment_1,Mapped using the documented item_group/item_id definition
+2022-23,27_enr1.csv,4,17,,846,ENR1,CWSN_DISABILITY,Thalassemia,SCHEMA_MAPPED,UDISE+ Data Sharing Portal Schema - School Enrolment_1,Mapped using the documented item_group/item_id definition
+2022-23,27_enr1.csv,4,18,,254,ENR1,CWSN_DISABILITY,Hemophilia,SCHEMA_MAPPED,UDISE+ Data Sharing Portal Schema - School Enrolment_1,Mapped using the documented item_group/item_id definition
+2022-23,27_enr1.csv,4,19,,1673,ENR1,CWSN_DISABILITY,Sickle Cell Disease,SCHEMA_MAPPED,UDISE+ Data Sharing Portal Schema - School Enrolment_1,Mapped using the documented item_group/item_id definition
+2022-23,27_enr1.csv,4,2,,19707,ENR1,CWSN_DISABILITY,Low Vision,SCHEMA_MAPPED,UDISE+ Data Sharing Portal Schema - School Enrolment_1,Mapped using the documented item_group/item_id definition
+2022-23,27_enr1.csv,4,20,,28,ENR1,CWSN_DISABILITY,Acid Attack Victim,SCHEMA_MAPPED,UDISE+ Data Sharing Portal Schema - School Enrolment_1,Mapped using the documented item_group/item_id definition
+2022-23,27_enr1.csv,4,21,,43,ENR1,CWSN_DISABILITY,Parkinson's Disease,DCF_EXTENSION,UDISE+ DCF 2025-26 Section 4.1.17(a),Mapped using the documented item_group/item_id definition
+2022-23,27_enr1.csv,4,3,,10245,ENR1,CWSN_DISABILITY,Hearing Impairment,SCHEMA_MAPPED,UDISE+ Data Sharing Portal Schema - School Enrolment_1,Mapped using the documented item_group/item_id definition
+2022-23,27_enr1.csv,4,4,,12648,ENR1,CWSN_DISABILITY,Speech and Language Disability,SCHEMA_MAPPED,UDISE+ Data Sharing Portal Schema - School Enrolment_1,Mapped using the documented item_group/item_id definition
+2022-23,27_enr1.csv,4,5,,18605,ENR1,CWSN_DISABILITY,Locomotor Disability,SCHEMA_MAPPED,UDISE+ Data Sharing Portal Schema - School Enrolment_1,Mapped using the documented item_group/item_id definition
+2022-23,27_enr1.csv,4,6,,2433,ENR1,CWSN_DISABILITY,Mental Illness,SCHEMA_MAPPED,UDISE+ Data Sharing Portal Schema - School Enrolment_1,Mapped using the documented item_group/item_id definition
+2022-23,27_enr1.csv,4,7,,9046,ENR1,CWSN_DISABILITY,Specific Learning Disabilities,SCHEMA_MAPPED,UDISE+ Data Sharing Portal Schema - School Enrolment_1,Mapped using the documented item_group/item_id definition
+2022-23,27_enr1.csv,4,8,,4396,ENR1,CWSN_DISABILITY,Cerebral Palsy,SCHEMA_MAPPED,UDISE+ Data Sharing Portal Schema - School Enrolment_1,Mapped using the documented item_group/item_id definition
+2022-23,27_enr1.csv,4,9,,1432,ENR1,CWSN_DISABILITY,Autism Spectrum Disorder,SCHEMA_MAPPED,UDISE+ Data Sharing Portal Schema - School Enrolment_1,Mapped using the documented item_group/item_id definition
+2022-23,27_enr1.csv,5,0,,11469,ENR1,UNKNOWN,UNMAPPED,UNMAPPED,No confirmed mapping in the consulted schema,Requires additional authoritative codebook
+2022-23,27_enr2.csv,8,10,,65007,ENR2,AGE_WISE_ENROLMENT,Age_ID_10,AGE_ID_ONLY,UDISE+ Data Sharing Portal Schema - Age Wise Enrolment_2,"Age ID range is documented, but ID-to-actual-age labels are not specified"
+2022-23,27_enr2.csv,8,11,,55409,ENR2,AGE_WISE_ENROLMENT,Age_ID_11,AGE_ID_ONLY,UDISE+ Data Sharing Portal Schema - Age Wise Enrolment_2,"Age ID range is documented, but ID-to-actual-age labels are not specified"
+2022-23,27_enr2.csv,8,12,,52577,ENR2,AGE_WISE_ENROLMENT,Age_ID_12,AGE_ID_ONLY,UDISE+ Data Sharing Portal Schema - Age Wise Enrolment_2,"Age ID range is documented, but ID-to-actual-age labels are not specified"
+2022-23,27_enr2.csv,8,13,,41890,ENR2,AGE_WISE_ENROLMENT,Age_ID_13,AGE_ID_ONLY,UDISE+ Data Sharing Portal Schema - Age Wise Enrolment_2,"Age ID range is documented, but ID-to-actual-age labels are not specified"
+2022-23,27_enr2.csv,8,14,,34708,ENR2,AGE_WISE_ENROLMENT,Age_ID_14,AGE_ID_ONLY,UDISE+ Data Sharing Portal Schema - Age Wise Enrolment_2,"Age ID range is documented, but ID-to-actual-age labels are not specified"
+2022-23,27_enr2.csv,8,15,,31077,ENR2,AGE_WISE_ENROLMENT,Age_ID_15,AGE_ID_ONLY,UDISE+ Data Sharing Portal Schema - Age Wise Enrolment_2,"Age ID range is documented, but ID-to-actual-age labels are not specified"
+2022-23,27_enr2.csv,8,16,,24461,ENR2,AGE_WISE_ENROLMENT,Age_ID_16,AGE_ID_ONLY,UDISE+ Data Sharing Portal Schema - Age Wise Enrolment_2,"Age ID range is documented, but ID-to-actual-age labels are not specified"
+2022-23,27_enr2.csv,8,17,,16817,ENR2,AGE_WISE_ENROLMENT,Age_ID_17,AGE_ID_ONLY,UDISE+ Data Sharing Portal Schema - Age Wise Enrolment_2,"Age ID range is documented, but ID-to-actual-age labels are not specified"
+2022-23,27_enr2.csv,8,18,,12335,ENR2,AGE_WISE_ENROLMENT,Age_ID_18,AGE_ID_ONLY,UDISE+ Data Sharing Portal Schema - Age Wise Enrolment_2,"Age ID range is documented, but ID-to-actual-age labels are not specified"
+2022-23,27_enr2.csv,8,19,,9317,ENR2,AGE_WISE_ENROLMENT,Age_ID_19,AGE_ID_ONLY,UDISE+ Data Sharing Portal Schema - Age Wise Enrolment_2,"Age ID range is documented, but ID-to-actual-age labels are not specified"
+2022-23,27_enr2.csv,8,2,,1577,ENR2,AGE_WISE_ENROLMENT,Age_ID_2,AGE_ID_ONLY,UDISE+ Data Sharing Portal Schema - Age Wise Enrolment_2,"Age ID range is documented, but ID-to-actual-age labels are not specified"
+2022-23,27_enr2.csv,8,20,,6562,ENR2,AGE_WISE_ENROLMENT,Age_ID_20,AGE_ID_ONLY,UDISE+ Data Sharing Portal Schema - Age Wise Enrolment_2,"Age ID range is documented, but ID-to-actual-age labels are not specified"
+2022-23,27_enr2.csv,8,21,,5564,ENR2,AGE_WISE_ENROLMENT,Age_ID_21,AGE_ID_ONLY,UDISE+ Data Sharing Portal Schema - Age Wise Enrolment_2,"Age ID range is documented, but ID-to-actual-age labels are not specified"
+2022-23,27_enr2.csv,8,22,,5761,ENR2,AGE_WISE_ENROLMENT,Age_ID_22,AGE_ID_ONLY,UDISE+ Data Sharing Portal Schema - Age Wise Enrolment_2,"Age ID range is documented, but ID-to-actual-age labels are not specified"
+2022-23,27_enr2.csv,8,3,,3333,ENR2,AGE_WISE_ENROLMENT,Age_ID_3,AGE_ID_ONLY,UDISE+ Data Sharing Portal Schema - Age Wise Enrolment_2,"Age ID range is documented, but ID-to-actual-age labels are not specified"
+2022-23,27_enr2.csv,8,4,,7116,ENR2,AGE_WISE_ENROLMENT,Age_ID_4,AGE_ID_ONLY,UDISE+ Data Sharing Portal Schema - Age Wise Enrolment_2,"Age ID range is documented, but ID-to-actual-age labels are not specified"
+2022-23,27_enr2.csv,8,5,,79478,ENR2,AGE_WISE_ENROLMENT,Age_ID_5,AGE_ID_ONLY,UDISE+ Data Sharing Portal Schema - Age Wise Enrolment_2,"Age ID range is documented, but ID-to-actual-age labels are not specified"
+2022-23,27_enr2.csv,8,6,,82374,ENR2,AGE_WISE_ENROLMENT,Age_ID_6,AGE_ID_ONLY,UDISE+ Data Sharing Portal Schema - Age Wise Enrolment_2,"Age ID range is documented, but ID-to-actual-age labels are not specified"
+2022-23,27_enr2.csv,8,7,,82924,ENR2,AGE_WISE_ENROLMENT,Age_ID_7,AGE_ID_ONLY,UDISE+ Data Sharing Portal Schema - Age Wise Enrolment_2,"Age ID range is documented, but ID-to-actual-age labels are not specified"
+2022-23,27_enr2.csv,8,8,,87973,ENR2,AGE_WISE_ENROLMENT,Age_ID_8,AGE_ID_ONLY,UDISE+ Data Sharing Portal Schema - Age Wise Enrolment_2,"Age ID range is documented, but ID-to-actual-age labels are not specified"
+2022-23,27_enr2.csv,8,9,,89410,ENR2,AGE_WISE_ENROLMENT,Age_ID_9,AGE_ID_ONLY,UDISE+ Data Sharing Portal Schema - Age Wise Enrolment_2,"Age ID range is documented, but ID-to-actual-age labels are not specified"
+2023-24,27_enr1.csv,1,1,,82250,ENR1,SOCIAL_CATEGORY,General,SCHEMA_MAPPED,UDISE+ Data Sharing Portal Schema - School Enrolment_1,Mapped using the documented item_group/item_id definition
+2023-24,27_enr1.csv,1,2,,77354,ENR1,SOCIAL_CATEGORY,SC,SCHEMA_MAPPED,UDISE+ Data Sharing Portal Schema - School Enrolment_1,Mapped using the documented item_group/item_id definition
+2023-24,27_enr1.csv,1,3,,68599,ENR1,SOCIAL_CATEGORY,ST,SCHEMA_MAPPED,UDISE+ Data Sharing Portal Schema - School Enrolment_1,Mapped using the documented item_group/item_id definition
+2023-24,27_enr1.csv,1,4,,92542,ENR1,SOCIAL_CATEGORY,OBC,SCHEMA_MAPPED,UDISE+ Data Sharing Portal Schema - School Enrolment_1,Mapped using the documented item_group/item_id definition
+2023-24,27_enr1.csv,10,32,,1293,ENR1,BENEFICIARY_CATEGORY,EWS,SCHEMA_MAPPED,UDISE+ Data Sharing Portal Schema - School Enrolment_1,Mapped using the documented item_group/item_id definition
+2023-24,27_enr1.csv,2,10,,20881,ENR1,MINORITY_GROUP,Jain,SCHEMA_MAPPED,UDISE+ Data Sharing Portal Schema - School Enrolment_1,Mapped using the documented item_group/item_id definition
+2023-24,27_enr1.csv,2,5,,56064,ENR1,MINORITY_GROUP,Muslim,SCHEMA_MAPPED,UDISE+ Data Sharing Portal Schema - School Enrolment_1,Mapped using the documented item_group/item_id definition
+2023-24,27_enr1.csv,2,6,,10637,ENR1,MINORITY_GROUP,Christian,SCHEMA_MAPPED,UDISE+ Data Sharing Portal Schema - School Enrolment_1,Mapped using the documented item_group/item_id definition
+2023-24,27_enr1.csv,2,7,,5459,ENR1,MINORITY_GROUP,Sikh,SCHEMA_MAPPED,UDISE+ Data Sharing Portal Schema - School Enrolment_1,Mapped using the documented item_group/item_id definition
+2023-24,27_enr1.csv,2,8,,42811,ENR1,MINORITY_GROUP,Buddhist,SCHEMA_MAPPED,UDISE+ Data Sharing Portal Schema - School Enrolment_1,Mapped using the documented item_group/item_id definition
+2023-24,27_enr1.csv,2,9,,1918,ENR1,MINORITY_GROUP,Parsi,SCHEMA_MAPPED,UDISE+ Data Sharing Portal Schema - School Enrolment_1,Mapped using the documented item_group/item_id definition
+2023-24,27_enr1.csv,3,13,,80621,ENR1,BENEFICIARY_CATEGORY,BPL,SCHEMA_MAPPED,UDISE+ Data Sharing Portal Schema - School Enrolment_1,Mapped using the documented item_group/item_id definition
+2023-24,27_enr1.csv,4,1,,2384,ENR1,CWSN_DISABILITY,Blindness,SCHEMA_MAPPED,UDISE+ Data Sharing Portal Schema - School Enrolment_1,Mapped using the documented item_group/item_id definition
+2023-24,27_enr1.csv,4,10,,6003,ENR1,CWSN_DISABILITY,Multiple Disability Including Deaf-Blindness,SCHEMA_MAPPED,UDISE+ Data Sharing Portal Schema - School Enrolment_1,Mapped using the documented item_group/item_id definition
+2023-24,27_enr1.csv,4,11,,114,ENR1,CWSN_DISABILITY,Leprosy Cured,SCHEMA_MAPPED,UDISE+ Data Sharing Portal Schema - School Enrolment_1,Mapped using the documented item_group/item_id definition
+2023-24,27_enr1.csv,4,12,,1445,ENR1,CWSN_DISABILITY,Dwarfism,SCHEMA_MAPPED,UDISE+ Data Sharing Portal Schema - School Enrolment_1,Mapped using the documented item_group/item_id definition
+2023-24,27_enr1.csv,4,13,,18730,ENR1,CWSN_DISABILITY,Intellectual Disability,SCHEMA_MAPPED,UDISE+ Data Sharing Portal Schema - School Enrolment_1,Mapped using the documented item_group/item_id definition
+2023-24,27_enr1.csv,4,14,,2099,ENR1,CWSN_DISABILITY,Muscular Dystrophy,SCHEMA_MAPPED,UDISE+ Data Sharing Portal Schema - School Enrolment_1,Mapped using the documented item_group/item_id definition
+2023-24,27_enr1.csv,4,15,,472,ENR1,CWSN_DISABILITY,Chronic Neurological Conditions,SCHEMA_MAPPED,UDISE+ Data Sharing Portal Schema - School Enrolment_1,Mapped using the documented item_group/item_id definition
+2023-24,27_enr1.csv,4,16,,321,ENR1,CWSN_DISABILITY,Multiple Sclerosis,SCHEMA_MAPPED,UDISE+ Data Sharing Portal Schema - School Enrolment_1,Mapped using the documented item_group/item_id definition
+2023-24,27_enr1.csv,4,17,,914,ENR1,CWSN_DISABILITY,Thalassemia,SCHEMA_MAPPED,UDISE+ Data Sharing Portal Schema - School Enrolment_1,Mapped using the documented item_group/item_id definition
+2023-24,27_enr1.csv,4,18,,281,ENR1,CWSN_DISABILITY,Hemophilia,SCHEMA_MAPPED,UDISE+ Data Sharing Portal Schema - School Enrolment_1,Mapped using the documented item_group/item_id definition
+2023-24,27_enr1.csv,4,19,,1702,ENR1,CWSN_DISABILITY,Sickle Cell Disease,SCHEMA_MAPPED,UDISE+ Data Sharing Portal Schema - School Enrolment_1,Mapped using the documented item_group/item_id definition
+2023-24,27_enr1.csv,4,2,,19623,ENR1,CWSN_DISABILITY,Low Vision,SCHEMA_MAPPED,UDISE+ Data Sharing Portal Schema - School Enrolment_1,Mapped using the documented item_group/item_id definition
+2023-24,27_enr1.csv,4,20,,24,ENR1,CWSN_DISABILITY,Acid Attack Victim,SCHEMA_MAPPED,UDISE+ Data Sharing Portal Schema - School Enrolment_1,Mapped using the documented item_group/item_id definition
+2023-24,27_enr1.csv,4,21,,44,ENR1,CWSN_DISABILITY,Parkinson's Disease,DCF_EXTENSION,UDISE+ DCF 2025-26 Section 4.1.17(a),Mapped using the documented item_group/item_id definition
+2023-24,27_enr1.csv,4,3,,9997,ENR1,CWSN_DISABILITY,Hearing Impairment,SCHEMA_MAPPED,UDISE+ Data Sharing Portal Schema - School Enrolment_1,Mapped using the documented item_group/item_id definition
+2023-24,27_enr1.csv,4,4,,12368,ENR1,CWSN_DISABILITY,Speech and Language Disability,SCHEMA_MAPPED,UDISE+ Data Sharing Portal Schema - School Enrolment_1,Mapped using the documented item_group/item_id definition
+2023-24,27_enr1.csv,4,5,,18656,ENR1,CWSN_DISABILITY,Locomotor Disability,SCHEMA_MAPPED,UDISE+ Data Sharing Portal Schema - School Enrolment_1,Mapped using the documented item_group/item_id definition
+2023-24,27_enr1.csv,4,6,,2531,ENR1,CWSN_DISABILITY,Mental Illness,SCHEMA_MAPPED,UDISE+ Data Sharing Portal Schema - School Enrolment_1,Mapped using the documented item_group/item_id definition
+2023-24,27_enr1.csv,4,7,,8545,ENR1,CWSN_DISABILITY,Specific Learning Disabilities,SCHEMA_MAPPED,UDISE+ Data Sharing Portal Schema - School Enrolment_1,Mapped using the documented item_group/item_id definition
+2023-24,27_enr1.csv,4,8,,4407,ENR1,CWSN_DISABILITY,Cerebral Palsy,SCHEMA_MAPPED,UDISE+ Data Sharing Portal Schema - School Enrolment_1,Mapped using the documented item_group/item_id definition
+2023-24,27_enr1.csv,4,9,,1576,ENR1,CWSN_DISABILITY,Autism Spectrum Disorder,SCHEMA_MAPPED,UDISE+ Data Sharing Portal Schema - School Enrolment_1,Mapped using the documented item_group/item_id definition
+2023-24,27_enr1.csv,5,0,,29892,ENR1,UNKNOWN,UNMAPPED,UNMAPPED,No confirmed mapping in the consulted schema,Requires additional authoritative codebook
+2023-24,27_enr2.csv,8,10,,65636,ENR2,AGE_WISE_ENROLMENT,Age_ID_10,AGE_ID_ONLY,UDISE+ Data Sharing Portal Schema - Age Wise Enrolment_2,"Age ID range is documented, but ID-to-actual-age labels are not specified"
+2023-24,27_enr2.csv,8,11,,56936,ENR2,AGE_WISE_ENROLMENT,Age_ID_11,AGE_ID_ONLY,UDISE+ Data Sharing Portal Schema - Age Wise Enrolment_2,"Age ID range is documented, but ID-to-actual-age labels are not specified"
+2023-24,27_enr2.csv,8,12,,53106,ENR2,AGE_WISE_ENROLMENT,Age_ID_12,AGE_ID_ONLY,UDISE+ Data Sharing Portal Schema - Age Wise Enrolment_2,"Age ID range is documented, but ID-to-actual-age labels are not specified"
+2023-24,27_enr2.csv,8,13,,41733,ENR2,AGE_WISE_ENROLMENT,Age_ID_13,AGE_ID_ONLY,UDISE+ Data Sharing Portal Schema - Age Wise Enrolment_2,"Age ID range is documented, but ID-to-actual-age labels are not specified"
+2023-24,27_enr2.csv,8,14,,35404,ENR2,AGE_WISE_ENROLMENT,Age_ID_14,AGE_ID_ONLY,UDISE+ Data Sharing Portal Schema - Age Wise Enrolment_2,"Age ID range is documented, but ID-to-actual-age labels are not specified"
+2023-24,27_enr2.csv,8,15,,31052,ENR2,AGE_WISE_ENROLMENT,Age_ID_15,AGE_ID_ONLY,UDISE+ Data Sharing Portal Schema - Age Wise Enrolment_2,"Age ID range is documented, but ID-to-actual-age labels are not specified"
+2023-24,27_enr2.csv,8,16,,25118,ENR2,AGE_WISE_ENROLMENT,Age_ID_16,AGE_ID_ONLY,UDISE+ Data Sharing Portal Schema - Age Wise Enrolment_2,"Age ID range is documented, but ID-to-actual-age labels are not specified"
+2023-24,27_enr2.csv,8,17,,17592,ENR2,AGE_WISE_ENROLMENT,Age_ID_17,AGE_ID_ONLY,UDISE+ Data Sharing Portal Schema - Age Wise Enrolment_2,"Age ID range is documented, but ID-to-actual-age labels are not specified"
+2023-24,27_enr2.csv,8,18,,12922,ENR2,AGE_WISE_ENROLMENT,Age_ID_18,AGE_ID_ONLY,UDISE+ Data Sharing Portal Schema - Age Wise Enrolment_2,"Age ID range is documented, but ID-to-actual-age labels are not specified"
+2023-24,27_enr2.csv,8,19,,9209,ENR2,AGE_WISE_ENROLMENT,Age_ID_19,AGE_ID_ONLY,UDISE+ Data Sharing Portal Schema - Age Wise Enrolment_2,"Age ID range is documented, but ID-to-actual-age labels are not specified"
+2023-24,27_enr2.csv,8,2,,1919,ENR2,AGE_WISE_ENROLMENT,Age_ID_2,AGE_ID_ONLY,UDISE+ Data Sharing Portal Schema - Age Wise Enrolment_2,"Age ID range is documented, but ID-to-actual-age labels are not specified"
+2023-24,27_enr2.csv,8,20,,6683,ENR2,AGE_WISE_ENROLMENT,Age_ID_20,AGE_ID_ONLY,UDISE+ Data Sharing Portal Schema - Age Wise Enrolment_2,"Age ID range is documented, but ID-to-actual-age labels are not specified"
+2023-24,27_enr2.csv,8,21,,4830,ENR2,AGE_WISE_ENROLMENT,Age_ID_21,AGE_ID_ONLY,UDISE+ Data Sharing Portal Schema - Age Wise Enrolment_2,"Age ID range is documented, but ID-to-actual-age labels are not specified"
+2023-24,27_enr2.csv,8,22,,6394,ENR2,AGE_WISE_ENROLMENT,Age_ID_22,AGE_ID_ONLY,UDISE+ Data Sharing Portal Schema - Age Wise Enrolment_2,"Age ID range is documented, but ID-to-actual-age labels are not specified"
+2023-24,27_enr2.csv,8,3,,3629,ENR2,AGE_WISE_ENROLMENT,Age_ID_3,AGE_ID_ONLY,UDISE+ Data Sharing Portal Schema - Age Wise Enrolment_2,"Age ID range is documented, but ID-to-actual-age labels are not specified"
+2023-24,27_enr2.csv,8,4,,9245,ENR2,AGE_WISE_ENROLMENT,Age_ID_4,AGE_ID_ONLY,UDISE+ Data Sharing Portal Schema - Age Wise Enrolment_2,"Age ID range is documented, but ID-to-actual-age labels are not specified"
+2023-24,27_enr2.csv,8,5,,78930,ENR2,AGE_WISE_ENROLMENT,Age_ID_5,AGE_ID_ONLY,UDISE+ Data Sharing Portal Schema - Age Wise Enrolment_2,"Age ID range is documented, but ID-to-actual-age labels are not specified"
+2023-24,27_enr2.csv,8,6,,81984,ENR2,AGE_WISE_ENROLMENT,Age_ID_6,AGE_ID_ONLY,UDISE+ Data Sharing Portal Schema - Age Wise Enrolment_2,"Age ID range is documented, but ID-to-actual-age labels are not specified"
+2023-24,27_enr2.csv,8,7,,83102,ENR2,AGE_WISE_ENROLMENT,Age_ID_7,AGE_ID_ONLY,UDISE+ Data Sharing Portal Schema - Age Wise Enrolment_2,"Age ID range is documented, but ID-to-actual-age labels are not specified"
+2023-24,27_enr2.csv,8,8,,86693,ENR2,AGE_WISE_ENROLMENT,Age_ID_8,AGE_ID_ONLY,UDISE+ Data Sharing Portal Schema - Age Wise Enrolment_2,"Age ID range is documented, but ID-to-actual-age labels are not specified"
+2023-24,27_enr2.csv,8,9,,91122,ENR2,AGE_WISE_ENROLMENT,Age_ID_9,AGE_ID_ONLY,UDISE+ Data Sharing Portal Schema - Age Wise Enrolment_2,"Age ID range is documented, but ID-to-actual-age labels are not specified"
+2024-25,27_enr1.csv,1,1,,82505,ENR1,SOCIAL_CATEGORY,General,SCHEMA_MAPPED,UDISE+ Data Sharing Portal Schema - School Enrolment_1,Mapped using the documented item_group/item_id definition
+2024-25,27_enr1.csv,1,2,,77758,ENR1,SOCIAL_CATEGORY,SC,SCHEMA_MAPPED,UDISE+ Data Sharing Portal Schema - School Enrolment_1,Mapped using the documented item_group/item_id definition
+2024-25,27_enr1.csv,1,3,,69422,ENR1,SOCIAL_CATEGORY,ST,SCHEMA_MAPPED,UDISE+ Data Sharing Portal Schema - School Enrolment_1,Mapped using the documented item_group/item_id definition
+2024-25,27_enr1.csv,1,4,,93788,ENR1,SOCIAL_CATEGORY,OBC,SCHEMA_MAPPED,UDISE+ Data Sharing Portal Schema - School Enrolment_1,Mapped using the documented item_group/item_id definition
+2024-25,27_enr1.csv,2,10,,20772,ENR1,MINORITY_GROUP,Jain,SCHEMA_MAPPED,UDISE+ Data Sharing Portal Schema - School Enrolment_1,Mapped using the documented item_group/item_id definition
+2024-25,27_enr1.csv,2,5,,56405,ENR1,MINORITY_GROUP,Muslim,SCHEMA_MAPPED,UDISE+ Data Sharing Portal Schema - School Enrolment_1,Mapped using the documented item_group/item_id definition
+2024-25,27_enr1.csv,2,6,,10759,ENR1,MINORITY_GROUP,Christian,SCHEMA_MAPPED,UDISE+ Data Sharing Portal Schema - School Enrolment_1,Mapped using the documented item_group/item_id definition
+2024-25,27_enr1.csv,2,7,,5603,ENR1,MINORITY_GROUP,Sikh,SCHEMA_MAPPED,UDISE+ Data Sharing Portal Schema - School Enrolment_1,Mapped using the documented item_group/item_id definition
+2024-25,27_enr1.csv,2,8,,44900,ENR1,MINORITY_GROUP,Buddhist,SCHEMA_MAPPED,UDISE+ Data Sharing Portal Schema - School Enrolment_1,Mapped using the documented item_group/item_id definition
+2024-25,27_enr1.csv,2,9,,1899,ENR1,MINORITY_GROUP,Parsi,SCHEMA_MAPPED,UDISE+ Data Sharing Portal Schema - School Enrolment_1,Mapped using the documented item_group/item_id definition
+2024-25,27_enr1.csv,3,13,,86244,ENR1,BENEFICIARY_CATEGORY,BPL,SCHEMA_MAPPED,UDISE+ Data Sharing Portal Schema - School Enrolment_1,Mapped using the documented item_group/item_id definition
+2024-25,27_enr1.csv,4,1,,2586,ENR1,CWSN_DISABILITY,Blindness,SCHEMA_MAPPED,UDISE+ Data Sharing Portal Schema - School Enrolment_1,Mapped using the documented item_group/item_id definition
+2024-25,27_enr1.csv,4,10,,5854,ENR1,CWSN_DISABILITY,Multiple Disability Including Deaf-Blindness,SCHEMA_MAPPED,UDISE+ Data Sharing Portal Schema - School Enrolment_1,Mapped using the documented item_group/item_id definition
+2024-25,27_enr1.csv,4,11,,126,ENR1,CWSN_DISABILITY,Leprosy Cured,SCHEMA_MAPPED,UDISE+ Data Sharing Portal Schema - School Enrolment_1,Mapped using the documented item_group/item_id definition
+2024-25,27_enr1.csv,4,12,,1496,ENR1,CWSN_DISABILITY,Dwarfism,SCHEMA_MAPPED,UDISE+ Data Sharing Portal Schema - School Enrolment_1,Mapped using the documented item_group/item_id definition
+2024-25,27_enr1.csv,4,13,,18696,ENR1,CWSN_DISABILITY,Intellectual Disability,SCHEMA_MAPPED,UDISE+ Data Sharing Portal Schema - School Enrolment_1,Mapped using the documented item_group/item_id definition
+2024-25,27_enr1.csv,4,14,,2184,ENR1,CWSN_DISABILITY,Muscular Dystrophy,SCHEMA_MAPPED,UDISE+ Data Sharing Portal Schema - School Enrolment_1,Mapped using the documented item_group/item_id definition
+2024-25,27_enr1.csv,4,15,,511,ENR1,CWSN_DISABILITY,Chronic Neurological Conditions,SCHEMA_MAPPED,UDISE+ Data Sharing Portal Schema - School Enrolment_1,Mapped using the documented item_group/item_id definition
+2024-25,27_enr1.csv,4,16,,386,ENR1,CWSN_DISABILITY,Multiple Sclerosis,SCHEMA_MAPPED,UDISE+ Data Sharing Portal Schema - School Enrolment_1,Mapped using the documented item_group/item_id definition
+2024-25,27_enr1.csv,4,17,,990,ENR1,CWSN_DISABILITY,Thalassemia,SCHEMA_MAPPED,UDISE+ Data Sharing Portal Schema - School Enrolment_1,Mapped using the documented item_group/item_id definition
+2024-25,27_enr1.csv,4,18,,294,ENR1,CWSN_DISABILITY,Hemophilia,SCHEMA_MAPPED,UDISE+ Data Sharing Portal Schema - School Enrolment_1,Mapped using the documented item_group/item_id definition
+2024-25,27_enr1.csv,4,19,,1853,ENR1,CWSN_DISABILITY,Sickle Cell Disease,SCHEMA_MAPPED,UDISE+ Data Sharing Portal Schema - School Enrolment_1,Mapped using the documented item_group/item_id definition
+2024-25,27_enr1.csv,4,2,,20436,ENR1,CWSN_DISABILITY,Low Vision,SCHEMA_MAPPED,UDISE+ Data Sharing Portal Schema - School Enrolment_1,Mapped using the documented item_group/item_id definition
+2024-25,27_enr1.csv,4,20,,27,ENR1,CWSN_DISABILITY,Acid Attack Victim,SCHEMA_MAPPED,UDISE+ Data Sharing Portal Schema - School Enrolment_1,Mapped using the documented item_group/item_id definition
+2024-25,27_enr1.csv,4,21,,45,ENR1,CWSN_DISABILITY,Parkinson's Disease,DCF_EXTENSION,UDISE+ DCF 2025-26 Section 4.1.17(a),Mapped using the documented item_group/item_id definition
+2024-25,27_enr1.csv,4,3,,10132,ENR1,CWSN_DISABILITY,Hearing Impairment,SCHEMA_MAPPED,UDISE+ Data Sharing Portal Schema - School Enrolment_1,Mapped using the documented item_group/item_id definition
+2024-25,27_enr1.csv,4,4,,13170,ENR1,CWSN_DISABILITY,Speech and Language Disability,SCHEMA_MAPPED,UDISE+ Data Sharing Portal Schema - School Enrolment_1,Mapped using the documented item_group/item_id definition
+2024-25,27_enr1.csv,4,5,,18947,ENR1,CWSN_DISABILITY,Locomotor Disability,SCHEMA_MAPPED,UDISE+ Data Sharing Portal Schema - School Enrolment_1,Mapped using the documented item_group/item_id definition
+2024-25,27_enr1.csv,4,6,,2867,ENR1,CWSN_DISABILITY,Mental Illness,SCHEMA_MAPPED,UDISE+ Data Sharing Portal Schema - School Enrolment_1,Mapped using the documented item_group/item_id definition
+2024-25,27_enr1.csv,4,7,,8852,ENR1,CWSN_DISABILITY,Specific Learning Disabilities,SCHEMA_MAPPED,UDISE+ Data Sharing Portal Schema - School Enrolment_1,Mapped using the documented item_group/item_id definition
+2024-25,27_enr1.csv,4,8,,4493,ENR1,CWSN_DISABILITY,Cerebral Palsy,SCHEMA_MAPPED,UDISE+ Data Sharing Portal Schema - School Enrolment_1,Mapped using the documented item_group/item_id definition
+2024-25,27_enr1.csv,4,9,,1785,ENR1,CWSN_DISABILITY,Autism Spectrum Disorder,SCHEMA_MAPPED,UDISE+ Data Sharing Portal Schema - School Enrolment_1,Mapped using the documented item_group/item_id definition
+2024-25,27_enr1.csv,5,0,,13728,ENR1,UNKNOWN,UNMAPPED,UNMAPPED,No confirmed mapping in the consulted schema,Requires additional authoritative codebook
+2024-25,27_enr2.csv,8,10,,71862,ENR2,AGE_WISE_ENROLMENT,Age_ID_10,AGE_ID_ONLY,UDISE+ Data Sharing Portal Schema - Age Wise Enrolment_2,"Age ID range is documented, but ID-to-actual-age labels are not specified"
+2024-25,27_enr2.csv,8,11,,56627,ENR2,AGE_WISE_ENROLMENT,Age_ID_11,AGE_ID_ONLY,UDISE+ Data Sharing Portal Schema - Age Wise Enrolment_2,"Age ID range is documented, but ID-to-actual-age labels are not specified"
+2024-25,27_enr2.csv,8,12,,54754,ENR2,AGE_WISE_ENROLMENT,Age_ID_12,AGE_ID_ONLY,UDISE+ Data Sharing Portal Schema - Age Wise Enrolment_2,"Age ID range is documented, but ID-to-actual-age labels are not specified"
+2024-25,27_enr2.csv,8,13,,44466,ENR2,AGE_WISE_ENROLMENT,Age_ID_13,AGE_ID_ONLY,UDISE+ Data Sharing Portal Schema - Age Wise Enrolment_2,"Age ID range is documented, but ID-to-actual-age labels are not specified"
+2024-25,27_enr2.csv,8,14,,36139,ENR2,AGE_WISE_ENROLMENT,Age_ID_14,AGE_ID_ONLY,UDISE+ Data Sharing Portal Schema - Age Wise Enrolment_2,"Age ID range is documented, but ID-to-actual-age labels are not specified"
+2024-25,27_enr2.csv,8,15,,32017,ENR2,AGE_WISE_ENROLMENT,Age_ID_15,AGE_ID_ONLY,UDISE+ Data Sharing Portal Schema - Age Wise Enrolment_2,"Age ID range is documented, but ID-to-actual-age labels are not specified"
+2024-25,27_enr2.csv,8,16,,26393,ENR2,AGE_WISE_ENROLMENT,Age_ID_16,AGE_ID_ONLY,UDISE+ Data Sharing Portal Schema - Age Wise Enrolment_2,"Age ID range is documented, but ID-to-actual-age labels are not specified"
+2024-25,27_enr2.csv,8,17,,18236,ENR2,AGE_WISE_ENROLMENT,Age_ID_17,AGE_ID_ONLY,UDISE+ Data Sharing Portal Schema - Age Wise Enrolment_2,"Age ID range is documented, but ID-to-actual-age labels are not specified"
+2024-25,27_enr2.csv,8,18,,13101,ENR2,AGE_WISE_ENROLMENT,Age_ID_18,AGE_ID_ONLY,UDISE+ Data Sharing Portal Schema - Age Wise Enrolment_2,"Age ID range is documented, but ID-to-actual-age labels are not specified"
+2024-25,27_enr2.csv,8,19,,8761,ENR2,AGE_WISE_ENROLMENT,Age_ID_19,AGE_ID_ONLY,UDISE+ Data Sharing Portal Schema - Age Wise Enrolment_2,"Age ID range is documented, but ID-to-actual-age labels are not specified"
+2024-25,27_enr2.csv,8,20,,5840,ENR2,AGE_WISE_ENROLMENT,Age_ID_20,AGE_ID_ONLY,UDISE+ Data Sharing Portal Schema - Age Wise Enrolment_2,"Age ID range is documented, but ID-to-actual-age labels are not specified"
+2024-25,27_enr2.csv,8,21,,4054,ENR2,AGE_WISE_ENROLMENT,Age_ID_21,AGE_ID_ONLY,UDISE+ Data Sharing Portal Schema - Age Wise Enrolment_2,"Age ID range is documented, but ID-to-actual-age labels are not specified"
+2024-25,27_enr2.csv,8,22,,5302,ENR2,AGE_WISE_ENROLMENT,Age_ID_22,AGE_ID_ONLY,UDISE+ Data Sharing Portal Schema - Age Wise Enrolment_2,"Age ID range is documented, but ID-to-actual-age labels are not specified"
+2024-25,27_enr2.csv,8,3,,3267,ENR2,AGE_WISE_ENROLMENT,Age_ID_3,AGE_ID_ONLY,UDISE+ Data Sharing Portal Schema - Age Wise Enrolment_2,"Age ID range is documented, but ID-to-actual-age labels are not specified"
+2024-25,27_enr2.csv,8,4,,6788,ENR2,AGE_WISE_ENROLMENT,Age_ID_4,AGE_ID_ONLY,UDISE+ Data Sharing Portal Schema - Age Wise Enrolment_2,"Age ID range is documented, but ID-to-actual-age labels are not specified"
+2024-25,27_enr2.csv,8,5,,75075,ENR2,AGE_WISE_ENROLMENT,Age_ID_5,AGE_ID_ONLY,UDISE+ Data Sharing Portal Schema - Age Wise Enrolment_2,"Age ID range is documented, but ID-to-actual-age labels are not specified"
+2024-25,27_enr2.csv,8,6,,81504,ENR2,AGE_WISE_ENROLMENT,Age_ID_6,AGE_ID_ONLY,UDISE+ Data Sharing Portal Schema - Age Wise Enrolment_2,"Age ID range is documented, but ID-to-actual-age labels are not specified"
+2024-25,27_enr2.csv,8,7,,82045,ENR2,AGE_WISE_ENROLMENT,Age_ID_7,AGE_ID_ONLY,UDISE+ Data Sharing Portal Schema - Age Wise Enrolment_2,"Age ID range is documented, but ID-to-actual-age labels are not specified"
+2024-25,27_enr2.csv,8,8,,84505,ENR2,AGE_WISE_ENROLMENT,Age_ID_8,AGE_ID_ONLY,UDISE+ Data Sharing Portal Schema - Age Wise Enrolment_2,"Age ID range is documented, but ID-to-actual-age labels are not specified"
+2024-25,27_enr2.csv,8,9,,92656,ENR2,AGE_WISE_ENROLMENT,Age_ID_9,AGE_ID_ONLY,UDISE+ Data Sharing Portal Schema - Age Wise Enrolment_2,"Age ID range is documented, but ID-to-actual-age labels are not specified"
+2025-26,27_enr1.csv,1,1,,82584,ENR1,SOCIAL_CATEGORY,General,SCHEMA_MAPPED,UDISE+ Data Sharing Portal Schema - School Enrolment_1,Mapped using the documented item_group/item_id definition
+2025-26,27_enr1.csv,1,2,,77995,ENR1,SOCIAL_CATEGORY,SC,SCHEMA_MAPPED,UDISE+ Data Sharing Portal Schema - School Enrolment_1,Mapped using the documented item_group/item_id definition
+2025-26,27_enr1.csv,1,3,,70315,ENR1,SOCIAL_CATEGORY,ST,SCHEMA_MAPPED,UDISE+ Data Sharing Portal Schema - School Enrolment_1,Mapped using the documented item_group/item_id definition
+2025-26,27_enr1.csv,1,4,,94451,ENR1,SOCIAL_CATEGORY,OBC,SCHEMA_MAPPED,UDISE+ Data Sharing Portal Schema - School Enrolment_1,Mapped using the documented item_group/item_id definition
+2025-26,27_enr1.csv,2,10,,20483,ENR1,MINORITY_GROUP,Jain,SCHEMA_MAPPED,UDISE+ Data Sharing Portal Schema - School Enrolment_1,Mapped using the documented item_group/item_id definition
+2025-26,27_enr1.csv,2,5,,57213,ENR1,MINORITY_GROUP,Muslim,SCHEMA_MAPPED,UDISE+ Data Sharing Portal Schema - School Enrolment_1,Mapped using the documented item_group/item_id definition
+2025-26,27_enr1.csv,2,6,,10873,ENR1,MINORITY_GROUP,Christian,SCHEMA_MAPPED,UDISE+ Data Sharing Portal Schema - School Enrolment_1,Mapped using the documented item_group/item_id definition
+2025-26,27_enr1.csv,2,7,,5765,ENR1,MINORITY_GROUP,Sikh,SCHEMA_MAPPED,UDISE+ Data Sharing Portal Schema - School Enrolment_1,Mapped using the documented item_group/item_id definition
+2025-26,27_enr1.csv,2,8,,46161,ENR1,MINORITY_GROUP,Buddhist,SCHEMA_MAPPED,UDISE+ Data Sharing Portal Schema - School Enrolment_1,Mapped using the documented item_group/item_id definition
+2025-26,27_enr1.csv,2,9,,1808,ENR1,MINORITY_GROUP,Parsi,SCHEMA_MAPPED,UDISE+ Data Sharing Portal Schema - School Enrolment_1,Mapped using the documented item_group/item_id definition
+2025-26,27_enr1.csv,3,13,,88436,ENR1,BENEFICIARY_CATEGORY,BPL,SCHEMA_MAPPED,UDISE+ Data Sharing Portal Schema - School Enrolment_1,Mapped using the documented item_group/item_id definition
+2025-26,27_enr1.csv,4,1,,2706,ENR1,CWSN_DISABILITY,Blindness,SCHEMA_MAPPED,UDISE+ Data Sharing Portal Schema - School Enrolment_1,Mapped using the documented item_group/item_id definition
+2025-26,27_enr1.csv,4,10,,5991,ENR1,CWSN_DISABILITY,Multiple Disability Including Deaf-Blindness,SCHEMA_MAPPED,UDISE+ Data Sharing Portal Schema - School Enrolment_1,Mapped using the documented item_group/item_id definition
+2025-26,27_enr1.csv,4,11,,130,ENR1,CWSN_DISABILITY,Leprosy Cured,SCHEMA_MAPPED,UDISE+ Data Sharing Portal Schema - School Enrolment_1,Mapped using the documented item_group/item_id definition
+2025-26,27_enr1.csv,4,12,,1643,ENR1,CWSN_DISABILITY,Dwarfism,SCHEMA_MAPPED,UDISE+ Data Sharing Portal Schema - School Enrolment_1,Mapped using the documented item_group/item_id definition
+2025-26,27_enr1.csv,4,13,,20953,ENR1,CWSN_DISABILITY,Intellectual Disability,SCHEMA_MAPPED,UDISE+ Data Sharing Portal Schema - School Enrolment_1,Mapped using the documented item_group/item_id definition
+2025-26,27_enr1.csv,4,14,,2294,ENR1,CWSN_DISABILITY,Muscular Dystrophy,SCHEMA_MAPPED,UDISE+ Data Sharing Portal Schema - School Enrolment_1,Mapped using the documented item_group/item_id definition
+2025-26,27_enr1.csv,4,15,,569,ENR1,CWSN_DISABILITY,Chronic Neurological Conditions,SCHEMA_MAPPED,UDISE+ Data Sharing Portal Schema - School Enrolment_1,Mapped using the documented item_group/item_id definition
+2025-26,27_enr1.csv,4,16,,431,ENR1,CWSN_DISABILITY,Multiple Sclerosis,SCHEMA_MAPPED,UDISE+ Data Sharing Portal Schema - School Enrolment_1,Mapped using the documented item_group/item_id definition
+2025-26,27_enr1.csv,4,17,,1169,ENR1,CWSN_DISABILITY,Thalassemia,SCHEMA_MAPPED,UDISE+ Data Sharing Portal Schema - School Enrolment_1,Mapped using the documented item_group/item_id definition
+2025-26,27_enr1.csv,4,18,,327,ENR1,CWSN_DISABILITY,Hemophilia,SCHEMA_MAPPED,UDISE+ Data Sharing Portal Schema - School Enrolment_1,Mapped using the documented item_group/item_id definition
+2025-26,27_enr1.csv,4,19,,2029,ENR1,CWSN_DISABILITY,Sickle Cell Disease,SCHEMA_MAPPED,UDISE+ Data Sharing Portal Schema - School Enrolment_1,Mapped using the documented item_group/item_id definition
+2025-26,27_enr1.csv,4,2,,21284,ENR1,CWSN_DISABILITY,Low Vision,SCHEMA_MAPPED,UDISE+ Data Sharing Portal Schema - School Enrolment_1,Mapped using the documented item_group/item_id definition
+2025-26,27_enr1.csv,4,20,,22,ENR1,CWSN_DISABILITY,Acid Attack Victim,SCHEMA_MAPPED,UDISE+ Data Sharing Portal Schema - School Enrolment_1,Mapped using the documented item_group/item_id definition
+2025-26,27_enr1.csv,4,21,,38,ENR1,CWSN_DISABILITY,Parkinson's Disease,DCF_EXTENSION,UDISE+ DCF 2025-26 Section 4.1.17(a),Mapped using the documented item_group/item_id definition
+2025-26,27_enr1.csv,4,3,,10912,ENR1,CWSN_DISABILITY,Hearing Impairment,SCHEMA_MAPPED,UDISE+ Data Sharing Portal Schema - School Enrolment_1,Mapped using the documented item_group/item_id definition
+2025-26,27_enr1.csv,4,4,,14194,ENR1,CWSN_DISABILITY,Speech and Language Disability,SCHEMA_MAPPED,UDISE+ Data Sharing Portal Schema - School Enrolment_1,Mapped using the documented item_group/item_id definition
+2025-26,27_enr1.csv,4,5,,20402,ENR1,CWSN_DISABILITY,Locomotor Disability,SCHEMA_MAPPED,UDISE+ Data Sharing Portal Schema - School Enrolment_1,Mapped using the documented item_group/item_id definition
+2025-26,27_enr1.csv,4,6,,2537,ENR1,CWSN_DISABILITY,Mental Illness,SCHEMA_MAPPED,UDISE+ Data Sharing Portal Schema - School Enrolment_1,Mapped using the documented item_group/item_id definition
+2025-26,27_enr1.csv,4,7,,9108,ENR1,CWSN_DISABILITY,Specific Learning Disabilities,SCHEMA_MAPPED,UDISE+ Data Sharing Portal Schema - School Enrolment_1,Mapped using the documented item_group/item_id definition
+2025-26,27_enr1.csv,4,8,,4803,ENR1,CWSN_DISABILITY,Cerebral Palsy,SCHEMA_MAPPED,UDISE+ Data Sharing Portal Schema - School Enrolment_1,Mapped using the documented item_group/item_id definition
+2025-26,27_enr1.csv,4,9,,2351,ENR1,CWSN_DISABILITY,Autism Spectrum Disorder,SCHEMA_MAPPED,UDISE+ Data Sharing Portal Schema - School Enrolment_1,Mapped using the documented item_group/item_id definition
+2025-26,27_enr1.csv,5,0,,35567,ENR1,UNKNOWN,UNMAPPED,UNMAPPED,No confirmed mapping in the consulted schema,Requires additional authoritative codebook
+2025-26,27_enr2.csv,8,10,,70462,ENR2,AGE_WISE_ENROLMENT,Age_ID_10,AGE_ID_ONLY,UDISE+ Data Sharing Portal Schema - Age Wise Enrolment_2,"Age ID range is documented, but ID-to-actual-age labels are not specified"
+2025-26,27_enr2.csv,8,11,,56775,ENR2,AGE_WISE_ENROLMENT,Age_ID_11,AGE_ID_ONLY,UDISE+ Data Sharing Portal Schema - Age Wise Enrolment_2,"Age ID range is documented, but ID-to-actual-age labels are not specified"
+2025-26,27_enr2.csv,8,12,,55195,ENR2,AGE_WISE_ENROLMENT,Age_ID_12,AGE_ID_ONLY,UDISE+ Data Sharing Portal Schema - Age Wise Enrolment_2,"Age ID range is documented, but ID-to-actual-age labels are not specified"
+2025-26,27_enr2.csv,8,13,,45351,ENR2,AGE_WISE_ENROLMENT,Age_ID_13,AGE_ID_ONLY,UDISE+ Data Sharing Portal Schema - Age Wise Enrolment_2,"Age ID range is documented, but ID-to-actual-age labels are not specified"
+2025-26,27_enr2.csv,8,14,,37394,ENR2,AGE_WISE_ENROLMENT,Age_ID_14,AGE_ID_ONLY,UDISE+ Data Sharing Portal Schema - Age Wise Enrolment_2,"Age ID range is documented, but ID-to-actual-age labels are not specified"
+2025-26,27_enr2.csv,8,15,,32606,ENR2,AGE_WISE_ENROLMENT,Age_ID_15,AGE_ID_ONLY,UDISE+ Data Sharing Portal Schema - Age Wise Enrolment_2,"Age ID range is documented, but ID-to-actual-age labels are not specified"
+2025-26,27_enr2.csv,8,16,,27234,ENR2,AGE_WISE_ENROLMENT,Age_ID_16,AGE_ID_ONLY,UDISE+ Data Sharing Portal Schema - Age Wise Enrolment_2,"Age ID range is documented, but ID-to-actual-age labels are not specified"
+2025-26,27_enr2.csv,8,17,,18823,ENR2,AGE_WISE_ENROLMENT,Age_ID_17,AGE_ID_ONLY,UDISE+ Data Sharing Portal Schema - Age Wise Enrolment_2,"Age ID range is documented, but ID-to-actual-age labels are not specified"
+2025-26,27_enr2.csv,8,18,,13500,ENR2,AGE_WISE_ENROLMENT,Age_ID_18,AGE_ID_ONLY,UDISE+ Data Sharing Portal Schema - Age Wise Enrolment_2,"Age ID range is documented, but ID-to-actual-age labels are not specified"
+2025-26,27_enr2.csv,8,19,,8589,ENR2,AGE_WISE_ENROLMENT,Age_ID_19,AGE_ID_ONLY,UDISE+ Data Sharing Portal Schema - Age Wise Enrolment_2,"Age ID range is documented, but ID-to-actual-age labels are not specified"
+2025-26,27_enr2.csv,8,20,,5563,ENR2,AGE_WISE_ENROLMENT,Age_ID_20,AGE_ID_ONLY,UDISE+ Data Sharing Portal Schema - Age Wise Enrolment_2,"Age ID range is documented, but ID-to-actual-age labels are not specified"
+2025-26,27_enr2.csv,8,21,,3583,ENR2,AGE_WISE_ENROLMENT,Age_ID_21,AGE_ID_ONLY,UDISE+ Data Sharing Portal Schema - Age Wise Enrolment_2,"Age ID range is documented, but ID-to-actual-age labels are not specified"
+2025-26,27_enr2.csv,8,22,,4638,ENR2,AGE_WISE_ENROLMENT,Age_ID_22,AGE_ID_ONLY,UDISE+ Data Sharing Portal Schema - Age Wise Enrolment_2,"Age ID range is documented, but ID-to-actual-age labels are not specified"
+2025-26,27_enr2.csv,8,3,,5403,ENR2,AGE_WISE_ENROLMENT,Age_ID_3,AGE_ID_ONLY,UDISE+ Data Sharing Portal Schema - Age Wise Enrolment_2,"Age ID range is documented, but ID-to-actual-age labels are not specified"
+2025-26,27_enr2.csv,8,4,,9141,ENR2,AGE_WISE_ENROLMENT,Age_ID_4,AGE_ID_ONLY,UDISE+ Data Sharing Portal Schema - Age Wise Enrolment_2,"Age ID range is documented, but ID-to-actual-age labels are not specified"
+2025-26,27_enr2.csv,8,5,,75309,ENR2,AGE_WISE_ENROLMENT,Age_ID_5,AGE_ID_ONLY,UDISE+ Data Sharing Portal Schema - Age Wise Enrolment_2,"Age ID range is documented, but ID-to-actual-age labels are not specified"
+2025-26,27_enr2.csv,8,6,,81249,ENR2,AGE_WISE_ENROLMENT,Age_ID_6,AGE_ID_ONLY,UDISE+ Data Sharing Portal Schema - Age Wise Enrolment_2,"Age ID range is documented, but ID-to-actual-age labels are not specified"
+2025-26,27_enr2.csv,8,7,,81930,ENR2,AGE_WISE_ENROLMENT,Age_ID_7,AGE_ID_ONLY,UDISE+ Data Sharing Portal Schema - Age Wise Enrolment_2,"Age ID range is documented, but ID-to-actual-age labels are not specified"
+2025-26,27_enr2.csv,8,8,,83554,ENR2,AGE_WISE_ENROLMENT,Age_ID_8,AGE_ID_ONLY,UDISE+ Data Sharing Portal Schema - Age Wise Enrolment_2,"Age ID range is documented, but ID-to-actual-age labels are not specified"
+2025-26,27_enr2.csv,8,9,,91917,ENR2,AGE_WISE_ENROLMENT,Age_ID_9,AGE_ID_ONLY,UDISE+ Data Sharing Portal Schema - Age Wise Enrolment_2,"Age ID range is documented, but ID-to-actual-age labels are not specified"

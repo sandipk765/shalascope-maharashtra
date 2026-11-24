@@ -1,0 +1,9 @@
+﻿feature,mean_abs_shap
+pillar2_participation,0.07195293643510686
+pillar2_infrastructure,0.05667271833425992
+pillar2_digital,0.048085313880692225
+pillar2_teacher_ptr,0.0464408095652456
+ptr_students_per_teacher_raw,0.042514489663547955
+year_num,0.03564073636771055
+enrollment_reported_student_total,0.030835261137191913
+school_count,0.018728092379022534

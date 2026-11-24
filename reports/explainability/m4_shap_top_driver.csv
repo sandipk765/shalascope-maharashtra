@@ -1,0 +1,37 @@
+﻿district,top_driver,top_shap_abs
+AHILYANAGAR,school_count,0.1303
+AKOLA,enrollment_reported_student_total,0.1787
+AMRAVATI,pillar2_participation,0.1608
+BEED,enrollment_reported_student_total,0.1619
+BHANDARA,enrollment_reported_student_total,0.181
+BULDANA,enrollment_reported_student_total,0.1631
+CHANDRAPUR,pillar2_participation,0.1854
+CHHATRAPATI SAMBHAJINAGAR,pillar2_infrastructure,0.135
+DHARASHIV,enrollment_reported_student_total,0.2652
+DHULE,pillar2_infrastructure,0.1907
+GADCHIROLI,enrollment_reported_student_total,0.1854
+GONDIA,enrollment_reported_student_total,0.181
+HINGOLI,enrollment_reported_student_total,0.1949
+JALGAON,enrollment_reported_student_total,0.1518
+JALNA,enrollment_reported_student_total,0.1619
+KOLHAPUR,pillar2_infrastructure,0.155
+LATUR,enrollment_reported_student_total,0.1634
+MUMBAI (SUBURBAN),pillar2_infrastructure,0.2304
+MUMBAI II,pillar2_infrastructure,0.1807
+NAGPUR,pillar2_participation,0.3282
+NANDED,enrollment_reported_student_total,0.1327
+NANDURBAR,pillar2_participation,0.1582
+NASHIK,enrollment_reported_student_total,0.2281
+PALGHAR,enrollment_reported_student_total,0.168
+PARBHANI,enrollment_reported_student_total,0.1907
+PUNE,school_count,0.0942
+RAIGAD,enrollment_reported_student_total,0.1753
+RATNAGIRI,enrollment_reported_student_total,0.1835
+SANGLI,enrollment_reported_student_total,0.1798
+SATARA,pillar2_infrastructure,0.1363
+SINDHUDURG,enrollment_reported_student_total,0.2192
+SOLAPUR,school_count,0.142
+THANE,enrollment_reported_student_total,0.2115
+WARDHA,pillar2_participation,0.2193
+WASHIM,enrollment_reported_student_total,0.2245
+YAVATMAL,pillar2_participation,0.1426

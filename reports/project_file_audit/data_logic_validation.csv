@@ -1,0 +1,51 @@
+﻿File,Test,Observed,Expected,Status
+maharashtra_school_year_master_2018-19.csv,School ID missing,0,0,PASS
+maharashtra_school_year_master_2018-19.csv,Duplicate School IDs,0,0,PASS
+maharashtra_school_year_master_2018-19.csv,School-year row count,109942,109942,PASS
+maharashtra_school_year_master_2018-19.csv,Unique districts,36,36,PASS
+maharashtra_school_year_master_2019-20.csv,School ID missing,0,0,PASS
+maharashtra_school_year_master_2019-20.csv,Duplicate School IDs,0,0,PASS
+maharashtra_school_year_master_2019-20.csv,School-year row count,110229,110229,PASS
+maharashtra_school_year_master_2019-20.csv,Unique districts,36,36,PASS
+maharashtra_school_year_master_2020-21.csv,School ID missing,0,0,PASS
+maharashtra_school_year_master_2020-21.csv,Duplicate School IDs,0,0,PASS
+maharashtra_school_year_master_2020-21.csv,School-year row count,110114,110114,PASS
+maharashtra_school_year_master_2020-21.csv,Unique districts,36,36,PASS
+maharashtra_school_year_master_2021-22.csv,School ID missing,0,0,PASS
+maharashtra_school_year_master_2021-22.csv,Duplicate School IDs,0,0,PASS
+maharashtra_school_year_master_2021-22.csv,School-year row count,109605,109605,PASS
+maharashtra_school_year_master_2021-22.csv,Unique districts,36,36,PASS
+maharashtra_school_year_master_2022-23.csv,School ID missing,0,0,PASS
+maharashtra_school_year_master_2022-23.csv,Duplicate School IDs,0,0,PASS
+maharashtra_school_year_master_2022-23.csv,School-year row count,108451,108451,PASS
+maharashtra_school_year_master_2022-23.csv,Unique districts,36,36,PASS
+maharashtra_school_year_master_2023-24.csv,School ID missing,0,0,PASS
+maharashtra_school_year_master_2023-24.csv,Duplicate School IDs,0,0,PASS
+maharashtra_school_year_master_2023-24.csv,School-year row count,108237,108237,PASS
+maharashtra_school_year_master_2023-24.csv,Unique districts,36,36,PASS
+maharashtra_school_year_master_2024-25.csv,School ID missing,0,0,PASS
+maharashtra_school_year_master_2024-25.csv,Duplicate School IDs,0,0,PASS
+maharashtra_school_year_master_2024-25.csv,School-year row count,108250,108250,PASS
+maharashtra_school_year_master_2024-25.csv,Unique districts,36,36,PASS
+maharashtra_school_year_master_2025-26.csv,School ID missing,0,0,PASS
+maharashtra_school_year_master_2025-26.csv,Duplicate School IDs,0,0,PASS
+maharashtra_school_year_master_2025-26.csv,School-year row count,108139,108139,PASS
+maharashtra_school_year_master_2025-26.csv,Unique districts,36,36,PASS
+maharashtra_district_year_final_master.csv,Row count,288,288,PASS
+maharashtra_district_year_final_master.csv,Unique districts,36,36,PASS
+maharashtra_district_year_final_master.csv,Duplicate district-year keys,0,0,PASS
+maharashtra_district_year_final_master.csv,Academic years,"['2018-19', '2019-20', '2020-21', '2021-22', '2022-23', '2023-24', '2024-25', '2025-26']",2018-19 through 2025-26,PASS
+maharashtra_district_year_shala_score_v1.csv,Row count,288,288,PASS
+maharashtra_district_year_shala_score_v1.csv,Unique districts,36,36,PASS
+maharashtra_district_year_shala_score_v1.csv,Duplicate district-year keys,0,0,PASS
+maharashtra_district_year_shala_score_v1.csv,Academic years,"['2018-19', '2019-20', '2020-21', '2021-22', '2022-23', '2023-24', '2024-25', '2025-26']",2018-19 through 2025-26,PASS
+maharashtra_district_year_shala_score_v1.csv,Score missing,0,0,PASS
+maharashtra_district_year_shala_score_v1.csv,Score range,13.879 to 80.150,0 to 100,PASS
+maharashtra_district_year_forecast_2026_27.csv,Row count,36,36,PASS
+maharashtra_district_year_forecast_2026_27.csv,Unique districts,36,36,PASS
+maharashtra_district_year_forecast_2026_27.csv,Duplicate district-year keys,0,0,PASS
+maharashtra_district_year_forecast_2026_27.csv,Forecast academic year,['2026-27'],['2026-27'],PASS
+maharashtra_district_year_forecast_2026_27.csv,Score missing,0,0,PASS
+maharashtra_district_year_forecast_2026_27.csv,Score range,27.481 to 79.887,0 to 100,PASS
+Final Master vs Shala Score,District-Year key match,288,288,PASS
+2025-26 vs 2026-27 Forecast,District match,36,36,PASS

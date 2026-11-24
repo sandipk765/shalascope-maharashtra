@@ -1,0 +1,24 @@
+SHALASCOPE - ML READINESS NOTES
+
+1. Forecast next academic year using current-year information.
+2. Do not use future-year predictors.
+3. Keep district as a categorical feature.
+4. Use chronological / rolling-origin validation.
+5. Compare against persistence and simple trend baselines.
+6. Fit imputers, scalers, encoders and feature selection on training folds only.
+7. Do not use full-period V1 pillar scores as leakage-free ML features.
+8. Future Shala Score should be recomputed from predicted raw pillars.
+9. Infrastructure has two outcomes: functional toilets and good-condition classrooms.
+10. Missing targets must not be replaced with zero.
+11. Only one-year-ahead transitions with consecutive academic years are retained.
+12. District-year panel has at most 252 one-year-ahead pairs per target.
+
+Candidate model families:
+- Baseline: Persistence (next year = current year)
+- Baseline: District-wise linear trend
+- Regularized Linear Regression / Ridge
+- Random Forest (small depth, conservative tuning)
+- Gradient Boosting only if rolling validation justifies it
+
+Deep learning is not recommended for 288 district-year observations.
+These are forecasting candidates, not yet validated production models.

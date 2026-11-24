@@ -1,0 +1,6 @@
+﻿prediction,selected_model,selected_mae,skill_vs_persistence,validation_folds_won,total_validation_folds,selection_reason
+student_enrollment,persistence,15126.155555555555,0.0,0,5,No complex model met the positive-skill and four-of-five-fold stability rule; Persistence selected.
+teacher_forecast,persistence,370.4,0.0,0,5,No complex model met the positive-skill and four-of-five-fold stability rule; Persistence selected.
+infrastructure_toilet,persistence,0.4553430959275812,0.0,0,5,No complex model met the positive-skill and four-of-five-fold stability rule; Persistence selected.
+infrastructure_classroom,persistence,0.5078155757578355,0.0,0,5,No complex model met the positive-skill and four-of-five-fold stability rule; Persistence selected.
+digital_readiness,district_linear_trend,0.6408077683503164,0.1148329282674616,4,5,Positive MAE skill and at least four validation folds won against Persistence.

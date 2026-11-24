@@ -1,0 +1,6 @@
+﻿prediction,selected_model,oof_residual_records,residual_p10,residual_p50,residual_p90,unit,method
+student_enrollment,persistence,180,-33967.2,-947.5,12196.799999999996,students,"Historical signed OOF residual P10-P90. Empirical error range, not a formal or guaranteed prediction interval."
+teacher_forecast,persistence,180,-550.6999999999999,-157.0,323.5999999999998,teachers,"Historical signed OOF residual P10-P90. Empirical error range, not a formal or guaranteed prediction interval."
+infrastructure_toilet,persistence,180,-0.4552249174603275,0.00511888012147205,0.9309474132383296,percentage points,"Historical signed OOF residual P10-P90. Empirical error range, not a formal or guaranteed prediction interval."
+infrastructure_classroom,persistence,180,-0.8172319659303853,-0.115117981524051,0.6553855492590299,percentage points,"Historical signed OOF residual P10-P90. Empirical error range, not a formal or guaranteed prediction interval."
+digital_readiness,district_linear_trend,180,-0.3593849461959622,0.2053799506201374,1.069498493905528,devices per reporting school,"Historical signed OOF residual P10-P90. Empirical error range, not a formal or guaranteed prediction interval."

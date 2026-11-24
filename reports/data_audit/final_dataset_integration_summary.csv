@@ -1,0 +1,2 @@
+﻿core_source_rows,enrollment_source_rows,final_rows,expected_rows,unique_districts,academic_years,core_source_columns,enrollment_source_columns,final_columns,matched_enrollment_rows,unmatched_enrollment_rows,duplicate_district_year_records,status
+288,288,288,288,36,8,528,132,659,288,0,0,PASS

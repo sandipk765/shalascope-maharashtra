@@ -1,0 +1,153 @@
+﻿academic_year,source_column,raw_code,normalized_code,decoded_label,school_count,status
+2018-19,special_training,2,2,No,105343,MAPPED
+2018-19,material_training,2,2,No,52323,MAPPED
+2018-19,smc_exists,2,2,No,13672,MAPPED
+2018-19,text_books_received,2,2,No,19202,MAPPED
+2018-19,smdc_constituted,9,9,UNMAPPED_CODE:9,85430,REVIEW_REQUIRED
+2018-19,smc_smdc_same,9,9,UNMAPPED_CODE:9,82496,REVIEW_REQUIRED
+2018-19,smc_exists,1,1,Yes,92565,MAPPED
+2018-19,smc_smdc_same,1,1,SMC and SMDC are Same,10832,MAPPED
+2018-19,smc_exists,9,9,UNMAPPED_CODE:9,3705,REVIEW_REQUIRED
+2018-19,smdc_constituted,2,2,No,15940,MAPPED
+2018-19,smc_smdc_same,2,2,SMC and SMDC are Different,16614,MAPPED
+2018-19,text_books_received,1,1,Yes,90740,MAPPED
+2018-19,special_training,1,1,Yes,4599,MAPPED
+2018-19,material_training,1,1,Yes,57619,MAPPED
+2018-19,smdc_constituted,1,1,Yes,8572,MAPPED
+2019-20,special_training,2,2,No,86081,MAPPED
+2019-20,material_training,1,1,Yes,58605,MAPPED
+2019-20,smc_exists,1,1,Yes,92578,MAPPED
+2019-20,text_books_received,2,2,No,1794,MAPPED
+2019-20,smdc_constituted,9,9,UNMAPPED_CODE:9,92480,REVIEW_REQUIRED
+2019-20,smc_smdc_same,1,1,SMC and SMDC are Same,9628,MAPPED
+2019-20,material_training,2,2,No,31071,MAPPED
+2019-20,smc_exists,9,9,UNMAPPED_CODE:9,4461,REVIEW_REQUIRED
+2019-20,smdc_constituted,2,2,No,8600,MAPPED
+2019-20,smc_smdc_same,9,9,UNMAPPED_CODE:9,86383,REVIEW_REQUIRED
+2019-20,text_books_received,1,1,Yes,87882,MAPPED
+2019-20,special_training,0,0,UNMAPPED_CODE:0,20553,REVIEW_REQUIRED
+2019-20,material_training,0,0,UNMAPPED_CODE:0,20553,REVIEW_REQUIRED
+2019-20,text_books_received,0,0,UNMAPPED_CODE:0,20553,REVIEW_REQUIRED
+2019-20,special_training,1,1,Yes,3595,MAPPED
+2019-20,smdc_constituted,1,1,Yes,9149,MAPPED
+2019-20,smc_smdc_same,2,2,SMC and SMDC are Different,14218,MAPPED
+2019-20,smc_exists,2,2,No,13190,MAPPED
+2020-21,special_training,9,9,UNMAPPED_CODE:9,20456,REVIEW_REQUIRED
+2020-21,material_training,9,9,UNMAPPED_CODE:9,20456,REVIEW_REQUIRED
+2020-21,smc_exists,9,9,UNMAPPED_CODE:9,21481,REVIEW_REQUIRED
+2020-21,text_books_received,9,9,UNMAPPED_CODE:9,20456,REVIEW_REQUIRED
+2020-21,smdc_constituted,9,9,UNMAPPED_CODE:9,98541,REVIEW_REQUIRED
+2020-21,smc_smdc_same,9,9,UNMAPPED_CODE:9,94976,REVIEW_REQUIRED
+2020-21,special_training,2,2,No,88026,MAPPED
+2020-21,material_training,2,2,No,42084,MAPPED
+2020-21,smc_exists,2,2,No,2831,MAPPED
+2020-21,text_books_received,1,1,Yes,86787,MAPPED
+2020-21,smdc_constituted,2,2,No,3528,MAPPED
+2020-21,smc_exists,1,1,Yes,85802,MAPPED
+2020-21,text_books_received,2,2,No,2871,MAPPED
+2020-21,material_training,1,1,Yes,47574,MAPPED
+2020-21,smc_smdc_same,1,1,SMC and SMDC are Same,6897,MAPPED
+2020-21,smdc_constituted,1,1,Yes,8045,MAPPED
+2020-21,smc_smdc_same,2,2,SMC and SMDC are Different,8241,MAPPED
+2020-21,special_training,1,1,Yes,1632,MAPPED
+2021-22,special_training,2,2,No,87651,MAPPED
+2021-22,material_training,9,9,UNMAPPED_CODE:9,109605,REVIEW_REQUIRED
+2021-22,smc_exists,1,1,Yes,83813,MAPPED
+2021-22,text_books_received,9,9,UNMAPPED_CODE:9,109605,REVIEW_REQUIRED
+2021-22,smdc_constituted,9,9,UNMAPPED_CODE:9,91031,REVIEW_REQUIRED
+2021-22,smc_smdc_same,9,9,UNMAPPED_CODE:9,109605,REVIEW_REQUIRED
+2021-22,special_training,9,9,UNMAPPED_CODE:9,19929,REVIEW_REQUIRED
+2021-22,smc_exists,9,9,UNMAPPED_CODE:9,21005,REVIEW_REQUIRED
+2021-22,smdc_constituted,1,1,Yes,13297,MAPPED
+2021-22,smdc_constituted,2,2,No,3091,MAPPED
+2021-22,smc_exists,2,2,No,4787,MAPPED
+2021-22,special_training,1,1,Yes,2025,MAPPED
+2021-22,smdc_constituted,3,3,UNMAPPED_CODE:3,2186,REVIEW_REQUIRED
+2022-23,special_training,9,9,UNMAPPED_CODE:9,108451,REVIEW_REQUIRED
+2022-23,material_training,1,1,Yes,26699,MAPPED
+2022-23,smc_exists,1,1,Yes,85521,MAPPED
+2022-23,balavatika_located_yn,0,0,UNMAPPED_CODE:0,6250,REVIEW_REQUIRED
+2022-23,free_text_books_pr,2,2,No,28349,MAPPED
+2022-23,free_uniform_pr,2,2,No,55528,MAPPED
+2022-23,free_text_books_up,1,1,Yes,40252,MAPPED
+2022-23,free_uniform_up,1,1,Yes,24310,MAPPED
+2022-23,smc_smdc_same,1,1,SDMC Constituted,14234,MAPPED
+2022-23,material_training,2,2,No,81752,MAPPED
+2022-23,balavatika_located_yn,2,2,No,66552,MAPPED
+2022-23,free_text_books_pr,1,1,Yes,80102,MAPPED
+2022-23,free_uniform_pr,1,1,Yes,52923,MAPPED
+2022-23,free_text_books_up,2,2,No,68199,MAPPED
+2022-23,free_uniform_up,2,2,No,84141,MAPPED
+2022-23,smc_smdc_same,9,9,UNMAPPED_CODE:9,89876,REVIEW_REQUIRED
+2022-23,smc_exists,2,2,No,2805,MAPPED
+2022-23,smc_exists,9,9,UNMAPPED_CODE:9,20125,REVIEW_REQUIRED
+2022-23,balavatika_located_yn,9,9,UNMAPPED_CODE:9,19056,REVIEW_REQUIRED
+2022-23,balavatika_located_yn,1,1,Yes,16593,MAPPED
+2022-23,smc_smdc_same,3,3,Same as SMC,2096,MAPPED
+2022-23,smc_smdc_same,2,2,SDMC Not Constituted,2245,MAPPED
+2023-24,special_training,9,9,UNMAPPED_CODE:9,108237,REVIEW_REQUIRED
+2023-24,material_training,2,2,No,74296,MAPPED
+2023-24,smc_exists,1,1,Yes,85817,MAPPED
+2023-24,balavatika_located_yn,9,9,UNMAPPED_CODE:9,25252,REVIEW_REQUIRED
+2023-24,free_text_books_pr,2,2,No,28206,MAPPED
+2023-24,free_uniform_pr,2,2,No,42851,MAPPED
+2023-24,free_text_books_up,1,1,Yes,40492,MAPPED
+2023-24,free_uniform_up,2,2,No,84172,MAPPED
+2023-24,smc_smdc_same,1,1,SDMC Constituted,14833,MAPPED
+2023-24,balavatika_located_yn,2,2,No,65468,MAPPED
+2023-24,free_text_books_pr,1,1,Yes,80031,MAPPED
+2023-24,free_uniform_pr,1,1,Yes,65386,MAPPED
+2023-24,free_text_books_up,2,2,No,67745,MAPPED
+2023-24,smc_smdc_same,9,9,UNMAPPED_CODE:9,89478,REVIEW_REQUIRED
+2023-24,smc_exists,2,2,No,2407,MAPPED
+2023-24,free_uniform_up,1,1,Yes,24065,MAPPED
+2023-24,smc_exists,9,9,UNMAPPED_CODE:9,20013,REVIEW_REQUIRED
+2023-24,material_training,1,1,Yes,33941,MAPPED
+2023-24,balavatika_located_yn,1,1,Yes,17517,MAPPED
+2023-24,smc_smdc_same,3,3,Same as SMC,1960,MAPPED
+2023-24,smc_smdc_same,2,2,SDMC Not Constituted,1966,MAPPED
+2024-25,special_training,9,9,UNMAPPED_CODE:9,108250,REVIEW_REQUIRED
+2024-25,material_training,1,1,Yes,60082,MAPPED
+2024-25,smc_exists,1,1,Yes,85957,MAPPED
+2024-25,balavatika_located_yn,0,0,UNMAPPED_CODE:0,6490,REVIEW_REQUIRED
+2024-25,free_text_books_pr,2,2,No,29462,MAPPED
+2024-25,free_uniform_pr,2,2,No,50163,MAPPED
+2024-25,free_text_books_up,1,1,Yes,40237,MAPPED
+2024-25,free_uniform_up,2,2,No,86851,MAPPED
+2024-25,smc_smdc_same,1,1,SDMC Constituted,14876,MAPPED
+2024-25,balavatika_located_yn,2,2,No,65257,MAPPED
+2024-25,free_text_books_pr,1,1,Yes,78788,MAPPED
+2024-25,free_uniform_pr,1,1,Yes,58087,MAPPED
+2024-25,free_text_books_up,2,2,No,68013,MAPPED
+2024-25,smc_smdc_same,9,9,UNMAPPED_CODE:9,89196,REVIEW_REQUIRED
+2024-25,material_training,2,2,No,48168,MAPPED
+2024-25,smc_exists,9,9,UNMAPPED_CODE:9,20117,REVIEW_REQUIRED
+2024-25,balavatika_located_yn,9,9,UNMAPPED_CODE:9,18938,REVIEW_REQUIRED
+2024-25,free_uniform_up,1,1,Yes,21399,MAPPED
+2024-25,balavatika_located_yn,1,1,Yes,17565,MAPPED
+2024-25,smc_smdc_same,3,3,Same as SMC,2289,MAPPED
+2024-25,smc_exists,2,2,No,2176,MAPPED
+2024-25,smc_smdc_same,2,2,SDMC Not Constituted,1889,MAPPED
+2025-26,special_training,9,9,UNMAPPED_CODE:9,102060,REVIEW_REQUIRED
+2025-26,material_training,1,1,Yes,60104,MAPPED
+2025-26,smc_exists,1,1,Yes,86589,MAPPED
+2025-26,balavatika_located_yn,2,2,No,62820,MAPPED
+2025-26,free_text_books_pr,1,1,Yes,79143,MAPPED
+2025-26,free_uniform_pr,1,1,Yes,64842,MAPPED
+2025-26,free_text_books_up,2,2,No,67383,MAPPED
+2025-26,free_uniform_up,2,2,No,83965,MAPPED
+2025-26,smc_smdc_same,9,9,UNMAPPED_CODE:9,88169,REVIEW_REQUIRED
+2025-26,material_training,2,2,No,48035,MAPPED
+2025-26,balavatika_located_yn,1,1,Yes,20089,MAPPED
+2025-26,free_text_books_up,1,1,Yes,40756,MAPPED
+2025-26,free_uniform_up,1,1,Yes,24174,MAPPED
+2025-26,smc_smdc_same,1,1,SDMC Constituted,15540,MAPPED
+2025-26,balavatika_located_yn,9,9,UNMAPPED_CODE:9,25230,REVIEW_REQUIRED
+2025-26,free_text_books_pr,2,2,No,28996,MAPPED
+2025-26,free_uniform_pr,2,2,No,43297,MAPPED
+2025-26,special_training,1,1,Yes,3919,MAPPED
+2025-26,smc_smdc_same,2,2,SDMC Not Constituted,1871,MAPPED
+2025-26,smc_smdc_same,3,3,Same as SMC,2559,MAPPED
+2025-26,smc_exists,9,9,UNMAPPED_CODE:9,19601,REVIEW_REQUIRED
+2025-26,smc_exists,2,2,No,1949,MAPPED
+2025-26,special_training,2,2,No,2160,MAPPED

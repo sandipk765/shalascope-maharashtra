@@ -1,0 +1,9 @@
+﻿academic_year,profile1_records,profile2_records,teacher_records,master_records,master_columns,profile1_districts,profile2_districts,teacher_districts,id_sets_match,record_counts_match,p2_district_mismatches,teacher_district_mismatches,output_file,status
+2018-19,109942,109942,109942,109942,148,36,36,36,True,True,0,0,data\processed\school_year\maharashtra_school_year_master_2018-19.csv,PASS
+2019-20,110229,110229,110229,110229,148,36,36,36,True,True,0,0,data\processed\school_year\maharashtra_school_year_master_2019-20.csv,PASS
+2020-21,110114,110114,110114,110114,148,36,36,36,True,True,0,0,data\processed\school_year\maharashtra_school_year_master_2020-21.csv,PASS
+2021-22,109605,109605,109605,109605,149,36,36,36,True,True,0,0,data\processed\school_year\maharashtra_school_year_master_2021-22.csv,PASS
+2022-23,108451,108451,108451,108451,93,36,36,36,True,True,0,0,data\processed\school_year\maharashtra_school_year_master_2022-23.csv,PASS
+2023-24,108237,108237,108237,108237,93,36,36,36,True,True,0,0,data\processed\school_year\maharashtra_school_year_master_2023-24.csv,PASS
+2024-25,108250,108250,108250,108250,93,36,36,36,True,True,0,0,data\processed\school_year\maharashtra_school_year_master_2024-25.csv,PASS
+2025-26,108139,108139,108139,108139,104,36,36,36,True,True,0,0,data\processed\school_year\maharashtra_school_year_master_2025-26.csv,PASS

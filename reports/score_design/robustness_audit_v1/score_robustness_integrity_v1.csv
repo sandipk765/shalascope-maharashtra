@@ -1,0 +1,13 @@
+﻿check,actual,expected,status,notes
+Total District-Year rows,288,288,PASS,
+Unique districts,36,36,PASS,
+Academic years,8,8,PASS,
+Duplicate District-Year records,0,0,PASS,
+36 districts per year,True,True,PASS,
+Complete final scores,288,288,PASS,
+Teacher pillar formula,3.552713678800501e-14,<= 0.000001,PASS,Recalculated from raw indicators
+Infrastructure pillar formula,1.4210854715202004e-14,<= 0.000001,PASS,Recalculated from raw indicators
+Digital pillar formula,3.552713678800501e-15,<= 0.000001,PASS,Recalculated from raw indicators
+Final Shala Score formula,2.1316282072803006e-14,<= 0.000001,PASS,Recalculated from raw indicators
+Pillar scores within 0-100,True,True,PASS,
+Final score within 0-100,True,True,PASS,

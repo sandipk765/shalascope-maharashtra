@@ -1,0 +1,5 @@
+﻿indicator,raw_column,score_column,p05_recalculated,p95_recalculated,maximum_score_difference,records_compared,status
+Students per Teacher,ptr_students_per_teacher_raw,score_teacher_strength,20.005491902377354,35.38896971824553,3.552713678800501e-14,288,PASS
+Functional Toilets,functional_toilet_pct_raw,score_functional_toilet,91.90106739692922,99.42961983418337,1.4210854715202004e-14,288,PASS
+Good Condition Classrooms,good_classroom_pct_raw,score_good_classrooms,82.91887932787257,95.80926084027108,1.4210854715202004e-14,288,PASS
+Digital Devices per School,digital_devices_per_school_raw,score_digital_readiness,2.496661295298123,22.310433621427425,3.552713678800501e-15,288,PASS

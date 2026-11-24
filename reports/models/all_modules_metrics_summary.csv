@@ -1,0 +1,6 @@
+﻿module,label,mae,rmse,r2,model,target,train_rows,test_rows,accuracy,f1_weighted
+M1 Enrolment Trend,LinearRegression (test 2024-25),125431.65847391076,203508.1014172369,0.7784315184772411,LinearRegression,enrollment_reported_student_total,216,36,,
+M2 Learning Proxy (SUBSTITUTE),Ridge proxy (test 2024-25),14.369531367335064,17.117667662956805,0.5203793406896149,Ridge,pillar2_infrastructure (SUBSTITUTE PROXY),216,36,,
+M3 Total Enrolment Forecast,Holt-Winters total enrolment (test 2024-25),11984.388888888889,24944.4807322181,0.996671155477455,Holt-Winters ExponentialSmoothing,enrollment_reported_student_total,216,36,,
+M4 Teacher Shortage Risk,RF (test 2024-25),,,,RandomForestClassifier,PTR>30 (shortage),216,36,0.9722222222222222,0.9730551933941766
+M5 Classroom Infra Proxy (not LO),RF (test 2024-25),,,,RandomForestClassifier,risk_tier_v2 (CLASSROOM INFRA PROXY -- not learning outcome),216,36,0.6944444444444444,0.6711768528073998

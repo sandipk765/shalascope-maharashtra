@@ -1,0 +1,9 @@
+﻿academic_year,source_file,output_file,total_records,raw_unique_districts,standardized_unique_districts,rows_with_renamed_district,missing_districts,malformed_rows,status
+2018-19,127_prof1.csv,data\interim\standardized\profile1\maharashtra_profile1_2018-19_standardized.csv,109942,36,36,20726,0,0,PASS
+2019-20,127_prof1.csv,data\interim\standardized\profile1\maharashtra_profile1_2019-20_standardized.csv,110229,36,36,20835,0,0,PASS
+2020-21,127_prof1.csv,data\interim\standardized\profile1\maharashtra_profile1_2020-21_standardized.csv,110114,36,36,20841,0,0,PASS
+2021-22,127_prof1.csv,data\interim\standardized\profile1\maharashtra_profile1_2021-22_standardized.csv,109605,36,36,20754,0,0,PASS
+2022-23,27_prof1.csv,data\interim\standardized\profile1\maharashtra_profile1_2022-23_standardized.csv,108451,36,36,20533,0,0,PASS
+2023-24,27_prof1.csv,data\interim\standardized\profile1\maharashtra_profile1_2023-24_standardized.csv,108237,36,36,14191,0,0,PASS
+2024-25,27_prof1.csv,data\interim\standardized\profile1\maharashtra_profile1_2024-25_standardized.csv,108250,36,36,14191,0,0,PASS
+2025-26,27_prof1.csv,data\interim\standardized\profile1\maharashtra_profile1_2025-26_standardized.csv,108139,36,36,8902,0,0,PASS

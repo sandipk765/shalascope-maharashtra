@@ -1,0 +1,36 @@
+SHALASCOPE - BASELINE ML EXPERIMENTS V2
+
+Validation: Expanding-window chronological validation.
+Validation target years: 2021-22 through 2025-26.
+Each validation year contains 36 districts.
+No random train-test split was used.
+
+Five model approaches:
+1. Persistence baseline.
+2. District historical mean.
+3. District linear trend.
+4. Ridge regression.
+5. Random Forest.
+
+Forecast features come from the preceding academic year.
+Forecast target is from the next consecutive academic year.
+Historical mean uses training target values only.
+District trend uses past training target observations only.
+Trend extrapolation uses the known validation year coordinate.
+ML preprocessing is fitted separately inside each training fold.
+
+Primary metric: MAE.
+Secondary metrics: RMSE and R2.
+Skill = 1 - model MAE / persistence MAE.
+Positive skill means improvement over persistence.
+Negative skill means worse MAE than persistence.
+Fold wins count validation periods with lower MAE than persistence.
+
+There are only five temporal validation folds.
+Repeated observations from each district are not independent.
+Model selection considers overall MAE and fold stability.
+No model is automatically production-ready.
+
+Future Shala Score must be derived from forecast raw indicators.
+It must not be trained directly using full-period normalized scores.
+Normalization for future scoring must use training-period parameters.

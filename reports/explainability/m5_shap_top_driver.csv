@@ -1,0 +1,37 @@
+﻿district,top_driver,top_shap_abs
+AHILYANAGAR,pillar2_participation,0.0505
+AKOLA,pillar2_participation,0.0865
+AMRAVATI,pillar2_participation,0.1488
+BEED,pillar2_participation,0.0752
+BHANDARA,pillar2_participation,0.1451
+BULDANA,pillar2_infrastructure,0.1195
+CHANDRAPUR,pillar2_participation,0.1471
+CHHATRAPATI SAMBHAJINAGAR,pillar2_participation,0.0537
+DHARASHIV,pillar2_infrastructure,0.0585
+DHULE,pillar2_infrastructure,0.079
+GADCHIROLI,pillar2_participation,0.1118
+GONDIA,pillar2_participation,0.1375
+HINGOLI,pillar2_infrastructure,0.0754
+JALGAON,pillar2_infrastructure,0.096
+JALNA,pillar2_infrastructure,0.1035
+KOLHAPUR,pillar2_participation,0.0875
+LATUR,pillar2_participation,0.0867
+MUMBAI (SUBURBAN),pillar2_digital,0.1719
+MUMBAI II,pillar2_digital,0.1482
+NAGPUR,pillar2_participation,0.1398
+NANDED,pillar2_participation,0.0813
+NANDURBAR,pillar2_infrastructure,0.1144
+NASHIK,pillar2_infrastructure,0.0734
+PALGHAR,pillar2_teacher_ptr,0.0729
+PARBHANI,pillar2_participation,0.0562
+PUNE,pillar2_digital,0.1483
+RAIGAD,pillar2_participation,0.0573
+RATNAGIRI,pillar2_teacher_ptr,0.0901
+SANGLI,pillar2_participation,0.0543
+SATARA,pillar2_participation,0.0512
+SINDHUDURG,pillar2_teacher_ptr,0.0928
+SOLAPUR,pillar2_digital,0.048
+THANE,pillar2_digital,0.1635
+WARDHA,pillar2_participation,0.1415
+WASHIM,enrollment_reported_student_total,0.0613
+YAVATMAL,pillar2_participation,0.1131

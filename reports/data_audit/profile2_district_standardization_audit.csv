@@ -1,0 +1,9 @@
+﻿academic_year,profile1_file,profile2_file,profile1_records,profile1_unique_ids,profile2_records,profile2_unique_ids,missing_profile2_ids,duplicate_profile2_ids,profile2_ids_not_in_profile1,profile1_ids_not_in_profile2,missing_district_matches,malformed_rows,id_sets_match,output_file,status
+2018-19,maharashtra_profile1_2018-19_standardized.csv,127_prof2.csv,109942,109942,109942,109942,0,0,0,0,0,0,True,data\interim\standardized\profile2\maharashtra_profile2_2018-19_standardized.csv,PASS
+2019-20,maharashtra_profile1_2019-20_standardized.csv,127_prof2.csv,110229,110229,110229,110229,0,0,0,0,0,0,True,data\interim\standardized\profile2\maharashtra_profile2_2019-20_standardized.csv,PASS
+2020-21,maharashtra_profile1_2020-21_standardized.csv,127_prof2.csv,110114,110114,110114,110114,0,0,0,0,0,0,True,data\interim\standardized\profile2\maharashtra_profile2_2020-21_standardized.csv,PASS
+2021-22,maharashtra_profile1_2021-22_standardized.csv,127_prof2.csv,109605,109605,109605,109605,0,0,0,0,0,0,True,data\interim\standardized\profile2\maharashtra_profile2_2021-22_standardized.csv,PASS
+2022-23,maharashtra_profile1_2022-23_standardized.csv,27_prof2.csv,108451,108451,108451,108451,0,0,0,0,0,0,True,data\interim\standardized\profile2\maharashtra_profile2_2022-23_standardized.csv,PASS
+2023-24,maharashtra_profile1_2023-24_standardized.csv,27_prof2.csv,108237,108237,108237,108237,0,0,0,0,0,0,True,data\interim\standardized\profile2\maharashtra_profile2_2023-24_standardized.csv,PASS
+2024-25,maharashtra_profile1_2024-25_standardized.csv,27_prof2.csv,108250,108250,108250,108250,0,0,0,0,0,0,True,data\interim\standardized\profile2\maharashtra_profile2_2024-25_standardized.csv,PASS
+2025-26,maharashtra_profile1_2025-26_standardized.csv,27_prof2.csv,108139,108139,108139,108139,0,0,0,0,0,0,True,data\interim\standardized\profile2\maharashtra_profile2_2025-26_standardized.csv,PASS

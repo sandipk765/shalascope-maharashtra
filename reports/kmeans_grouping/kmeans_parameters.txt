@@ -1,0 +1,51 @@
+SHIKSHANDARPAN AI - K-MEANS DISTRICT RISK GROUPING
+============================================================
+
+Optimal k: 2
+Random state: 42
+n_init: 10
+
+Clustering Features:
+  - ptr_students_per_teacher_raw (Students per Teacher)
+  - functional_toilet_pct_raw (Functional Toilet %)
+  - good_classroom_pct_raw (Good Classroom %)
+  - digital_devices_per_school_raw (Digital Devices / School)
+  - facility_classrooms_needing_repair_pct (Classrooms Needing Repair %)
+
+Preprocessing:
+  - Aggregated to district-level means across 8 years
+  - StandardScaler (zero mean, unit variance)
+  - Median imputation for missing values
+
+Cluster Evaluation:
+  k=2.0: inertia=106.45, silhouette=0.4287
+  k=3.0: inertia=76.95, silhouette=0.2625
+  k=4.0: inertia=55.16, silhouette=0.2918
+  k=5.0: inertia=42.14, silhouette=0.2948
+  k=6.0: inertia=34.96, silhouette=0.3626
+  k=7.0: inertia=29.20, silhouette=0.2454
+  k=8.0: inertia=22.75, silhouette=0.2807
+
+Cluster Profiles (unscaled means):
+
+  Cluster 0: Strong Educational Conditions (9 districts, mean score 48.44)
+    Students per Teacher: 32.59
+    Functional Toilet %: 97.91
+    Good Classroom %: 93.86
+    Digital Devices / School: 13.42
+    Classrooms Needing Repair %: 6.14
+
+  Cluster 1: Priority Support Required (27 districts, mean score 34.98)
+    Students per Teacher: 26.75
+    Functional Toilet %: 95.24
+    Good Classroom %: 86.90
+    Digital Devices / School: 4.38
+    Classrooms Needing Repair %: 13.10
+
+Imputation:
+  No imputation needed.
+
+============================================================
+Cluster labels are assigned based on actual cluster profiles
+(ranked by mean Shala Score), not assumed cluster numbers.
+============================================================

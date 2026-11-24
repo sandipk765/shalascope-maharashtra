@@ -1,0 +1,9 @@
+﻿academic_year,teacher_records,teacher_unique_ids,teacher_missing_ids,teacher_duplicate_ids,profile1_records,profile1_unique_ids,profile1_missing_ids,profile1_duplicate_ids,profile2_records,profile2_unique_ids,profile2_missing_ids,profile2_duplicate_ids,teacher_profile1_matched,teacher_ids_not_in_profile1,profile1_ids_not_in_teacher,teacher_profile2_matched,teacher_ids_not_in_profile2,profile2_ids_not_in_teacher,profile1_profile2_matched,profile1_ids_not_in_profile2,profile2_ids_not_in_profile1,teacher_malformed_rows,profile1_malformed_rows,profile2_malformed_rows,status
+2018-19,109942,109942,0,0,109942,109942,0,0,109942,109942,0,0,109942,0,0,109942,0,0,109942,0,0,0,0,0,PASS
+2019-20,110229,110229,0,0,110229,110229,0,0,110229,110229,0,0,110229,0,0,110229,0,0,110229,0,0,0,0,0,PASS
+2020-21,110114,110114,0,0,110114,110114,0,0,110114,110114,0,0,110114,0,0,110114,0,0,110114,0,0,0,0,0,PASS
+2021-22,109605,109605,0,0,109605,109605,0,0,109605,109605,0,0,109605,0,0,109605,0,0,109605,0,0,0,0,0,PASS
+2022-23,108451,108451,0,0,108451,108451,0,0,108451,108451,0,0,108451,0,0,108451,0,0,108451,0,0,0,0,0,PASS
+2023-24,108237,108237,0,0,108237,108237,0,0,108237,108237,0,0,108237,0,0,108237,0,0,108237,0,0,0,0,0,PASS
+2024-25,108250,108250,0,0,108250,108250,0,0,108250,108250,0,0,108250,0,0,108250,0,0,108250,0,0,0,0,0,PASS
+2025-26,108139,108139,0,0,108139,108139,0,0,108139,108139,0,0,108139,0,0,108139,0,0,108139,0,0,0,0,0,PASS

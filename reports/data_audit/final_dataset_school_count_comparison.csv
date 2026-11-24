@@ -1,0 +1,3 @@
+﻿reference_column,enrollment_count_column,comparable_records,mismatch_records,status
+school_count,enrollment_total_schools,288,0,PASS
+facility_total_schools,enrollment_total_schools,288,0,PASS

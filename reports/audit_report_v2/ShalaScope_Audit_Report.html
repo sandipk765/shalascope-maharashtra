@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ShalaScope Maharashtra — Audit Report</title>
+<style>
+:root {
+  --plum: #6F3853;
+  --plum-deep: #4A1525;
+  --sage: #5D8A70;
+  --blue: #6A8EA3;
+  --gold: #B8895B;
+  --coral: #BC6C70;
+  --amber: #C08A4B;
+  --page: #F7F4F1;
+  --surface: #FFFFFF;
+  --ink: #342B31;
+  --muted: #786D73;
+  --line: #E8DEE2;
+  --pass: #5D8A70;
+  --fail: #BC6C70;
+  --partial: #C08A4B;
+  --missing: #999;
+  --review: #B8895B;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+  background: var(--page);
+  color: var(--ink);
+  line-height: 1.6;
+  font-size: 14px;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 40px 30px;
+}
+h1 { font-size: 28px; color: var(--plum-deep); margin-bottom: 6px; letter-spacing: -0.5px; }
+h2 { font-size: 20px; color: var(--plum); margin-top: 32px; margin-bottom: 10px; letter-spacing: -0.3px; border-bottom: 2px solid var(--gold); padding-bottom: 6px; }
+h3 { font-size: 16px; color: var(--plum); margin-top: 22px; margin-bottom: 8px; }
+h4 { font-size: 14px; color: var(--ink); margin-top: 16px; margin-bottom: 6px; font-weight: 700; }
+p { margin-bottom: 10px; color: var(--ink); }
+table { width: 100%; border-collapse: collapse; margin: 12px 0; font-size: 13px; background: var(--surface); }
+th { background: var(--plum-deep); color: #FFF; padding: 8px 10px; text-align: left; font-weight: 700; font-size: 12px; text-transform: uppercase; letter-spacing: 0.5px; }
+td { padding: 7px 10px; border-bottom: 1px solid var(--line); vertical-align: top; }
+tr:nth-child(even) { background: #F9F5F3; }
+code, pre { font-family: "Cascadia Code", "Consolas", monospace; background: #F2ECEF; padding: 2px 6px; border-radius: 4px; font-size: 12px; }
+pre { padding: 12px; overflow-x: auto; margin: 10px 0; }
+.badge { display: inline-block; padding: 2px 10px; border-radius: 6px; font-size: 11px; font-weight: 700; letter-spacing: 0.5px; text-transform: uppercase; }
+.badge-pass { background: #E8F4EF; color: var(--pass); }
+.badge-fail { background: #FAE9E9; color: var(--fail); }
+.badge-partial { background: #FDF6EC; color: var(--partial); }
+.badge-missing { background: #F0EFED; color: var(--missing); }
+.badge-review { background: #F5EFE7; color: var(--review); }
+.kpi-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; margin: 16px 0; }
+.kpi-card { background: var(--surface); border: 1px solid var(--line); border-top: 3px solid var(--plum); border-radius: 10px; padding: 14px; text-align: center; }
+.kpi-value { font-size: 24px; font-weight: 800; color: var(--plum); }
+.kpi-label { font-size: 10px; font-weight: 700; color: var(--muted); text-transform: uppercase; letter-spacing: 0.8px; margin-top: 4px; }
+.formula { background: var(--surface); border: 1px solid var(--line); border-left: 3px solid var(--gold); border-radius: 8px; padding: 14px 18px; margin: 12px 0; font-family: "Cascadia Code", monospace; font-size: 14px; }
+.section { margin-bottom: 28px; }
+.divider { border: none; border-top: 1px solid var(--line); margin: 24px 0; }
+.footer { text-align: center; color: var(--muted); font-size: 12px; margin-top: 40px; padding-top: 16px; border-top: 1px solid var(--line); }
+@media print { body { max-width: none; padding: 0; } .kpi-grid { grid-template-columns: repeat(4, 1fr); } }
+</style>
+</head>
+<body>
+
+<h1>ShalaScope Maharashtra</h1>
+<p style="font-size: 16px; color: var(--muted); margin-bottom: 20px;">Complete Project Audit Report — District-Level School Education Intelligence &amp; Predictive Analytics Platform</p>
+
+<div class="kpi-grid">
+  <div class="kpi-card"><div class="kpi-value">36</div><div class="kpi-label">Districts</div></div>
+  <div class="kpi-card"><div class="kpi-value">288</div><div class="kpi-label">District-Year Records</div></div>
+  <div class="kpi-card"><div class="kpi-value">659</div><div class="kpi-label">Master Columns</div></div>
+  <div class="kpi-card"><div class="kpi-value">49</div><div class="kpi-label">Raw ZIP Archives</div></div>
+  <div class="kpi-card"><div class="kpi-value">5</div><div class="kpi-label">Forecast Targets</div></div>
+  <div class="kpi-card"><div class="kpi-value">5</div><div class="kpi-label">Validation Folds</div></div>
+  <div class="kpi-card"><div class="kpi-value">6</div><div class="kpi-label">What-If Workspaces</div></div>
+  <div class="kpi-card"><div class="kpi-value">78</div><div class="kpi-label">Audit Score / 100</div></div>
+</div>
+
+<p><strong>Audit Date:</strong> 19 November 2026 &nbsp;|&nbsp; <strong>Verdict:</strong> <span class="badge badge-partial">READY AFTER MINOR CORRECTIONS</span></p>
+
+<hr class="divider">
+
+<h2>Executive Summary</h2>
+<div class="section">
+<p>ShalaScope Maharashtra is a complete, functional data science project with a verified end-to-end pipeline from raw UDISE+ ZIP archives through to a working Streamlit dashboard with six what-if workspaces. The Shala Score formula is mathematically correct. The ML validation framework is methodologically sound with no data leakage. All 10 principal numeric claims were independently recalculated and confirmed.</p>
+<p><strong>3 critical issues</strong> found (missing <code>scikit-learn</code>, missing academic report, Teacher What-If inconsistency). <strong>7 major issues</strong> and <strong>10 minor issues</strong> also identified. All critical fixes can be completed in under 2 hours.</p>
+</div>
+
+<h2>Shala Score Methodology</h2>
+<div class="section">
+<div class="formula">Shala Score = (Teacher Strength + Infrastructure + Digital Readiness) / 3</div>
+<div class="formula">Infrastructure = (Functional Toilet Score + Good Classroom Score) / 2</div>
+
+<table>
+<tr><th>Indicator</th><th>Weight</th><th>Direction</th><th>P5</th><th>P95</th></tr>
+<tr><td>Students per teacher (PTR)</td><td>33.33%</td><td>Lower is better</td><td>20.01</td><td>35.39</td></tr>
+<tr><td>Functional toilet %</td><td>16.67%</td><td>Higher is better</td><td>91.90%</td><td>99.43%</td></tr>
+<tr><td>Good classroom %</td><td>16.67%</td><td>Higher is better</td><td>82.92%</td><td>95.81%</td></tr>
+<tr><td>Digital devices / school</td><td>33.33%</td><td>Higher is better</td><td>2.50</td><td>22.31</td></tr>
+</table>
+<p><strong>Normalization:</strong> Pooled P5-P95 winsorized min-max across all 288 district-year rows. Direction-aware. NaN preserved (no imputation). Frozen parameters reused for forecast scoring.</p>
+<p><strong>Ceiling effect:</strong> Mumbai II and Mumbai (Suburban) exceed the Digital Readiness P95 ceiling for all 8 years. Both score a fixed 100 and cannot be distinguished from each other on this dimension.</p>
+</div>
+
+<h2>Forecast Model Comparison</h2>
+<div class="section">
+<table>
+<tr><th>Target</th><th>Selected Model</th><th>MAE</th><th>R²</th><th>Skill vs Persistence</th><th>Status</th></tr>
+<tr><td>Student Enrollment</td><td>Persistence</td><td>15,126</td><td>0.9960</td><td>0.0</td><td><span class="badge badge-pass">PASS</span></td></tr>
+<tr><td>Teacher Count</td><td>Persistence</td><td>370.4</td><td>0.9980</td><td>0.0</td><td><span class="badge badge-pass">PASS</span></td></tr>
+<tr><td>Functional Toilet %</td><td>Persistence</td><td>0.455</td><td>0.8626</td><td>0.0</td><td><span class="badge badge-pass">PASS</span></td></tr>
+<tr><td>Good Classroom %</td><td>Persistence</td><td>0.508</td><td>0.9736</td><td>0.0</td><td><span class="badge badge-pass">PASS</span></td></tr>
+<tr><td><strong>Digital Readiness</strong></td><td><strong>District Linear Trend</strong></td><td><strong>0.641</strong></td><td><strong>0.9726</strong></td><td><strong>+11.48%</strong></td><td><span class="badge badge-pass">PASS</span></td></tr>
+</table>
+<p><strong>Digital Readiness improvement:</strong> (1 − 0.6408 / 0.7239) × 100 = 11.4833% — independently recalculated and confirmed.</p>
+</div>
+
+<h2>Verification Results</h2>
+<div class="section">
+<table>
+<tr><th>Claim</th><th>Expected</th><th>Actual</th><th>Status</th></tr>
+<tr><td>36 districts</td><td>36</td><td>36</td><td><span class="badge badge-pass">VERIFIED</span></td></tr>
+<tr><td>288 district-year records</td><td>288</td><td>288</td><td><span class="badge badge-pass">VERIFIED</span></td></tr>
+<tr><td>Zero duplicate keys</td><td>0</td><td>0</td><td><span class="badge badge-pass">VERIFIED</span></td></tr>
+<tr><td>288 complete scores</td><td>288</td><td>288</td><td><span class="badge badge-pass">VERIFIED</span></td></tr>
+<tr><td>Scores in [0, 100]</td><td>Yes</td><td>Min 13.88, Max 80.15</td><td><span class="badge badge-pass">VERIFIED</span></td></tr>
+<tr><td>P1-P99 correlation</td><td>0.9743</td><td>0.9743</td><td><span class="badge badge-pass">VERIFIED</span></td></tr>
+<tr><td>P2.5-P97.5 correlation</td><td>0.9895</td><td>0.9895</td><td><span class="badge badge-pass">VERIFIED</span></td></tr>
+<tr><td>180 OOF predictions per target</td><td>180</td><td>180</td><td><span class="badge badge-pass">VERIFIED</span></td></tr>
+<tr><td>Digital MAE improvement 11.48%</td><td>11.48%</td><td>11.4833%</td><td><span class="badge badge-pass">VERIFIED</span></td></tr>
+<tr><td>49 ZIP archives</td><td>49</td><td>49</td><td><span class="badge badge-pass">VERIFIED</span></td></tr>
+<tr><td>scikit-learn in requirements</td><td>Present</td><td>ABSENT</td><td><span class="badge badge-fail">FAILED</span></td></tr>
+<tr><td>Academic report present</td><td>Present</td><td>MISSING</td><td><span class="badge badge-fail">FAILED</span></td></tr>
+</table>
+</div>
+
+<h2>Critical Issues</h2>
+<div class="section">
+<table>
+<tr><th>#</th><th>Issue</th><th>File</th><th>Effort</th><th>Status</th></tr>
+<tr><td>1</td><td><code>scikit-learn</code> missing from <code>requirements.txt</code></td><td>requirements.txt</td><td>30 sec</td><td><span class="badge badge-fail">CRITICAL</span></td></tr>
+<tr><td>2</td><td>Academic report not in <code>reports/final/</code></td><td>—</td><td>External</td><td><span class="badge badge-fail">CRITICAL</span></td></tr>
+<tr><td>3</td><td>Teacher What-If shows count, not pillar score</td><td>app.py</td><td>30 min</td><td><span class="badge badge-partial">PARTIAL</span></td></tr>
+<tr><td>4</td><td>Dead variable <code>RISK_THRESHOLD_INPUT</code></td><td>build_forecast_2026_27.py</td><td>1 min</td><td><span class="badge badge-review">REVIEW</span></td></tr>
+</table>
+</div>
+
+<h2>Scorecard</h2>
+<div class="section">
+<table>
+<tr><th>Domain</th><th>Score / 100</th><th>Status</th></tr>
+<tr><td>Data Quality</td><td>82</td><td><span class="badge badge-pass">PASS</span></td></tr>
+<tr><td>Data Processing</td><td>80</td><td><span class="badge badge-pass">PASS</span></td></tr>
+<tr><td>Shala Score Methodology</td><td>85</td><td><span class="badge badge-pass">PASS</span></td></tr>
+<tr><td>Machine Learning</td><td>78</td><td><span class="badge badge-review">NEEDS REVIEW</span></td></tr>
+<tr><td>Forecasting</td><td>84</td><td><span class="badge badge-pass">PASS</span></td></tr>
+<tr><td>What-If Scenarios</td><td>74</td><td><span class="badge badge-review">NEEDS REVIEW</span></td></tr>
+<tr><td>Dashboard</td><td>76</td><td><span class="badge badge-review">NEEDS REVIEW</span></td></tr>
+<tr><td>Code Quality</td><td>79</td><td><span class="badge badge-pass">PASS</span></td></tr>
+<tr><td>Documentation</td><td>70</td><td><span class="badge badge-review">NEEDS REVIEW</span></td></tr>
+<tr><td>Reproducibility</td><td>72</td><td><span class="badge badge-review">NEEDS REVIEW</span></td></tr>
+</table>
+</div>
+
+<h2>Implementation Roadmap</h2>
+<div class="section">
+<h3>Tier 1 — Immediate (Before Demonstration)</h3>
+<table>
+<tr><th>#</th><th>Task</th><th>Effort</th></tr>
+<tr><td>1</td><td>Add <code>scikit-learn&gt;=1.3</code> to requirements.txt</td><td>30 sec</td></tr>
+<tr><td>2</td><td>Remove dead <code>RISK_THRESHOLD_INPUT</code></td><td>1 min</td></tr>
+<tr><td>3</td><td>Fix Teacher What-If workspace (PTR + pillar score)</td><td>30 min</td></tr>
+<tr><td>4</td><td>Add District Education Profile panel</td><td>1 hour</td></tr>
+<tr><td>5</td><td>Add auto-generated district insights</td><td>1 hour</td></tr>
+</table>
+
+<h3>Tier 2 — Important (Before Final Submission)</h3>
+<table>
+<tr><th>#</th><th>Task</th><th>Effort</th></tr>
+<tr><td>6</td><td>Model selection + normalization tables in Methodology</td><td>45 min</td></tr>
+<tr><td>7</td><td>Teacher type/gender breakdown in Analytics</td><td>45 min</td></tr>
+<tr><td>8</td><td>Classroom repair breakdown in District Explorer</td><td>30 min</td></tr>
+<tr><td>9</td><td>Replace <code>width="stretch"</code> with <code>use_container_width=True</code></td><td>15 min</td></tr>
+<tr><td>10</td><td>Add README.md</td><td>30 min</td></tr>
+<tr><td>11</td><td>Place academic report in <code>reports/final/</code></td><td>External</td></tr>
+<tr><td>12</td><td>Document ceiling effect + pooled normalization</td><td>30 min</td></tr>
+</table>
+
+<h3>Tier 3 — Optional Future Enhancements</h3>
+<table>
+<tr><th>#</th><th>Task</th><th>Effort</th></tr>
+<tr><td>13</td><td>District Report Generator</td><td>3 hours</td></tr>
+<tr><td>14</td><td>Marathi/English language toggle</td><td>4 hours</td></tr>
+<tr><td>15</td><td>Data science lifecycle visual</td><td>2 hours</td></tr>
+<tr><td>16</td><td>GeoJSON map visualization</td><td>4 hours</td></tr>
+</table>
+</div>
+
+<h2>Final Verdict</h2>
+<div class="section">
+<p style="font-size: 18px; font-weight: 700; color: var(--plum);">Ready After Minor Corrections</p>
+<p>The project is methodologically sound and functionally complete. The 4 critical fixes (Tier 1 items 1-4) can be completed in under 2 hours. None require retraining models, changing formulas, or regenerating data.</p>
+</div>
+
+<div class="footer">
+<p><strong>ShalaScope Maharashtra</strong> — District-Level Education Intelligence &amp; Predictive Analytics<br>
+Audit Report v2 — 19 November 2026 — Independent External Review</p>
+</div>
+
+</body>
+</html>

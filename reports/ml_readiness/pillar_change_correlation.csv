@@ -1,0 +1,4 @@
+﻿pillar_pair,first_difference_pearson,valid_district_year_changes,interpretation
+pillar_teacher_strength vs pillar_infrastructure,-0.07310531084970728,252,Correlation of annual changes; not a causal relationship
+pillar_teacher_strength vs pillar_digital_readiness,0.11306675578974147,252,Correlation of annual changes; not a causal relationship
+pillar_infrastructure vs pillar_digital_readiness,-0.07282793338003792,252,Correlation of annual changes; not a causal relationship

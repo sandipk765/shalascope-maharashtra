@@ -1,0 +1,5 @@
+﻿indicator,source_or_formula,direction,valid_records,missing_records,minimum,p05,median,p95,maximum,values_clipped_below_p05,values_clipped_above_p95,normalization
+Students per teacher,Enrollment total / (Male + Female + Transgender teachers),LOWER_IS_BETTER,288,0,16.438466711499665,20.005491902377354,27.97168724856568,35.38896971824553,38.16181297212816,15,15,Pooled P5-P95 winsorized min-max across all 8 years
+Functional toilet percentage,facility_functional_toilet_pct,HIGHER_IS_BETTER,288,0,84.31964992706814,91.90106739692922,96.26202552026729,99.42961983418337,99.77847339272816,15,15,Pooled P5-P95 winsorized min-max across all 8 years
+Good-condition classroom percentage,facility_classrooms_good_condition_pct,HIGHER_IS_BETTER,288,0,72.51859451141318,82.91887932787257,88.2686756604419,95.80926084027108,99.57764427453122,15,15,Pooled P5-P95 winsorized min-max across all 8 years
+Digital devices per reporting school,facility_avg_digital_devices_per_reporting_school,HIGHER_IS_BETTER,288,0,1.7853274249138356,2.496661295298123,4.721108141742887,22.310433621427425,43.10062535531552,15,15,Pooled P5-P95 winsorized min-max across all 8 years

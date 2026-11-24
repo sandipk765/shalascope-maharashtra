@@ -1,0 +1,9 @@
+﻿academic_year,master_schools,integrated_schools,facility_source_rows,facility_missing_schools,enr1_unique_ids,enr2_unique_ids,enrollment_missing_from_both,enrollment_missing_from_any,enr1_item_rows,enr2_item_rows,integrated_columns,status,output_file
+2018-19,109942,109942,109942,0,109942,109942,0,0,1429246,2198840,196,PASS,maharashtra_school_year_integrated_2018-19.csv
+2019-20,110229,110229,110229,0,110229,110229,0,0,1543206,2204580,196,PASS,maharashtra_school_year_integrated_2019-20.csv
+2020-21,110114,110114,110114,0,110114,110114,0,0,1651710,2202280,196,PASS,maharashtra_school_year_integrated_2020-21.csv
+2021-22,109605,109605,109605,0,109605,109605,0,0,1534470,2192100,197,PASS,maharashtra_school_year_integrated_2021-22.csv
+2022-23,108451,108451,108451,0,108322,108322,129,129,640096,795670,170,PASS_WITH_DOCUMENTED_ENROLLMENT_GAPS,maharashtra_school_year_integrated_2022-23.csv
+2023-24,108237,108237,108237,0,108219,108219,18,18,682557,803239,170,PASS_WITH_DOCUMENTED_ENROLLMENT_GAPS,maharashtra_school_year_integrated_2023-24.csv
+2024-25,108250,108250,108250,0,108250,108250,0,0,679513,803392,170,PASS,maharashtra_school_year_integrated_2024-25.csv
+2025-26,108139,108139,108139,0,108139,108139,0,0,715544,808216,193,PASS,maharashtra_school_year_integrated_2025-26.csv

@@ -1,0 +1,76 @@
+﻿category,source_column,standard_column_candidate,mapping_status,years_available,year_count,notes
+profile_1,block,block_name,Direct,2022-23;2023-24;2024-25;2025-26,4,Block name in newer extracts.
+profile_1,district,district_name,Direct,2018-19;2019-20;2020-21;2021-22;2022-23;2023-24;2024-25;2025-26,8,District name; apply district alias mapping.
+profile_1,estd_year,school_establishment_year,Alias,2025-26,1,2025-26 field name; semantic equivalence should be checked.
+profile_1,highclass,highest_class,Direct,2018-19;2019-20;2020-21;2021-22;2022-23;2023-24;2024-25;2025-26,8,Highest class offered.
+profile_1,lgd_block_name,lgd_block_name,Direct,2022-23;2023-24;2024-25;2025-26,4,LGD block name; keep separate from block until checked.
+profile_1,lowclass,lowest_class,Direct,2018-19;2019-20;2020-21;2021-22;2022-23;2023-24;2024-25;2025-26,8,Lowest class offered.
+profile_1,managment,school_management_code,Direct,2018-19;2019-20;2020-21;2021-22;2022-23;2023-24;2024-25;2025-26,8,Management code; spelling in source is 'managment'.
+profile_1,pseudocode,school_id,Direct identifier alias,2022-23;2023-24;2024-25;2025-26,4,Same intended school identifier spelling variant; verify values match within year.
+profile_1,psuedocode,school_id,Direct identifier alias,2018-19;2019-20;2020-21;2021-22,4,Unique school pseudo code; normalize spelling only.
+profile_1,rural_urban,school_location_type_code,Direct,2018-19;2019-20;2020-21;2021-22;2022-23;2023-24;2024-25;2025-26,8,"Code: 1 Rural, 2 Urban per DSP schema."
+profile_1,school_category,school_category_code,Direct,2018-19;2019-20;2020-21;2021-22;2022-23;2023-24;2024-25;2025-26,8,School category code; decode with year-specific codebook.
+profile_1,school_type,school_type_code,Direct,2018-19;2019-20;2020-21;2021-22;2022-23;2023-24;2024-25;2025-26,8,"1 Boys, 2 Girls, 3 Co-educational per DSP schema."
+profile_1,state,state_name,Direct,2018-19;2019-20;2020-21;2021-22;2022-23;2023-24;2024-25;2025-26,8,State name.
+profile_1,year_of_establishment,school_establishment_year,Alias,2018-19;2019-20;2020-21;2021-22,4,2018-19 to 2021-22 field name.
+profile_2,acad_inspections,academic_inspections_count,Direct,2018-19;2019-20;2020-21;2021-22;2022-23;2023-24;2024-25;2025-26,8,Number of academic inspections.
+profile_2,grants_expenditure,school_grants_expenditure_rupees,Direct,2018-19;2019-20;2020-21;2021-22;2022-23;2023-24;2024-25;2025-26,8,School grants expenditure in rupees.
+profile_2,grants_receipt,school_grants_received_rupees,Direct,2018-19;2019-20;2020-21;2021-22;2022-23;2023-24;2024-25;2025-26,8,School grants receipt in rupees.
+profile_2,pseudocode,school_id,Direct identifier alias,2022-23;2023-24;2024-25;2025-26,4,Unique school pseudo code spelling variant.
+profile_2,psuedocode,school_id,Direct identifier alias,2018-19;2019-20;2020-21;2021-22,4,Unique school pseudo code.
+profile_2,smc_exists,school_management_committee_exists_code,Direct,2018-19;2019-20;2020-21;2021-22;2022-23;2023-24;2024-25;2025-26,8,SMC constituted.
+enrolment_1,cpp_b,pre_primary_boys_enrolment,Direct,2018-19;2019-20;2020-21;2021-22;2022-23;2023-24;2024-25;2025-26,8,Pre Primary boys enrolment.
+enrolment_1,cpp_g,pre_primary_girls_enrolment,Direct,2018-19;2019-20;2020-21;2021-22;2022-23;2023-24;2024-25;2025-26,8,Pre Primary girls enrolment.
+enrolment_1,cpp_t,pre_primary_total_enrolment,Derived/direct-new,2025-26,1,Total field present in 2025-26; validate against boys + girls before use.
+enrolment_1,item_desc,enrolment_item_description,Review meaning,2018-19;2019-20;2020-21;2021-22,4,Older grouping metadata; do not assume equivalence to item_group.
+enrolment_1,item_group,enrolment_item_group_code,Review meaning,2022-23;2023-24;2024-25;2025-26,4,Newer grouping field; decode values before aggregation.
+enrolment_1,item_id,enrolment_item_id,Review meaning,2022-23;2023-24;2024-25;2025-26,4,Newer item identifier; decode before aggregation.
+enrolment_1,pseudocode,school_id,Direct identifier alias,2022-23;2023-24;2024-25;2025-26,4,Unique school pseudo code.
+enrolment_1,psuedocode,school_id,Direct identifier alias,2018-19;2019-20;2020-21;2021-22,4,Unique school pseudo code.
+enrolment_2,cpp_b,pre_primary_boys_enrolment,Direct,2018-19;2019-20;2020-21;2021-22;2022-23;2023-24;2024-25;2025-26,8,Pre Primary boys enrolment.
+enrolment_2,cpp_g,pre_primary_girls_enrolment,Direct,2018-19;2019-20;2020-21;2021-22;2022-23;2023-24;2024-25;2025-26,8,Pre Primary girls enrolment.
+enrolment_2,cpp_t,pre_primary_total_enrolment,Derived/direct-new,2025-26,1,Total field present in 2025-26; validate against boys + girls before use.
+enrolment_2,item_desc,enrolment_item_description,Review meaning,2018-19;2019-20;2020-21;2021-22,4,Older grouping metadata.
+enrolment_2,item_group,enrolment_item_group_code,Review meaning,2022-23;2023-24;2024-25;2025-26,4,Newer grouping field; decode values before aggregation.
+enrolment_2,item_id,enrolment_item_id,Review meaning,2022-23;2023-24;2024-25;2025-26,4,Newer item identifier; decode before aggregation.
+enrolment_2,pseudocode,school_id,Direct identifier alias,2022-23;2023-24;2024-25;2025-26,4,Unique school pseudo code.
+enrolment_2,psuedocode,school_id,Direct identifier alias,2018-19;2019-20;2020-21;2021-22,4,Unique school pseudo code.
+facility,availability_of_handrails,ramp_handrails_available_code,Direct,2018-19;2019-20;2020-21;2021-22;2022-23;2023-24;2024-25;2025-26,8,Handrails for ramp available.
+facility,availability_ramps,ramps_available_code,Direct,2018-19;2019-20;2020-21;2021-22;2022-23;2023-24;2024-25;2025-26,8,Ramp available.
+facility,desktop,desktops_count,Direct,2018-19;2019-20;2020-21;2021-22;2022-23;2023-24;2024-25;2025-26,8,Number of desktops.
+facility,drinking_water_available,drinking_water_available_code,Direct,2018-19;2019-20;2020-21;2021-22,4,Drinking water available.
+facility,drinking_water_functional,drinking_water_functional_code,Direct,2018-19;2019-20;2020-21;2021-22,4,Functional drinking water.
+facility,electricity_availability,electricity_available_code,Direct,2018-19;2019-20;2020-21;2021-22;2022-23;2023-24;2024-25;2025-26,8,Electricity connection available.
+facility,ict_lab,ict_lab_count_or_code,Review meaning,2018-19;2019-20;2020-21;2021-22,4,Legacy ICT lab field; verify whether availability or count.
+facility,ict_lab_yn,ict_lab_available_code,Direct,2022-23;2023-24;2024-25;2025-26,4,ICT lab available; newer field.
+facility,internet,internet_devices_or_connections_count,Review meaning,2018-19;2019-20;2020-21;2021-22;2022-23;2023-24;2024-25;2025-26,8,Schema says number of internet; do not interpret as percentage without denominator.
+facility,laptop,laptops_count,Direct,2018-19;2019-20;2020-21;2021-22;2022-23;2023-24;2024-25;2025-26,8,Number of laptops.
+facility,library_availability,library_available_code,Direct,2018-19;2019-20;2020-21;2021-22;2022-23;2023-24;2024-25;2025-26,8,Library available.
+facility,pseudocode,school_id,Direct identifier alias,2022-23;2023-24;2024-25;2025-26,4,Unique school pseudo code.
+facility,psuedocode,school_id,Direct identifier alias,2018-19;2019-20;2020-21;2021-22,4,Unique school pseudo code.
+facility,tablet,tablets_count,Direct,2018-19;2019-20;2020-21;2021-22;2022-23;2023-24;2024-25;2025-26,8,Number of tablets.
+facility,total_boys_func_toilet,boys_functional_toilet_seats_count,Direct,2018-19;2019-20;2020-21;2021-22;2022-23;2023-24;2024-25;2025-26,8,Functional boys toilet seats.
+facility,total_boys_toilet,boys_toilet_seats_count,Direct,2018-19;2019-20;2020-21;2021-22;2022-23;2023-24;2024-25;2025-26,8,Boys toilet seats excluding CWSN-friendly seats per schema.
+facility,total_class_rooms,instructional_classrooms_count,Direct,2018-19;2019-20;2020-21;2021-22;2022-23;2023-24;2024-25;2025-26,8,Total instructional classrooms.
+facility,total_girls_func_toilet,girls_functional_toilet_seats_count,Direct,2018-19;2019-20;2020-21;2021-22;2022-23;2023-24;2024-25;2025-26,8,Functional girls toilet seats.
+facility,total_girls_toilet,girls_toilet_seats_count,Direct,2018-19;2019-20;2020-21;2021-22;2022-23;2023-24;2024-25;2025-26,8,Girls toilet seats excluding CWSN-friendly seats per schema.
+teacher,below_graduate,teachers_below_graduate,Direct,2018-19;2019-20;2020-21;2021-22;2022-23;2023-24;2024-25;2025-26,8,Highest academic qualification below graduate.
+teacher,contract,contract_teachers,Direct,2018-19;2019-20;2020-21;2021-22;2022-23;2023-24;2024-25;2025-26,8,Contract teachers.
+teacher,female,female_teachers,Direct,2018-19;2019-20;2020-21;2021-22;2022-23;2023-24;2024-25;2025-26,8,Female teachers.
+teacher,graduate,graduate_teachers,Direct,2018-19;2019-20;2020-21;2021-22;2022-23;2023-24;2024-25;2025-26,8,Graduate teachers.
+teacher,male,male_teachers,Direct,2018-19;2019-20;2020-21;2021-22;2022-23;2023-24;2024-25;2025-26,8,Male teachers.
+teacher,part_time,part_time_teachers,Direct,2018-19;2019-20;2020-21;2021-22;2022-23;2023-24;2024-25;2025-26,8,Part-time teachers.
+teacher,post_graduate_and_above,postgraduate_or_above_teachers,Direct,2018-19;2019-20;2020-21;2021-22;2022-23;2023-24;2024-25;2025-26,8,Postgraduate and above.
+teacher,pseudocode,school_id,Direct identifier alias,2022-23;2023-24;2024-25;2025-26,4,Unique school pseudo code.
+teacher,psuedocode,school_id,Direct identifier alias,2018-19;2019-20;2020-21;2021-22,4,Unique school pseudo code.
+teacher,regular,regular_teachers,Direct,2018-19;2019-20;2020-21;2021-22;2022-23;2023-24;2024-25;2025-26,8,Regular teachers.
+teacher,total_tch,total_teachers,Alias,2022-23;2023-24;2024-25;2025-26,4,2022-23 onward name for total teachers.
+teacher,total_teacher,total_teachers,Alias,2018-19;2019-20;2020-21;2021-22,4,Legacy name for total teachers.
+teacher,total_teacher_trained_computer,computer_trained_teachers,Alias,2018-19;2019-20;2020-21;2021-22,4,Legacy computer-trained teacher field.
+teacher,trained_comp,computer_trained_teachers,Alias,2022-23;2023-24;2024-25;2025-26,4,Newer computer-trained teacher field; verify equivalence.
+teacher,transgender,transgender_teachers,Direct,2018-19;2019-20;2020-21;2021-22;2022-23;2023-24;2024-25;2025-26,8,Transgender teachers.
+safety,cctv_cam_yn,cctv_available_code,Direct,2025-26,1,CCTV camera indicator.
+safety,fire_ext_yn,fire_extinguisher_code,Direct,2025-26,1,Fire extinguisher indicator.
+safety,pseudocode,school_id,Direct identifier alias,2025-26,1,Unique school pseudo code.
+safety,sdmp_plan_yn,school_disaster_management_plan_code,Direct,2025-26,1,School disaster management plan indicator.
+safety,struct_safaud_yn,structural_safety_audit_code,Direct,2025-26,1,Structural safety audit indicator.

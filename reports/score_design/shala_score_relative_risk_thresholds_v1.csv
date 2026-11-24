@@ -1,0 +1,5 @@
+﻿class,rule,meaning
+CRITICAL,Score <= 29.9843,Lowest historical score quartile
+HIGH,29.9843 < Score <= 36.5908,Second-lowest historical score quartile
+MODERATE,36.5908 < Score <= 43.7223,Third historical score quartile
+LOW,Score > 43.7223,Highest historical score quartile

@@ -1,0 +1,6 @@
+﻿academic_year,file_name,item_group,item_id,item_desc,record_count,file_part,feature_category,canonical_label,mapping_status,mapping_source,mapping_note
+2021-22,127_enr2.csv,,,,109605,ENR2,UNKNOWN,UNMAPPED,UNMAPPED,No source description or code mapping found,Blank source item
+2022-23,27_enr1.csv,5,0,,11469,ENR1,UNKNOWN,UNMAPPED,UNMAPPED,No confirmed mapping in the consulted schema,Requires additional authoritative codebook
+2023-24,27_enr1.csv,5,0,,29892,ENR1,UNKNOWN,UNMAPPED,UNMAPPED,No confirmed mapping in the consulted schema,Requires additional authoritative codebook
+2024-25,27_enr1.csv,5,0,,13728,ENR1,UNKNOWN,UNMAPPED,UNMAPPED,No confirmed mapping in the consulted schema,Requires additional authoritative codebook
+2025-26,27_enr1.csv,5,0,,35567,ENR1,UNKNOWN,UNMAPPED,UNMAPPED,No confirmed mapping in the consulted schema,Requires additional authoritative codebook

@@ -1,0 +1,5 @@
+﻿indicator,p05,p95,direction,source
+Students per teacher,20.005491902377354,35.38896971824553,LOWER_IS_BETTER,Historical Shala Score V1 parameters
+Functional toilet percentage,91.90106739692922,99.42961983418336,HIGHER_IS_BETTER,Historical Shala Score V1 parameters
+Good-condition classroom percentage,82.91887932787257,95.80926084027108,HIGHER_IS_BETTER,Historical Shala Score V1 parameters
+Digital devices per reporting school,2.496661295298123,22.310433621427425,HIGHER_IS_BETTER,Historical Shala Score V1 parameters

@@ -1,0 +1,9 @@
+﻿academic_year,master_records,master_columns,expected_profile1_records,unique_school_ids,unique_districts,missing_ids,duplicate_ids,missing_from_master,extra_ids,missing_districts,missing_district_raw,mapping_mismatches,wrong_academic_year,malformed_rows,duplicate_columns,status
+2018-19,109942,148,109942,109942,36,0,0,0,0,0,0,0,0,0,0,PASS
+2019-20,110229,148,110229,110229,36,0,0,0,0,0,0,0,0,0,0,PASS
+2020-21,110114,148,110114,110114,36,0,0,0,0,0,0,0,0,0,0,PASS
+2021-22,109605,149,109605,109605,36,0,0,0,0,0,0,0,0,0,0,PASS
+2022-23,108451,93,108451,108451,36,0,0,0,0,0,0,0,0,0,0,PASS
+2023-24,108237,93,108237,108237,36,0,0,0,0,0,0,0,0,0,0,PASS
+2024-25,108250,93,108250,108250,36,0,0,0,0,0,0,0,0,0,0,PASS
+2025-26,108139,104,108139,108139,36,0,0,0,0,0,0,0,0,0,0,PASS

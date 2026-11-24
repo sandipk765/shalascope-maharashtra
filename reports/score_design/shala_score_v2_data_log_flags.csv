@@ -1,0 +1,19 @@
+﻿pillar,column,status,null_pct
+Teacher/PTR,ptr_students_per_teacher_raw,AVAILABLE,0.0%
+Infrastructure,facility_functional_toilet_pct,AVAILABLE,0.0%
+Infrastructure,facility_classrooms_good_condition_pct,AVAILABLE,0.0%
+Infrastructure,facility_pucca_building_block_pct,AVAILABLE,12.5%
+Infrastructure,electricity_pct,MISSING_IN_SOURCE,100%
+Infrastructure,drinking_water_pct,MISSING_IN_SOURCE,100%
+Infrastructure,library_pct,MISSING_IN_SOURCE,100%
+Infrastructure,ramp_pct,MISSING_IN_SOURCE,100%
+Participation,enrollment_reported_enrollment_g_component_total,AVAILABLE,0.0%
+Participation,enrollment_reported_enrollment_b_component_total,AVAILABLE,0.0%
+Participation,enrollment_reported_sc_enrollment,AVAILABLE,0.0%
+Participation,enrollment_reported_st_enrollment,AVAILABLE,0.0%
+Participation,enrollment_reported_obc_enrollment,AVAILABLE,0.0%
+Digital,facility_avg_digital_devices_per_reporting_school,AVAILABLE,0.0%
+Digital,district_computer_trained_teacher_pct,AVAILABLE,50.0%
+Digital,internet_pct,MISSING_IN_SOURCE,100%
+Learning,learning_outcome / ger / dropout_rate,MISSING_IN_SOURCE,100%
+Learning,aser_score / nas_score,MISSING_IN_SOURCE,100%

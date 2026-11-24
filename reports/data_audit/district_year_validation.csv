@@ -1,0 +1,2 @@
+﻿years,districts,district_year_records,expected_records,source_school_year_rows,aggregated_school_year_rows,duplicate_district_years,status
+8,36,288,288,872967,872967,0,PASS

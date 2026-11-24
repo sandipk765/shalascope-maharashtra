@@ -1,0 +1,41 @@
+﻿standard_indicator,source_category,source_columns,data_type,processing_rule,evidence_and_limit
+school_id,profile_1/profile_2/facility/teacher/enrolment,psuedocode or pseudocode,Join key,Preserve as string for safe exact joins; check duplicates and cross-file match for each year.,"Schema defines pseudo code as unique school identity; old/new spelling must be normalized, not numerically aggregated."
+district_name,profile_1,district,Dimension,Trim/case-normalize; map historical aliases to an approved district master.,Do not infer renamed district solely by fuzzy matching; keep raw and canonical name.
+rural_urban_code,profile_1,rural_urban,Categorical code,"Decode 1=Rural, 2=Urban. Keep raw code too.",Explicit legend in DSP Schema page 3.
+school_category_code,profile_1,school_category,Categorical code,"Decode only listed codes 1-8,10,11. Unknown codes remain UNKNOWN.",Explicit legend in DSP Schema page 3.
+school_type_code,profile_1,school_type,Categorical code,"Decode 1=Boys, 2=Girls, 3=Co-educational.",Explicit legend in DSP Schema page 3.
+school_management_code,profile_1,managment,Categorical code,Use explicit management lookup; preserve unknown values.,Explicit management legend in DSP Schema page 3.
+lowest_class,profile_1,lowclass,Numeric,Parse numeric; retain nulls.,Lowest class offered.
+highest_class,profile_1,highclass,Numeric,Parse numeric; retain nulls.,Highest class offered.
+school_establishment_year,profile_1,year_of_establishment / estd_year,Year,Normalize year format; verify estd_year against latest schema/value samples before treating as alias.,Legacy field documented on page 1; estd_year is 2025-26 only and not defined by supplied schema.
+total_teachers,teacher,total_teacher / total_tch,Count,Use one canonical field per year; validate total = male + female + transgender where definitions permit.,Legacy field total_teacher documented in DSP Schema p.12; total_tch is newer name and needs current schema check.
+male_teachers,teacher,male,Count,Non-negative integer; school-year aggregate by sum.,Total number of male teachers.
+female_teachers,teacher,female,Count,Non-negative integer; school-year aggregate by sum.,Total number of female teachers.
+transgender_teachers,teacher,transgender,Count,Non-negative integer; school-year aggregate by sum.,Total number of transgender teachers.
+regular_teachers,teacher,regular,Count,Non-negative integer; sum only after duplicate School ID check.,Total regular teachers.
+contract_teachers,teacher,contract,Count,Non-negative integer.,Total contract teachers.
+part_time_teachers,teacher,part_time,Count,Non-negative integer.,Total part-time teachers.
+class_enrolment_boys,enrolment_1/enrolment_2,"cpp_b, c1_b...c12_b",Count by class,Aggregate only after inspecting item_desc/item_group/item_id row grain; do not sum both enrolment files together.,DSP Schema p.15 defines class-wise boys columns.
+class_enrolment_girls,enrolment_1/enrolment_2,"cpp_g, c1_g...c12_g",Count by class,Aggregate only after inspecting item_desc/item_group/item_id row grain; do not sum both enrolment files together.,DSP Schema p.15 defines class-wise girls columns.
+class_enrolment_total,enrolment_1/enrolment_2,"2025-26 cpp_t, c1_t...c12_t; otherwise derive",Count by class,Where *_t exists compare against boys+girls. For years without *_t calculate boys+girls only after row dimension is resolved; retain derived flag.,2025-26 source totals need arithmetic validation.
+total_classrooms,facility,total_class_rooms,Count,Sum counts at district level after one record per school.,"Instructional classrooms, DSP Schema p.9."
+classrooms_good_condition,facility,classrooms_in_good_condition,Count,Sum counts at district level; do not interpret as school count.,DSP Schema p.9.
+classrooms_minor_repair,facility,classrooms_needs_minor_repair,Count,Sum counts at district level.,DSP Schema p.9.
+classrooms_major_repair,facility,classrooms_needs_major_repair,Count,Sum counts at district level.,DSP Schema p.9.
+boys_toilet_seats,facility,total_boys_toilet,Count of seats,Keep separate from functional seats; do not turn into availability % without school-level denominator.,DSP Schema p.9.
+boys_functional_toilet_seats,facility,total_boys_func_toilet,Count of seats,Keep separate from total seats.,DSP Schema p.9.
+girls_toilet_seats,facility,total_girls_toilet,Count of seats,Keep separate from functional seats.,DSP Schema p.9.
+girls_functional_toilet_seats,facility,total_girls_func_toilet,Count of seats,Keep separate from total seats.,DSP Schema p.9.
+drinking_water_available_code,facility,drinking_water_available,Categorical code,Keep raw code until matching field-value legend is obtained; code 9 may mean Not Applicable per schema note.,"Column description exists, but full value lookup is not shown."
+drinking_water_functional_code,facility,drinking_water_functional,Categorical code,Keep raw code; no assumed 1=yes/2=no mapping.,"Column description exists, but full value lookup is not shown."
+electricity_available_code,facility,electricity_availability,Categorical code,Keep raw code; derive yes/no only after codebook/value verification.,"Column description exists, but full value lookup is not shown."
+library_available_code,facility,library_availability,Categorical code,Keep raw code; no assumed binary decoding.,"Column description exists, but full value lookup is not shown."
+playground_available_code,facility,playground_available,Categorical code,Keep raw code; no assumed binary decoding.,"Column description exists, but full value lookup is not shown."
+ramps_available_code,facility,availability_ramps,Categorical code,Keep raw code until value legend is confirmed.,Description in DSP Schema p.10.
+ramp_handrails_available_code,facility,availability_of_handrails,Categorical code,Keep raw code until value legend is confirmed.,Description in DSP Schema p.10.
+laptops_count,facility,laptop,Count,Sum school counts.,"Number of laptops, DSP Schema p.10."
+tablets_count,facility,tablet,Count,Sum school counts.,"Number of tablets, DSP Schema p.10."
+desktops_count,facility,desktop,Count,Sum school counts.,"Number of desktops, DSP Schema p.10."
+internet_reported_count,facility,internet,Numeric source value,Do not convert to percentage or binary until current schema confirms whether this is count/connection/availability.,Legacy schema wording says number of internet; preserve raw numeric.
+girls_to_boys_enrolment_ratio,derived from enrolment,girls_total / boys_total,Ratio,"Calculate only from matched, same-scope district totals; boys_total must be >0. Label as girls-to-boys enrolment ratio, not official GER-based GPI.","Formula is an analytical feature, not a source field."
+aggregate_student_teacher_ratio,derived from enrolment + teacher,total_students / total_teachers,Ratio,Use matched district-year totals and document scope; call it aggregate student-teacher ratio unless class-level official PTR denominator is used.,Analytical feature; source data are total enrolment and teacher count.

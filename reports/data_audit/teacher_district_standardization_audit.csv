@@ -1,0 +1,9 @@
+﻿academic_year,profile1_records,profile1_unique_ids,teacher_records,teacher_unique_ids,missing_teacher_ids,duplicate_teacher_ids,teacher_ids_not_in_profile1,profile1_ids_not_in_teacher,missing_district_matches,malformed_rows,id_sets_match,output_file,status
+2018-19,109942,109942,109942,109942,0,0,0,0,0,0,True,data\interim\standardized\teacher\maharashtra_teacher_2018-19_standardized.csv,PASS
+2019-20,110229,110229,110229,110229,0,0,0,0,0,0,True,data\interim\standardized\teacher\maharashtra_teacher_2019-20_standardized.csv,PASS
+2020-21,110114,110114,110114,110114,0,0,0,0,0,0,True,data\interim\standardized\teacher\maharashtra_teacher_2020-21_standardized.csv,PASS
+2021-22,109605,109605,109605,109605,0,0,0,0,0,0,True,data\interim\standardized\teacher\maharashtra_teacher_2021-22_standardized.csv,PASS
+2022-23,108451,108451,108451,108451,0,0,0,0,0,0,True,data\interim\standardized\teacher\maharashtra_teacher_2022-23_standardized.csv,PASS
+2023-24,108237,108237,108237,108237,0,0,0,0,0,0,True,data\interim\standardized\teacher\maharashtra_teacher_2023-24_standardized.csv,PASS
+2024-25,108250,108250,108250,108250,0,0,0,0,0,0,True,data\interim\standardized\teacher\maharashtra_teacher_2024-25_standardized.csv,PASS
+2025-26,108139,108139,108139,108139,0,0,0,0,0,0,True,data\interim\standardized\teacher\maharashtra_teacher_2025-26_standardized.csv,PASS

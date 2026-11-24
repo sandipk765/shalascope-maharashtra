@@ -1,0 +1,5 @@
+﻿NumPy 2.2.6
+Pandas 2.3.3
+PyArrow 26.0.1
+Streamlit 1.56.0
+IMPORT AND ARROW TEST PASS

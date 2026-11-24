@@ -1,0 +1,5 @@
+﻿academic_year,comparison,schools_left,schools_right,common_schools,compared_columns,comparable_cells,exact_match_cells,mismatch_cells,cell_match_percentage,schools_matching_all_comparable_cells,schools_with_comparison,group4_schools,group5_schools,group4_item_rows_complete
+2022-23,GROUP4_SUM_VS_GROUP5_ITEM0,5881,5881,5881,26,152906,124915,27991,81.69,125,5881,51674,11469,0
+2023-24,GROUP4_SUM_VS_GROUP5_ITEM0,17415,17415,17415,26,452790,367842,84948,81.24,242,17415,51995,29892,0
+2024-25,GROUP4_SUM_VS_GROUP5_ITEM0,10054,10054,10054,26,261404,214002,47402,81.87,145,10054,53456,13728,0
+2025-26,GROUP4_SUM_VS_GROUP5_ITEM0,23509,23509,23509,39,916851,799124,117727,87.16,346,23509,55623,35567,0

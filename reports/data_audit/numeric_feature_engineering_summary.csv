@@ -1,0 +1,9 @@
+﻿academic_year,input_file,output_file,rows,unique_school_ids,district_count,feature_columns,missing_school_ids,duplicate_school_ids,missing_districts,invalid_percentage_values,status
+2018-19,maharashtra_school_year_master_2018-19.csv,maharashtra_numeric_features_2018-19.csv,109942,109942,36,104,0,0,0,0,PASS
+2019-20,maharashtra_school_year_master_2019-20.csv,maharashtra_numeric_features_2019-20.csv,110229,110229,36,122,0,0,0,0,PASS
+2020-21,maharashtra_school_year_master_2020-21.csv,maharashtra_numeric_features_2020-21.csv,110114,110114,36,122,0,0,0,0,PASS
+2021-22,maharashtra_school_year_master_2021-22.csv,maharashtra_numeric_features_2021-22.csv,109605,109605,36,122,0,0,0,0,PASS
+2022-23,maharashtra_school_year_master_2022-23.csv,maharashtra_numeric_features_2022-23.csv,108451,108451,36,40,0,0,0,0,PASS
+2023-24,maharashtra_school_year_master_2023-24.csv,maharashtra_numeric_features_2023-24.csv,108237,108237,36,40,0,0,0,0,PASS
+2024-25,maharashtra_school_year_master_2024-25.csv,maharashtra_numeric_features_2024-25.csv,108250,108250,36,40,0,0,0,0,PASS
+2025-26,maharashtra_school_year_master_2025-26.csv,maharashtra_numeric_features_2025-26.csv,108139,108139,36,40,0,0,0,0,PASS

@@ -1,0 +1,9 @@
+﻿academic_year,total_records,categorical_columns_decoded,missing_values,unmapped_values,values_with_semantic_caveat,output_file,status
+2018-19,109942,10,0,0,50,data\processed\school_year_features\profile1\maharashtra_profile1_features_2018-19.csv,PASS_WITH_CAVEATS
+2019-20,110229,10,0,0,45,data\processed\school_year_features\profile1\maharashtra_profile1_features_2019-20.csv,PASS_WITH_CAVEATS
+2020-21,110114,10,0,0,42,data\processed\school_year_features\profile1\maharashtra_profile1_features_2020-21.csv,PASS_WITH_CAVEATS
+2021-22,109605,10,0,0,41,data\processed\school_year_features\profile1\maharashtra_profile1_features_2021-22.csv,PASS_WITH_CAVEATS
+2022-23,108451,10,0,0,36,data\processed\school_year_features\profile1\maharashtra_profile1_features_2022-23.csv,PASS_WITH_CAVEATS
+2023-24,108237,10,0,0,33,data\processed\school_year_features\profile1\maharashtra_profile1_features_2023-24.csv,PASS_WITH_CAVEATS
+2024-25,108250,10,0,0,32,data\processed\school_year_features\profile1\maharashtra_profile1_features_2024-25.csv,PASS_WITH_CAVEATS
+2025-26,108139,10,0,0,31,data\processed\school_year_features\profile1\maharashtra_profile1_features_2025-26.csv,PASS_WITH_CAVEATS

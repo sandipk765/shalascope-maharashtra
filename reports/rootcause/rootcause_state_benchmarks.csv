@@ -1,0 +1,6 @@
+﻿column,indicator,unit,state_mean,state_median,state_p10,state_p90
+ptr_students_per_teacher_raw,Pupil-Teacher Ratio,students / teacher,28.21122566708537,27.97168724856568,24.36594142229971,33.27057321544648
+functional_toilet_pct_raw,Functional Toilet Coverage,%,95.90885256833096,96.26202552026729,93.14648847074973,98.57556651277099
+good_classroom_pct_raw,Good-Condition Classrooms,%,88.64048591349979,88.2686756604419,84.17015378626262,95.09626766965543
+facility_classrooms_needing_repair_pct,Classrooms Needing Repair,%,11.359514086500212,11.731324339558098,4.90373233034456,15.829846213737383
+digital_devices_per_school_raw,Digital Devices per School,devices / school,6.641136602883596,4.721108141742887,2.8231684465852007,11.400160754766603

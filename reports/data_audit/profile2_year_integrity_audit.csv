@@ -1,0 +1,9 @@
+﻿academic_year,master_records,profile2_records,profile2_columns,key_column,missing_key,duplicate_profile2_ids,unmatched_profile2_ids,missing_master_ids,district_count,missing_district,status
+2018-19,109942,109942,65,psuedocode,0,0,0,0,36,0,PASS
+2019-20,110229,110229,65,psuedocode,0,0,0,0,36,0,PASS
+2020-21,110114,110114,65,psuedocode,0,0,0,0,36,0,PASS
+2021-22,109605,109605,65,psuedocode,0,0,0,0,36,0,PASS
+2022-23,108451,108451,19,pseudocode,0,0,0,0,36,0,PASS
+2023-24,108237,108237,19,pseudocode,0,0,0,0,36,0,PASS
+2024-25,108250,108250,19,pseudocode,0,0,0,0,36,0,PASS
+2025-26,108139,108139,19,pseudocode,0,0,0,0,36,0,PASS

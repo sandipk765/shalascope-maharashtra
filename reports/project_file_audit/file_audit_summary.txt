@@ -1,0 +1,18 @@
+﻿SHALASCOPE MAHARASHTRA - FILE AUDIT SUMMARY
+
+Project Root: C:\Users\userp\Desktop\ShalaScope_Maharashtra
+Audit Time: 11/17/2026 11:17:45
+
+Total Inventory Files: 479
+
+Expected Folders: 35
+Existing Folders: 35
+Missing Folders: 0
+
+Expected Key Files: 24
+Found Key Files: 22
+Missing Key Files: 2
+Empty Key Files: 0
+
+Audit Reports:
+C:\Users\userp\Desktop\ShalaScope_Maharashtra\reports\project_file_audit

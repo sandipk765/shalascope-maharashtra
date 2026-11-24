@@ -1,0 +1,9 @@
+﻿academic_year,source_file,total_column_used,computer_column_used,rows_scanned,complete_rows,missing_values,non_numeric_values,negative_values,fractional_values,gender_mismatches,computer_over_total,total_teachers_statewide,male_teachers_statewide,female_teachers_statewide,transgender_teachers_statewide,computer_trained_teachers_statewide,computer_training_percentage,maximum_teachers_in_one_school,maximum_computer_trained_in_one_school,completeness_percentage,status
+2018-19,maharashtra_teacher_2018-19_standardized.csv,total_teacher,total_teacher_trained_computer,109942,109942,0,0,0,0,0,0,770125,411971,358154,0,374513,48.63,261,261,100.0,PASS
+2019-20,maharashtra_teacher_2019-20_standardized.csv,total_teacher,total_teacher_trained_computer,110229,110229,0,0,0,0,0,0,783847,408750,375093,4,435225,55.52,273,273,100.0,PASS
+2020-21,maharashtra_teacher_2020-21_standardized.csv,total_teacher,total_teacher_trained_computer,110114,110114,0,0,0,0,0,0,766916,398644,368272,0,454909,59.32,244,229,100.0,PASS
+2021-22,maharashtra_teacher_2021-22_standardized.csv,total_teacher,total_teacher_trained_computer,109605,109605,0,0,0,0,0,0,748589,386196,362393,0,470636,62.87,244,224,100.0,PASS
+2022-23,maharashtra_teacher_2022-23_standardized.csv,total_tch,trained_comp,108451,108451,0,0,0,0,0,0,742316,373787,368526,3,498123,67.1,255,241,100.0,PASS
+2023-24,maharashtra_teacher_2023-24_standardized.csv,total_tch,trained_comp,108237,108237,0,0,0,0,0,0,738114,362600,375506,8,516793,70.02,350,307,100.0,PASS
+2024-25,maharashtra_teacher_2024-25_standardized.csv,total_tch,trained_comp,108250,108250,0,0,0,0,0,0,747501,358136,389364,1,538337,72.02,354,322,100.0,PASS
+2025-26,maharashtra_teacher_2025-26_standardized.csv,total_tch,trained_comp,108139,108139,0,0,0,0,0,0,750272,350038,400233,1,552448,73.63,372,329,100.0,PASS

@@ -1,0 +1,417 @@
+﻿academic_year,source_column,raw_code,normalized_code,decoded_label,school_count,status
+2018-19,rural_urban,1,1,Rural,84140,MAPPED
+2018-19,rural_urban,2,2,Urban,25802,MAPPED
+2018-19,school_category,1,1,Primary Only (Grades 1-5),52574,MAPPED
+2018-19,school_category,3,3,"Primary, Upper Primary, Secondary and Higher Secondary (Grades 1-12)",6125,MAPPED
+2018-19,school_category,2,2,Primary with Upper Primary (Grades 1-8),29790,MAPPED
+2018-19,school_category,7,7,Upper Primary and Secondary (Grades 6-10),6153,MAPPED
+2018-19,school_category,6,6,"Primary, Upper Primary and Secondary (Grades 1-10)",10261,MAPPED
+2018-19,school_category,11,11,Higher Secondary / Junior College Only (Grades 11-12),2574,MAPPED
+2018-19,school_category,10,10,Secondary with Higher Secondary (Grades 9-12),141,MAPPED
+2018-19,school_category,5,5,"Upper Primary, Secondary and Higher Secondary (Grades 6-12)",1202,MAPPED
+2018-19,school_category,8,8,Secondary Only (Grades 9-10),990,MAPPED
+2018-19,school_category,4,4,Upper Primary Only (Grades 6-8),132,MAPPED
+2018-19,school_type,3,3,Co-educational,107062,MAPPED
+2018-19,school_type,1,1,Boys,1034,MAPPED
+2018-19,school_type,2,2,Girls,1846,MAPPED
+2018-19,managment,3,3,Local Body,65200,MAPPED
+2018-19,managment,4,4,Government Aided,23554,MAPPED
+2018-19,managment,5,5,Private Unaided (Recognized),19400,MAPPED
+2018-19,managment,2,2,Tribal Welfare Department,520,MAPPED
+2018-19,managment,90,90,Social Welfare Department,123,MAPPED
+2018-19,managment,8,8,Unrecognized,801,MAPPED
+2018-19,managment,1,1,Department of Education,82,MAPPED
+2018-19,managment,98,98,Madrasa Unrecognized,108,MAPPED
+2018-19,managment,92,92,Kendriya Vidyalaya / Central School,68,MAPPED
+2018-19,managment,93,93,Jawahar Navodaya Vidyalaya,33,MAPPED
+2018-19,managment,97,97,Recognized Madrasa (Legacy Classification - Subtype Not Specified),46,MAPPED_WITH_CAVEAT
+2018-19,managment,95,95,Railway School,6,MAPPED
+2018-19,managment,94,94,Sainik School,1,MAPPED
+2018-19,special_school_for_cwsn,2,2,No,108642,MAPPED
+2018-19,special_school_for_cwsn,1,1,Yes,1300,MAPPED
+2018-19,shift_school,2,2,No,96708,MAPPED
+2018-19,shift_school,1,1,Yes,13234,MAPPED
+2018-19,resi_school,2,2,Partially Residential,105728,MAPPED
+2018-19,resi_school,1,1,Completely Residential,4214,MAPPED
+2018-19,minority_school,2,2,No,102132,MAPPED
+2018-19,minority_school,1,1,Yes,7810,MAPPED
+2018-19,pre_primary,2,2,No,85689,MAPPED
+2018-19,pre_primary,1,1,Yes,13062,MAPPED
+2018-19,pre_primary,9,9,Not Applicable,11191,MAPPED
+2018-19,medium_instr1,10,10,Marathi,87214,MAPPED
+2018-19,medium_instr1,19,19,English,14958,MAPPED
+2018-19,medium_instr1,18,18,Urdu,5210,MAPPED
+2018-19,medium_instr1,4,04,Hindi,1798,MAPPED
+2018-19,medium_instr1,5,05,Kannada,336,MAPPED
+2018-19,medium_instr1,17,17,Telugu,57,MAPPED
+2018-19,medium_instr1,3,03,Gujarati,249,MAPPED
+2018-19,medium_instr1,15,15,Sindhi,19,MAPPED
+2018-19,medium_instr1,16,16,Tamil,39,MAPPED
+2018-19,medium_instr1,2,02,Bengali,55,MAPPED
+2018-19,medium_instr1,99,99,Other Medium of Instruction (Legacy / Variant Code),4,MAPPED_WITH_CAVEAT
+2018-19,medium_instr1,1,01,Assamese,1,MAPPED
+2018-19,medium_instr1,14,14,Sanskrit,1,MAPPED
+2018-19,medium_instr1,20,20,Bodo,1,MAPPED
+2019-20,rural_urban,1,1,Rural,84036,MAPPED
+2019-20,rural_urban,2,2,Urban,26193,MAPPED
+2019-20,school_category,1,1,Primary Only (Grades 1-5),52094,MAPPED
+2019-20,school_category,3,3,"Primary, Upper Primary, Secondary and Higher Secondary (Grades 1-12)",6467,MAPPED
+2019-20,school_category,2,2,Primary with Upper Primary (Grades 1-8),29915,MAPPED
+2019-20,school_category,7,7,Upper Primary and Secondary (Grades 6-10),6126,MAPPED
+2019-20,school_category,6,6,"Primary, Upper Primary and Secondary (Grades 1-10)",10527,MAPPED
+2019-20,school_category,11,11,Higher Secondary / Junior College Only (Grades 11-12),2595,MAPPED
+2019-20,school_category,10,10,Secondary with Higher Secondary (Grades 9-12),162,MAPPED
+2019-20,school_category,5,5,"Upper Primary, Secondary and Higher Secondary (Grades 6-12)",1235,MAPPED
+2019-20,school_category,8,8,Secondary Only (Grades 9-10),981,MAPPED
+2019-20,school_category,4,4,Upper Primary Only (Grades 6-8),127,MAPPED
+2019-20,school_type,3,3,Co-educational,107394,MAPPED
+2019-20,school_type,1,1,Boys,1018,MAPPED
+2019-20,school_type,2,2,Girls,1817,MAPPED
+2019-20,managment,3,3,Local Body,65065,MAPPED
+2019-20,managment,4,4,Government Aided,23791,MAPPED
+2019-20,managment,5,5,Private Unaided (Recognized),19654,MAPPED
+2019-20,managment,2,2,Tribal Welfare Department,527,MAPPED
+2019-20,managment,90,90,Social Welfare Department,120,MAPPED
+2019-20,managment,8,8,Unrecognized,747,MAPPED
+2019-20,managment,98,98,Madrasa Unrecognized,106,MAPPED
+2019-20,managment,92,92,Kendriya Vidyalaya / Central School,59,MAPPED
+2019-20,managment,93,93,Jawahar Navodaya Vidyalaya,34,MAPPED
+2019-20,managment,1,1,Department of Education,60,MAPPED
+2019-20,managment,97,97,Recognized Madrasa (Legacy Classification - Subtype Not Specified),45,MAPPED_WITH_CAVEAT
+2019-20,managment,101,101,Other Central Government / PSU Schools,14,MAPPED
+2019-20,managment,95,95,Railway School,5,MAPPED
+2019-20,managment,94,94,Sainik School,2,MAPPED
+2019-20,special_school_for_cwsn,2,2,No,109011,MAPPED
+2019-20,special_school_for_cwsn,1,1,Yes,1218,MAPPED
+2019-20,shift_school,2,2,No,97814,MAPPED
+2019-20,shift_school,1,1,Yes,12415,MAPPED
+2019-20,resi_school,2,2,Partially Residential,105918,MAPPED
+2019-20,resi_school,1,1,Completely Residential,4311,MAPPED
+2019-20,minority_school,2,2,No,101906,MAPPED
+2019-20,minority_school,1,1,Yes,8323,MAPPED
+2019-20,pre_primary,2,2,No,85833,MAPPED
+2019-20,pre_primary,1,1,Yes,13170,MAPPED
+2019-20,pre_primary,9,9,Not Applicable,11226,MAPPED
+2019-20,medium_instr1,10,10,Marathi,87048,MAPPED
+2019-20,medium_instr1,19,19,English,15396,MAPPED
+2019-20,medium_instr1,18,18,Urdu,5298,MAPPED
+2019-20,medium_instr1,4,04,Hindi,1751,MAPPED
+2019-20,medium_instr1,5,05,Kannada,335,MAPPED
+2019-20,medium_instr1,17,17,Telugu,57,MAPPED
+2019-20,medium_instr1,3,03,Gujarati,232,MAPPED
+2019-20,medium_instr1,15,15,Sindhi,18,MAPPED
+2019-20,medium_instr1,16,16,Tamil,39,MAPPED
+2019-20,medium_instr1,2,02,Bengali,55,MAPPED
+2020-21,rural_urban,1,1,Rural,83874,MAPPED
+2020-21,rural_urban,2,2,Urban,26240,MAPPED
+2020-21,school_category,1,1,Primary Only (Grades 1-5),51639,MAPPED
+2020-21,school_category,3,3,"Primary, Upper Primary, Secondary and Higher Secondary (Grades 1-12)",6730,MAPPED
+2020-21,school_category,2,2,Primary with Upper Primary (Grades 1-8),29855,MAPPED
+2020-21,school_category,7,7,Upper Primary and Secondary (Grades 6-10),6106,MAPPED
+2020-21,school_category,6,6,"Primary, Upper Primary and Secondary (Grades 1-10)",10637,MAPPED
+2020-21,school_category,11,11,Higher Secondary / Junior College Only (Grades 11-12),2627,MAPPED
+2020-21,school_category,10,10,Secondary with Higher Secondary (Grades 9-12),165,MAPPED
+2020-21,school_category,5,5,"Upper Primary, Secondary and Higher Secondary (Grades 6-12)",1256,MAPPED
+2020-21,school_category,8,8,Secondary Only (Grades 9-10),984,MAPPED
+2020-21,school_category,4,4,Upper Primary Only (Grades 6-8),115,MAPPED
+2020-21,school_type,3,3,Co-educational,107310,MAPPED
+2020-21,school_type,1,1,Boys,1011,MAPPED
+2020-21,school_type,2,2,Girls,1793,MAPPED
+2020-21,managment,3,3,Local Body,64919,MAPPED
+2020-21,managment,4,4,Government Aided,23924,MAPPED
+2020-21,managment,5,5,Private Unaided (Recognized),19632,MAPPED
+2020-21,managment,2,2,Tribal Welfare Department,531,MAPPED
+2020-21,managment,90,90,Social Welfare Department,117,MAPPED
+2020-21,managment,8,8,Unrecognized,674,MAPPED
+2020-21,managment,98,98,Madrasa Unrecognized,108,MAPPED
+2020-21,managment,92,92,Kendriya Vidyalaya / Central School,60,MAPPED
+2020-21,managment,93,93,Jawahar Navodaya Vidyalaya,34,MAPPED
+2020-21,managment,1,1,Department of Education,51,MAPPED
+2020-21,managment,97,97,Recognized Madrasa (Legacy Classification - Subtype Not Specified),42,MAPPED_WITH_CAVEAT
+2020-21,managment,101,101,Other Central Government / PSU Schools,15,MAPPED
+2020-21,managment,95,95,Railway School,5,MAPPED
+2020-21,managment,94,94,Sainik School,2,MAPPED
+2020-21,special_school_for_cwsn,2,2,No,108935,MAPPED
+2020-21,special_school_for_cwsn,1,1,Yes,1179,MAPPED
+2020-21,shift_school,2,2,No,98182,MAPPED
+2020-21,shift_school,1,1,Yes,11932,MAPPED
+2020-21,resi_school,2,2,Partially Residential,105863,MAPPED
+2020-21,resi_school,1,1,Completely Residential,4251,MAPPED
+2020-21,minority_school,2,2,No,101645,MAPPED
+2020-21,minority_school,1,1,Yes,8430,MAPPED
+2020-21,minority_school,9,9,Not Applicable,39,MAPPED
+2020-21,pre_primary,2,2,No,85753,MAPPED
+2020-21,pre_primary,1,1,Yes,13108,MAPPED
+2020-21,pre_primary,9,9,Not Applicable,11253,MAPPED
+2020-21,medium_instr1,10,10,Marathi,86892,MAPPED
+2020-21,medium_instr1,19,19,English,15461,MAPPED
+2020-21,medium_instr1,18,18,Urdu,5303,MAPPED
+2020-21,medium_instr1,4,04,Hindi,1733,MAPPED
+2020-21,medium_instr1,5,05,Kannada,335,MAPPED
+2020-21,medium_instr1,17,17,Telugu,53,MAPPED
+2020-21,medium_instr1,3,03,Gujarati,226,MAPPED
+2020-21,medium_instr1,15,15,Sindhi,16,MAPPED
+2020-21,medium_instr1,16,16,Tamil,40,MAPPED
+2020-21,medium_instr1,2,02,Bengali,55,MAPPED
+2021-22,rural_urban,1,1,Rural,81903,MAPPED
+2021-22,rural_urban,2,2,Urban,27702,MAPPED
+2021-22,school_category,1,1,Primary Only (Grades 1-5),51152,MAPPED
+2021-22,school_category,3,3,"Primary, Upper Primary, Secondary and Higher Secondary (Grades 1-12)",6854,MAPPED
+2021-22,school_category,2,2,Primary with Upper Primary (Grades 1-8),29730,MAPPED
+2021-22,school_category,7,7,Upper Primary and Secondary (Grades 6-10),6083,MAPPED
+2021-22,school_category,6,6,"Primary, Upper Primary and Secondary (Grades 1-10)",10658,MAPPED
+2021-22,school_category,11,11,Higher Secondary / Junior College Only (Grades 11-12),2597,MAPPED
+2021-22,school_category,10,10,Secondary with Higher Secondary (Grades 9-12),160,MAPPED
+2021-22,school_category,5,5,"Upper Primary, Secondary and Higher Secondary (Grades 6-12)",1260,MAPPED
+2021-22,school_category,8,8,Secondary Only (Grades 9-10),1000,MAPPED
+2021-22,school_category,4,4,Upper Primary Only (Grades 6-8),111,MAPPED
+2021-22,school_type,3,3,Co-educational,106847,MAPPED
+2021-22,school_type,1,1,Boys,995,MAPPED
+2021-22,school_type,2,2,Girls,1763,MAPPED
+2021-22,managment,3,3,Local Body,64845,MAPPED
+2021-22,managment,4,4,Government Aided,24037,MAPPED
+2021-22,managment,5,5,Private Unaided (Recognized),19268,MAPPED
+2021-22,managment,2,2,Tribal Welfare Department,533,MAPPED
+2021-22,managment,90,90,Social Welfare Department,117,MAPPED
+2021-22,managment,8,8,Unrecognized,533,MAPPED
+2021-22,managment,98,98,Madrasa Unrecognized,87,MAPPED
+2021-22,managment,92,92,Kendriya Vidyalaya / Central School,60,MAPPED
+2021-22,managment,93,93,Jawahar Navodaya Vidyalaya,34,MAPPED
+2021-22,managment,97,97,Recognized Madrasa (Legacy Classification - Subtype Not Specified),41,MAPPED_WITH_CAVEAT
+2021-22,managment,1,1,Department of Education,28,MAPPED
+2021-22,managment,101,101,Other Central Government / PSU Schools,15,MAPPED
+2021-22,managment,95,95,Railway School,5,MAPPED
+2021-22,managment,94,94,Sainik School,2,MAPPED
+2021-22,special_school_for_cwsn,2,2,No,108501,MAPPED
+2021-22,special_school_for_cwsn,1,1,Yes,1104,MAPPED
+2021-22,shift_school,2,2,No,98347,MAPPED
+2021-22,shift_school,1,1,Yes,11258,MAPPED
+2021-22,resi_school,3,3,Non-Residential,104430,MAPPED
+2021-22,resi_school,2,2,Partially Residential,975,MAPPED
+2021-22,resi_school,1,1,Completely Residential,4200,MAPPED
+2021-22,minority_school,2,2,No,100786,MAPPED
+2021-22,minority_school,1,1,Yes,8719,MAPPED
+2021-22,minority_school,9,9,Not Applicable,100,MAPPED
+2021-22,pre_primary,2,2,No,73262,MAPPED
+2021-22,pre_primary,9,9,Not Applicable,23606,MAPPED
+2021-22,pre_primary,1,1,Yes,12737,MAPPED
+2021-22,medium_instr1,10,10,Marathi,86663,MAPPED
+2021-22,medium_instr1,19,19,English,15225,MAPPED
+2021-22,medium_instr1,18,18,Urdu,5275,MAPPED
+2021-22,medium_instr1,4,04,Hindi,1723,MAPPED
+2021-22,medium_instr1,5,05,Kannada,332,MAPPED
+2021-22,medium_instr1,17,17,Telugu,52,MAPPED
+2021-22,medium_instr1,3,03,Gujarati,222,MAPPED
+2021-22,medium_instr1,15,15,Sindhi,18,MAPPED
+2021-22,medium_instr1,16,16,Tamil,39,MAPPED
+2021-22,medium_instr1,2,02,Bengali,56,MAPPED
+2022-23,rural_urban,1,1,Rural,80278,MAPPED
+2022-23,rural_urban,2,2,Urban,28173,MAPPED
+2022-23,school_category,1,1,Primary Only (Grades 1-5),50474,MAPPED
+2022-23,school_category,3,3,"Primary, Upper Primary, Secondary and Higher Secondary (Grades 1-12)",6929,MAPPED
+2022-23,school_category,2,2,Primary with Upper Primary (Grades 1-8),29343,MAPPED
+2022-23,school_category,7,7,Upper Primary and Secondary (Grades 6-10),6004,MAPPED
+2022-23,school_category,6,6,"Primary, Upper Primary and Secondary (Grades 1-10)",10662,MAPPED
+2022-23,school_category,11,11,Higher Secondary / Junior College Only (Grades 11-12),2542,MAPPED
+2022-23,school_category,10,10,Secondary with Higher Secondary (Grades 9-12),163,MAPPED
+2022-23,school_category,5,5,"Upper Primary, Secondary and Higher Secondary (Grades 6-12)",1267,MAPPED
+2022-23,school_category,8,8,Secondary Only (Grades 9-10),965,MAPPED
+2022-23,school_category,4,4,Upper Primary Only (Grades 6-8),102,MAPPED
+2022-23,school_type,3,3,Co-educational,105751,MAPPED
+2022-23,school_type,1,1,Boys,968,MAPPED
+2022-23,school_type,2,2,Girls,1732,MAPPED
+2022-23,managment,3,3,Local Body,64641,MAPPED
+2022-23,managment,4,4,Government Aided,23964,MAPPED
+2022-23,managment,5,5,Private Unaided (Recognized),18723,MAPPED
+2022-23,managment,2,2,Tribal Welfare Department,540,MAPPED
+2022-23,managment,90,90,Social Welfare Department,118,MAPPED
+2022-23,managment,8,8,Unrecognized,273,MAPPED
+2022-23,managment,98,98,Madrasa Unrecognized,24,MAPPED
+2022-23,managment,92,92,Kendriya Vidyalaya / Central School,59,MAPPED
+2022-23,managment,93,93,Jawahar Navodaya Vidyalaya,34,MAPPED
+2022-23,managment,1,1,Department of Education,18,MAPPED
+2022-23,managment,101,101,Other Central Government / PSU Schools,15,MAPPED
+2022-23,managment,97,97,Recognized Madrasa (2022-23 Reference Variant - Subtype Requires Review),36,MAPPED_WITH_CAVEAT
+2022-23,managment,95,95,Railway School,4,MAPPED
+2022-23,managment,94,94,Sainik School,2,MAPPED
+2022-23,special_school_for_cwsn,2,2,No,107347,MAPPED
+2022-23,special_school_for_cwsn,1,1,Yes,1104,MAPPED
+2022-23,shift_school,2,2,No,97554,MAPPED
+2022-23,shift_school,1,1,Yes,10897,MAPPED
+2022-23,resi_school,3,3,Non-Residential,103550,MAPPED
+2022-23,resi_school,2,2,Partially Residential,934,MAPPED
+2022-23,resi_school,1,1,Completely Residential,3967,MAPPED
+2022-23,minority_school,2,2,No,99718,MAPPED
+2022-23,minority_school,1,1,Yes,8599,MAPPED
+2022-23,minority_school,9,9,Not Applicable,134,MAPPED
+2022-23,pre_primary,2,2,No,72687,MAPPED
+2022-23,pre_primary,9,9,Not Applicable,23390,MAPPED
+2022-23,pre_primary,1,1,Yes,12374,MAPPED
+2022-23,medium_instr1,10,10,Marathi,86157,MAPPED
+2022-23,medium_instr1,19,19,English,14810,MAPPED
+2022-23,medium_instr1,18,18,Urdu,5146,MAPPED
+2022-23,medium_instr1,4,04,Hindi,1663,MAPPED
+2022-23,medium_instr1,5,05,Kannada,328,MAPPED
+2022-23,medium_instr1,17,17,Telugu,49,MAPPED
+2022-23,medium_instr1,3,03,Gujarati,198,MAPPED
+2022-23,medium_instr1,16,16,Tamil,34,MAPPED
+2022-23,medium_instr1,2,02,Bengali,56,MAPPED
+2022-23,medium_instr1,15,15,Sindhi,10,MAPPED
+2023-24,rural_urban,1,1,Rural,80151,MAPPED
+2023-24,rural_urban,2,2,Urban,28086,MAPPED
+2023-24,school_category,1,1,Primary Only (Grades 1-5),49906,MAPPED
+2023-24,school_category,3,3,"Primary, Upper Primary, Secondary and Higher Secondary (Grades 1-12)",7277,MAPPED
+2023-24,school_category,2,2,Primary with Upper Primary (Grades 1-8),29157,MAPPED
+2023-24,school_category,7,7,Upper Primary and Secondary (Grades 6-10),5975,MAPPED
+2023-24,school_category,6,6,"Primary, Upper Primary and Secondary (Grades 1-10)",10905,MAPPED
+2023-24,school_category,11,11,Higher Secondary / Junior College Only (Grades 11-12),2530,MAPPED
+2023-24,school_category,8,8,Secondary Only (Grades 9-10),946,MAPPED
+2023-24,school_category,10,10,Secondary with Higher Secondary (Grades 9-12),169,MAPPED
+2023-24,school_category,5,5,"Upper Primary, Secondary and Higher Secondary (Grades 6-12)",1277,MAPPED
+2023-24,school_category,4,4,Upper Primary Only (Grades 6-8),95,MAPPED
+2023-24,school_type,3,3,Co-educational,105582,MAPPED
+2023-24,school_type,1,1,Boys,954,MAPPED
+2023-24,school_type,2,2,Girls,1701,MAPPED
+2023-24,managment,3,3,Local Body,64368,MAPPED
+2023-24,managment,4,4,Government Aided,24173,MAPPED
+2023-24,managment,5,5,Private Unaided (Recognized),18642,MAPPED
+2023-24,managment,2,2,Tribal Welfare Department,542,MAPPED
+2023-24,managment,90,90,Social Welfare Department,116,MAPPED
+2023-24,managment,8,8,Unrecognized,210,MAPPED
+2023-24,managment,98,98,Madrasa Unrecognized,22,MAPPED
+2023-24,managment,92,92,Kendriya Vidyalaya / Central School,59,MAPPED
+2023-24,managment,93,93,Jawahar Navodaya Vidyalaya,34,MAPPED
+2023-24,managment,1,1,Department of Education,18,MAPPED
+2023-24,managment,101,101,Other Central Government / PSU Schools,14,MAPPED
+2023-24,managment,97,97,Recognized Madrasa (Subtype Not Specified - Reference Variation),33,MAPPED_WITH_CAVEAT
+2023-24,managment,95,95,Railway School,4,MAPPED
+2023-24,managment,94,94,Sainik School,2,MAPPED
+2023-24,special_school_for_cwsn,2,2,No,107027,MAPPED
+2023-24,special_school_for_cwsn,1,1,Yes,1210,MAPPED
+2023-24,shift_school,2,2,No,97645,MAPPED
+2023-24,shift_school,1,1,Yes,10592,MAPPED
+2023-24,resi_school,3,3,Non-Residential,103354,MAPPED
+2023-24,resi_school,2,2,Partially Residential,946,MAPPED
+2023-24,resi_school,1,1,Completely Residential,3937,MAPPED
+2023-24,minority_school,2,2,No,99278,MAPPED
+2023-24,minority_school,1,1,Yes,8789,MAPPED
+2023-24,minority_school,9,9,Not Applicable,170,MAPPED
+2023-24,pre_primary,2,2,No,72363,MAPPED
+2023-24,pre_primary,9,9,Not Applicable,23329,MAPPED
+2023-24,pre_primary,1,1,Yes,12545,MAPPED
+2023-24,medium_instr1,10,10,Marathi,85901,MAPPED
+2023-24,medium_instr1,19,19,English,14907,MAPPED
+2023-24,medium_instr1,18,18,Urdu,5120,MAPPED
+2023-24,medium_instr1,4,04,Hindi,1649,MAPPED
+2023-24,medium_instr1,5,05,Kannada,323,MAPPED
+2023-24,medium_instr1,17,17,Telugu,47,MAPPED
+2023-24,medium_instr1,3,03,Gujarati,191,MAPPED
+2023-24,medium_instr1,16,16,Tamil,34,MAPPED
+2023-24,medium_instr1,2,02,Bengali,56,MAPPED
+2023-24,medium_instr1,15,15,Sindhi,9,MAPPED
+2024-25,rural_urban,1,1,Rural,80154,MAPPED
+2024-25,rural_urban,2,2,Urban,28096,MAPPED
+2024-25,school_category,1,1,Primary Only (Grades 1-5),49478,MAPPED
+2024-25,school_category,3,3,"Primary, Upper Primary, Secondary and Higher Secondary (Grades 1-12)",7751,MAPPED
+2024-25,school_category,2,2,Primary with Upper Primary (Grades 1-8),28956,MAPPED
+2024-25,school_category,7,7,Upper Primary and Secondary (Grades 6-10),5925,MAPPED
+2024-25,school_category,6,6,"Primary, Upper Primary and Secondary (Grades 1-10)",11120,MAPPED
+2024-25,school_category,11,11,Higher Secondary / Junior College Only (Grades 11-12),2526,MAPPED
+2024-25,school_category,8,8,Secondary Only (Grades 9-10),924,MAPPED
+2024-25,school_category,10,10,Secondary with Higher Secondary (Grades 9-12),181,MAPPED
+2024-25,school_category,5,5,"Upper Primary, Secondary and Higher Secondary (Grades 6-12)",1307,MAPPED
+2024-25,school_category,4,4,Upper Primary Only (Grades 6-8),82,MAPPED
+2024-25,school_type,3,3,Co-educational,105654,MAPPED
+2024-25,school_type,1,1,Boys,924,MAPPED
+2024-25,school_type,2,2,Girls,1672,MAPPED
+2024-25,managment,3,3,Local Body,64098,MAPPED
+2024-25,managment,4,4,Government Aided,24327,MAPPED
+2024-25,managment,5,5,Private Unaided (Recognized),18746,MAPPED
+2024-25,managment,2,2,Tribal Welfare Department,543,MAPPED
+2024-25,managment,90,90,Social Welfare Department,115,MAPPED
+2024-25,managment,8,8,Unrecognized,164,MAPPED
+2024-25,managment,7,7,Partially Government Aided,79,MAPPED
+2024-25,managment,98,98,Madrasa Unrecognized,18,MAPPED
+2024-25,managment,92,92,Kendriya Vidyalaya / Central School,59,MAPPED
+2024-25,managment,93,93,Jawahar Navodaya Vidyalaya,34,MAPPED
+2024-25,managment,1,1,Department of Education,17,MAPPED
+2024-25,managment,101,101,Other Central Government / PSU Schools,13,MAPPED
+2024-25,managment,97,97,Recognized Madrasa (Subtype Not Specified - Reference Variation),32,MAPPED_WITH_CAVEAT
+2024-25,managment,94,94,Sainik School,2,MAPPED
+2024-25,managment,95,95,Railway School,3,MAPPED
+2024-25,special_school_for_cwsn,2,2,No,107209,MAPPED
+2024-25,special_school_for_cwsn,1,1,Yes,1041,MAPPED
+2024-25,shift_school,2,2,No,97815,MAPPED
+2024-25,shift_school,1,1,Yes,10435,MAPPED
+2024-25,resi_school,3,3,Non-Residential,103395,MAPPED
+2024-25,resi_school,1,1,Completely Residential,3893,MAPPED
+2024-25,resi_school,2,2,Partially Residential,962,MAPPED
+2024-25,minority_school,2,2,No,99523,MAPPED
+2024-25,minority_school,1,1,Yes,8727,MAPPED
+2024-25,pre_primary,2,2,No,72268,MAPPED
+2024-25,pre_primary,9,9,Not Applicable,23224,MAPPED
+2024-25,pre_primary,1,1,Yes,12758,MAPPED
+2024-25,medium_instr1,10,10,Marathi,85702,MAPPED
+2024-25,medium_instr1,19,19,English,15210,MAPPED
+2024-25,medium_instr1,18,18,Urdu,5096,MAPPED
+2024-25,medium_instr1,4,04,Hindi,1601,MAPPED
+2024-25,medium_instr1,5,05,Kannada,322,MAPPED
+2024-25,medium_instr1,17,17,Telugu,43,MAPPED
+2024-25,medium_instr1,3,03,Gujarati,179,MAPPED
+2024-25,medium_instr1,16,16,Tamil,34,MAPPED
+2024-25,medium_instr1,2,02,Bengali,55,MAPPED
+2024-25,medium_instr1,15,15,Sindhi,8,MAPPED
+2025-26,rural_urban,1,1,Rural,80039,MAPPED
+2025-26,rural_urban,2,2,Urban,28100,MAPPED
+2025-26,school_category,1,1,Primary Only (Grades 1-5),49016,MAPPED
+2025-26,school_category,3,3,"Primary, Upper Primary, Secondary and Higher Secondary (Grades 1-12)",8105,MAPPED
+2025-26,school_category,2,2,Primary with Upper Primary (Grades 1-8),28831,MAPPED
+2025-26,school_category,7,7,Upper Primary and Secondary (Grades 6-10),5886,MAPPED
+2025-26,school_category,6,6,"Primary, Upper Primary and Secondary (Grades 1-10)",11244,MAPPED
+2025-26,school_category,11,11,Higher Secondary / Junior College Only (Grades 11-12),2541,MAPPED
+2025-26,school_category,8,8,Secondary Only (Grades 9-10),907,MAPPED
+2025-26,school_category,10,10,Secondary with Higher Secondary (Grades 9-12),195,MAPPED
+2025-26,school_category,5,5,"Upper Primary, Secondary and Higher Secondary (Grades 6-12)",1330,MAPPED
+2025-26,school_category,4,4,Upper Primary Only (Grades 6-8),79,MAPPED
+2025-26,school_category,12,12,Pre-Primary Only,5,MAPPED
+2025-26,school_type,3,3,Co-educational,105691,MAPPED
+2025-26,school_type,1,1,Boys,859,MAPPED
+2025-26,school_type,2,2,Girls,1589,MAPPED
+2025-26,managment,3,3,Local Body,63790,MAPPED
+2025-26,managment,4,4,Government Aided,22123,MAPPED
+2025-26,managment,5,5,Private Unaided (Recognized),17824,MAPPED
+2025-26,managment,7,7,Partially Government Aided,3402,MAPPED
+2025-26,managment,2,2,Tribal Welfare Department,542,MAPPED
+2025-26,managment,90,90,Social Welfare Department,114,MAPPED
+2025-26,managment,8,8,Unrecognized,172,MAPPED
+2025-26,managment,98,98,Madrasa Unrecognized,16,MAPPED
+2025-26,managment,92,92,Kendriya Vidyalaya / Central School,60,MAPPED
+2025-26,managment,93,93,Jawahar Navodaya Vidyalaya,34,MAPPED
+2025-26,managment,97,97,Recognized Madrasa (Subtype Not Confirmed for 2025-26),31,MAPPED_WITH_CAVEAT
+2025-26,managment,1,1,Department of Education,14,MAPPED
+2025-26,managment,101,101,Other Central Government / PSU Schools,12,MAPPED
+2025-26,managment,94,94,Sainik School,2,MAPPED
+2025-26,managment,95,95,Railway School,3,MAPPED
+2025-26,special_school_for_cwsn,2,2,No,107171,MAPPED
+2025-26,special_school_for_cwsn,1,1,Yes,968,MAPPED
+2025-26,shift_school,2,2,No,97773,MAPPED
+2025-26,shift_school,1,1,Yes,10361,MAPPED
+2025-26,shift_school,9,9,Not Applicable,5,MAPPED
+2025-26,resi_school,3,3,Non-Residential,103570,MAPPED
+2025-26,resi_school,1,1,Completely Residential,3646,MAPPED
+2025-26,resi_school,2,2,Partially Residential,923,MAPPED
+2025-26,minority_school,2,2,No,99340,MAPPED
+2025-26,minority_school,1,1,Yes,8799,MAPPED
+2025-26,pre_primary,2,2,No,71339,MAPPED
+2025-26,pre_primary,9,9,Not Applicable,23199,MAPPED
+2025-26,pre_primary,1,1,Yes,13601,MAPPED
+2025-26,medium_instr1,10,10,Marathi,85518,MAPPED
+2025-26,medium_instr1,19,19,English,15324,MAPPED
+2025-26,medium_instr1,18,18,Urdu,5094,MAPPED
+2025-26,medium_instr1,4,04,Hindi,1577,MAPPED
+2025-26,medium_instr1,5,05,Kannada,319,MAPPED
+2025-26,medium_instr1,17,17,Telugu,39,MAPPED
+2025-26,medium_instr1,3,03,Gujarati,172,MAPPED
+2025-26,medium_instr1,16,16,Tamil,33,MAPPED
+2025-26,medium_instr1,2,02,Bengali,55,MAPPED
+2025-26,medium_instr1,15,15,Sindhi,8,MAPPED

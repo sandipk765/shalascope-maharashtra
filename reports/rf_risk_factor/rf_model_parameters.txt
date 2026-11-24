@@ -1,0 +1,76 @@
+SHIKSHANDARPAN AI - RANDOM FOREST RISK FACTOR ANALYSIS
+============================================================
+
+Target: shala_score_v1 (educational condition index)
+Samples: 288
+Features: 12
+Validation: 5-fold KFold (shuffle=True, random_state=42)
+
+Model Parameters:
+  n_estimators: 300
+  max_depth: 8
+  min_samples_leaf: 3
+  max_features: 0.7
+  random_state: 42
+
+Cross-Validated Performance:
+  Mean MAE: 2.0813 (+/- 0.2556)
+  Mean RMSE: 2.6486
+  Mean R2: 0.9490
+  R2 range: [0.9353, 0.9682]
+
+Baseline Comparison (computed separately):
+  Naive baseline (mean predictor) CV MAE : 9.21
+  Random Forest CV MAE                   : ~2.08
+  Improvement over naive baseline        : 77.2%
+  (Confirms RF identifies genuine patterns, not random noise.)
+
+Methodological Note — Self-Confirmation Bias:
+  4 of 12 features (PTR, toilet %, classroom %, digital devices)
+  are the direct raw inputs used to compute shala_score_v1.
+  Their high feature importance is therefore partially self-confirming.
+  The 8 remaining features provide context about which non-score-input
+  indicators also associate with educational conditions.
+
+Feature Importance Ranking:
+   1. good_classroom_pct_raw                        importance=0.3301 (+/- 0.2957)
+   2. facility_classrooms_needing_repair_pct        importance=0.2536 (+/- 0.2843)
+   3. functional_toilet_pct_raw                     importance=0.1338 (+/- 0.0517)
+   4. ptr_students_per_teacher_raw                  importance=0.1176 (+/- 0.0390)
+   5. digital_devices_per_school_raw                importance=0.0879 (+/- 0.1504)
+   6. district_female_teacher_pct                   importance=0.0363 (+/- 0.0458)
+   7. school_count                                  importance=0.0096 (+/- 0.0158)
+   8. district_computer_trained_teacher_pct         importance=0.0071 (+/- 0.0088)
+   9. district_contract_teacher_pct                 importance=0.0069 (+/- 0.0121)
+  10. enrollment_reported_student_total             importance=0.0065 (+/- 0.0087)
+  11. score_teacher_total_derived                   importance=0.0055 (+/- 0.0215)
+  12. district_regular_teacher_pct                  importance=0.0053 (+/- 0.0130)
+
+Missing-Value Report:
+  school_count: 0/288 (0.0%) missing
+  enrollment_reported_student_total: 0/288 (0.0%) missing
+  score_teacher_total_derived: 0/288 (0.0%) missing
+  ptr_students_per_teacher_raw: 0/288 (0.0%) missing
+  functional_toilet_pct_raw: 0/288 (0.0%) missing
+  good_classroom_pct_raw: 0/288 (0.0%) missing
+  digital_devices_per_school_raw: 0/288 (0.0%) missing
+  facility_classrooms_needing_repair_pct: 0/288 (0.0%) missing
+  district_female_teacher_pct: 144/288 (50.0%) missing
+  district_regular_teacher_pct: 144/288 (50.0%) missing
+  district_contract_teacher_pct: 144/288 (50.0%) missing
+  district_computer_trained_teacher_pct: 144/288 (50.0%) missing
+  shala_score_v1: 0/288 (0.0%) missing
+
+Imputation:
+  district_female_teacher_pct: filled with median 40.2845
+  district_regular_teacher_pct: filled with median 91.5280
+  district_contract_teacher_pct: filled with median 7.8880
+  district_computer_trained_teacher_pct: filled with median 57.4775
+
+============================================================
+IMPORTANT: This model identifies indicators ASSOCIATED with
+educational conditions (Shala Score). It does NOT predict
+dropout — no dropout data exists in the dataset. Feature
+importance indicates statistical association, not proven
+causation.
+============================================================

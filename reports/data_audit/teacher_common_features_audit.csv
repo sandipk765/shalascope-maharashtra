@@ -1,0 +1,9 @@
+﻿academic_year,records,unique_school_ids,total_teachers,computer_trained_teachers,computer_training_share_pct,gender_mismatches,computer_over_total,output_file,status
+2018-19,109942,109942,770125,374513,48.63,0,0,data\processed\school_year_features\teacher\maharashtra_teacher_features_2018-19.csv,PASS
+2019-20,110229,110229,783847,435225,55.52,0,0,data\processed\school_year_features\teacher\maharashtra_teacher_features_2019-20.csv,PASS
+2020-21,110114,110114,766916,454909,59.32,0,0,data\processed\school_year_features\teacher\maharashtra_teacher_features_2020-21.csv,PASS
+2021-22,109605,109605,748589,470636,62.87,0,0,data\processed\school_year_features\teacher\maharashtra_teacher_features_2021-22.csv,PASS
+2022-23,108451,108451,742316,498123,67.1,0,0,data\processed\school_year_features\teacher\maharashtra_teacher_features_2022-23.csv,PASS
+2023-24,108237,108237,738114,516793,70.02,0,0,data\processed\school_year_features\teacher\maharashtra_teacher_features_2023-24.csv,PASS
+2024-25,108250,108250,747501,538337,72.02,0,0,data\processed\school_year_features\teacher\maharashtra_teacher_features_2024-25.csv,PASS
+2025-26,108139,108139,750272,552448,73.63,0,0,data\processed\school_year_features\teacher\maharashtra_teacher_features_2025-26.csv,PASS

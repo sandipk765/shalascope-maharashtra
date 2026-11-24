@@ -1,0 +1,40 @@
+SHALASCOPE MAHARASHTRA - 2026-27 FORECAST
+
+Source historical data: 2018-19 to 2025-26.
+Forecast period: 2026-27.
+Geographic coverage: 36 Maharashtra districts.
+
+Model selection rule:
+A complex model is eligible when its overall MAE skill
+against Persistence is positive and it wins at least
+four of the five chronological validation folds.
+Otherwise Persistence is selected.
+
+Selected model is based on the V2 baseline evaluation.
+Student enrollment: Persistence.
+Teacher forecast: Persistence.
+Functional toilets: Persistence.
+Good classrooms: Persistence.
+Digital readiness: District linear trend.
+
+Persistence uses the latest 2025-26 observed value.
+Digital trend uses historical target-year observations
+available through 2025-26 and extrapolates to 2026-27.
+
+Historical error ranges use pooled out-of-fold residual
+P10 and P90 quantiles from 2021-22 to 2025-26.
+These are empirical error ranges, not formal prediction
+intervals and do not guarantee 80 percent coverage.
+
+Future Shala Score is derived from forecast raw indicators.
+Historical V1 P5-P95 parameters are frozen and reused.
+Teacher score uses forecast students per teacher.
+Infrastructure score is the mean of toilet and classroom scores.
+Digital score uses forecast devices per reporting school.
+All three pillars have equal weights.
+
+Relative performance bands use historical V1 score quartiles.
+They are descriptive categories, not risk probabilities.
+
+Forecasts are experimental and not official government estimates.
+No student learning outcome or causal impact is inferred.

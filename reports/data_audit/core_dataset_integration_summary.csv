@@ -1,0 +1,2 @@
+﻿base_rows,facility_rows,merged_rows,expected_rows,unique_districts,academic_years,base_columns,facility_source_columns,merged_columns,matched_facility_rows,unmatched_facility_rows,school_count_comparable_records,school_count_mismatches,duplicate_district_year_records,status
+288,288,288,288,36,8,480,48,528,288,0,288,0,0,PASS

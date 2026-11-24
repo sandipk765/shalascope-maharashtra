@@ -1,0 +1,53 @@
+﻿category,source_field,code,meaning,applicability_or_note,evidence
+profile_1,rural_urban,1,Rural,School location,DSP_Schema.pdf page 3
+profile_1,rural_urban,2,Urban,School location,DSP_Schema.pdf page 3
+profile_1,school_category,1,Primary Only (1-5),School category,DSP_Schema.pdf page 3
+profile_1,school_category,2,Primary with Upper Primary (1-8),School category,DSP_Schema.pdf page 3
+profile_1,school_category,3,"Primary with Upper Primary, Secondary and Higher Secondary (1-12)",School category,DSP_Schema.pdf page 3
+profile_1,school_category,4,Upper Primary Only (6-8),School category,DSP_Schema.pdf page 3
+profile_1,school_category,5,"Upper Primary, Secondary and Higher Secondary (6-12)",School category,DSP_Schema.pdf page 3
+profile_1,school_category,6,"Primary, Upper Primary and Secondary Only (1-10)",School category,DSP_Schema.pdf page 3
+profile_1,school_category,7,Upper Primary and Secondary (6-10),School category,DSP_Schema.pdf page 3
+profile_1,school_category,8,Secondary Only (9-10),School category,DSP_Schema.pdf page 3
+profile_1,school_category,10,Secondary with Higher Secondary (9-12),School category,DSP_Schema.pdf page 3
+profile_1,school_category,11,Higher Secondary Only / Junior College (11-12),School category,DSP_Schema.pdf page 3
+profile_1,school_type,1,Boys,Type of school,DSP_Schema.pdf page 3
+profile_1,school_type,2,Girls,Type of school,DSP_Schema.pdf page 3
+profile_1,school_type,3,Co-educational,Type of school,DSP_Schema.pdf page 3
+profile_1,managment,1,Department of Education,School management,DSP_Schema.pdf page 3
+profile_1,managment,2,Tribal Welfare Department,School management,DSP_Schema.pdf page 3
+profile_1,managment,3,Local Body,School management,DSP_Schema.pdf page 3
+profile_1,managment,4,Government aided,School management,DSP_Schema.pdf page 3
+profile_1,managment,5,Private unaided (Recognized),School management,DSP_Schema.pdf page 3
+profile_1,managment,6,Other Government Managed Schools,School management,DSP_Schema.pdf page 3
+profile_1,managment,8,Unrecognized,School management,DSP_Schema.pdf page 3
+profile_1,managment,90,Social Welfare Department,School management,DSP_Schema.pdf page 3
+profile_1,managment,91,Ministry of Labour,School management,DSP_Schema.pdf page 3
+profile_1,managment,92,Central School,School management,DSP_Schema.pdf page 3
+profile_1,managment,93,Jawahar Navodaya Vidyalaya,School management,DSP_Schema.pdf page 3
+profile_1,managment,94,Sainik School,School management,DSP_Schema.pdf page 3
+profile_1,managment,95,Railway School,School management,DSP_Schema.pdf page 3
+profile_1,managment,96,Central Tibetan School,School management,DSP_Schema.pdf page 3
+profile_1,managment,97,Madarsa Recognized (Wakf Board/Madarsa Board),School management,DSP_Schema.pdf page 3
+profile_1,managment,98,Madarsa Unrecognized,School management,DSP_Schema.pdf page 3
+facility,building_status,1,Private,School building status,DSP_Schema.pdf pages 10-11
+facility,building_status,2,Rented,School building status,DSP_Schema.pdf pages 10-11
+facility,building_status,3,Government,School building status,DSP_Schema.pdf pages 10-11
+facility,building_status,4,Government school in rent-free building,School building status,DSP_Schema.pdf pages 10-11
+facility,building_status,5,No building,School building status,DSP_Schema.pdf pages 10-11
+facility,building_status,7,Building under construction,School building status,DSP_Schema.pdf pages 10-11
+facility,building_status,10,School running in other Department building,School building status,DSP_Schema.pdf pages 10-11
+general_note,coded_smallint_fields,9,Not Applicable,Apply only where source field is coded; never convert count=9 to missing automatically.,"DSP_Schema.pdf pages 2, 8, 10, 13, 15"
+teacher,teacher_social_category,1,General,Teacher social category code legend shown in PDF,DSP_Schema.pdf page 13
+teacher,teacher_social_category,2,SC,Teacher social category code legend shown in PDF,DSP_Schema.pdf page 13
+teacher,teacher_social_category,3,ST,Teacher social category code legend shown in PDF,DSP_Schema.pdf page 13
+teacher,teacher_social_category,4,OBC,Teacher social category code legend shown in PDF,DSP_Schema.pdf page 13
+teacher,teacher_social_category,5,ORC,Teacher social category code legend shown in PDF,DSP_Schema.pdf page 13
+teacher,teacher_social_category,6,Other,Teacher social category code legend shown in PDF,DSP_Schema.pdf page 13
+teacher,teacher_type,1,Head Teacher,Teacher type code legend shown in PDF,DSP_Schema.pdf page 14
+teacher,teacher_type,2,Acting Head Teacher,Teacher type code legend shown in PDF,DSP_Schema.pdf page 14
+teacher,teacher_type,3,Teacher,Teacher type code legend shown in PDF,DSP_Schema.pdf page 14
+teacher,teacher_type,4,Instructor positioned as per RTE,Teacher type code legend shown in PDF,DSP_Schema.pdf page 14
+teacher,teacher_type,5,Principal,Teacher type code legend shown in PDF,DSP_Schema.pdf page 14
+teacher,teacher_type,6,Vice-Principal,Teacher type code legend shown in PDF,DSP_Schema.pdf page 14
+teacher,teacher_type,8,Lecturer,Teacher type code legend shown in PDF,DSP_Schema.pdf page 14

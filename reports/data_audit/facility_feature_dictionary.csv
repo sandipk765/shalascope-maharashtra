@@ -1,0 +1,12 @@
+﻿feature,source_fields,method,note
+total_toilet_count,total_boys_toilet + total_girls_toilet,Sum of boys and girls toilet counts,Numeric count feature
+functional_toilet_count,total_boys_func_toilet + total_girls_func_toilet,Sum of functional toilet counts,Numeric count feature
+functional_toilet_pct,functional_toilet_count / total_toilet_count,Percentage; invalid numerator greater than denominator excluded,Missing values are not converted to zero
+usable_total_building_blocks,no_building_blocks,Source total after structural quality exclusions,Entire 2024-25 field excluded; inconsistent 2021-22 rows excluded
+pucca_building_block_pct,pucca_building_blocks / usable_total_building_blocks,Percentage,Only calculated when numerator does not exceed denominator
+usable_total_classrooms,total_class_rooms,Source total after structural quality exclusions,Entire 2024-25 field excluded; 2021-22 zero-total exceptions excluded
+classrooms_condition_reported_count,classrooms_in_good_condition + classrooms_needs_minor_repair + classrooms_needs_major_repair,Sum of reported condition categories,Independent of the suspect total_class_rooms field
+classrooms_needing_repair_pct,minor repair + major repair / condition reported count,Percentage among reported condition counts,Not a percentage of total classrooms
+total_digital_devices,desktop + laptop + tablet,Sum when all three source components are available,Missing components are not treated as zero
+printer_count,printer,Numeric count,Raw count retained separately
+projector_count,projector,Numeric count,Raw count retained separately

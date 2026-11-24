@@ -1,0 +1,6 @@
+﻿scenario,q25,q50,q75,critical_records,high_records,moderate_records,low_records,interpretation
+equal_33_33_33,29.9842514426569,36.59076480700873,43.722342832450046,72,72,72,72,Relative historical quartile bands
+teacher_50_25_25,33.18126904929718,39.80012740820358,46.72408150556866,72,72,72,72,Relative historical quartile bands
+infrastructure_25_50_25,32.84628424823798,39.26864041891517,47.04589022710017,72,72,72,72,Relative historical quartile bands
+digital_25_25_50,24.478305302061845,30.00873421367794,36.38997389520787,72,72,72,72,Relative historical quartile bands
+balanced_40_40_20,34.71277043659634,41.259986606301354,48.710647158434774,72,72,72,72,Relative historical quartile bands

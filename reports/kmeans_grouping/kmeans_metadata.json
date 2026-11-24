@@ -1,0 +1,84 @@
+{
+  "optimal_k": 2,
+  "best_silhouette": 0.4286838250989676,
+  "random_state": 42,
+  "features": [
+    "ptr_students_per_teacher_raw",
+    "functional_toilet_pct_raw",
+    "good_classroom_pct_raw",
+    "digital_devices_per_school_raw",
+    "facility_classrooms_needing_repair_pct"
+  ],
+  "feature_labels": {
+    "ptr_students_per_teacher_raw": "Students per Teacher",
+    "functional_toilet_pct_raw": "Functional Toilet %",
+    "good_classroom_pct_raw": "Good Classroom %",
+    "digital_devices_per_school_raw": "Digital Devices / School",
+    "facility_classrooms_needing_repair_pct": "Classrooms Needing Repair %"
+  },
+  "evaluation": [
+    {
+      "k": 2,
+      "inertia": 106.45005567853192,
+      "silhouette": 0.4286838250989676
+    },
+    {
+      "k": 3,
+      "inertia": 76.94807155764818,
+      "silhouette": 0.262491829627854
+    },
+    {
+      "k": 4,
+      "inertia": 55.1641407097766,
+      "silhouette": 0.2918076831912669
+    },
+    {
+      "k": 5,
+      "inertia": 42.1439164707399,
+      "silhouette": 0.2947590033322151
+    },
+    {
+      "k": 6,
+      "inertia": 34.95917147494566,
+      "silhouette": 0.3626113601679226
+    },
+    {
+      "k": 7,
+      "inertia": 29.198185107836693,
+      "silhouette": 0.2453580069859485
+    },
+    {
+      "k": 8,
+      "inertia": 22.75350795121723,
+      "silhouette": 0.2807440408999839
+    }
+  ],
+  "cluster_labels": {
+    "0": "Strong Educational Conditions",
+    "1": "Priority Support Required"
+  },
+  "cluster_summary": [
+    {
+      "cluster": 0,
+      "descriptive_label": "Strong Educational Conditions",
+      "district_count": 9,
+      "mean_shala_score": 48.44,
+      "ptr_students_per_teacher_raw": 32.59,
+      "functional_toilet_pct_raw": 97.91,
+      "good_classroom_pct_raw": 93.86,
+      "digital_devices_per_school_raw": 13.42,
+      "facility_classrooms_needing_repair_pct": 6.14
+    },
+    {
+      "cluster": 1,
+      "descriptive_label": "Priority Support Required",
+      "district_count": 27,
+      "mean_shala_score": 34.98,
+      "ptr_students_per_teacher_raw": 26.75,
+      "functional_toilet_pct_raw": 95.24,
+      "good_classroom_pct_raw": 86.9,
+      "digital_devices_per_school_raw": 4.38,
+      "facility_classrooms_needing_repair_pct": 13.1
+    }
+  ]
+}

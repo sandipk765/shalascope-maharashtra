@@ -1,0 +1,13 @@
+﻿item,method
+Scope,Relative school-conditions index; not a government score or learning-outcome measure
+Teacher Strength,Students per teacher; lower is better; teacher total derived from sex-wise teacher totals
+Infrastructure,Mean of normalized functional toilet % and good-condition classroom %
+Digital Readiness,Average digital devices per reporting school; not proof of functionality or student access
+Pillar weights,Teacher 33.33%; Infrastructure 33.33%; Digital 33.33%
+Infrastructure sub-weights,Functional toilets 50%; good-condition classrooms 50%
+Normalization,Pooled P5-P95 winsorized min-max across 288 District-Year rows
+Missing data,No zero imputation; missing required inputs prevent affected score calculation
+Student support,Textbook/uniform ratios are context-only until eligible-student denominator is verified
+Governance,Inspections/visits remain context-only; more visits are not automatically better outcomes
+Relative risk classes,"Pooled historical score quartiles; descriptive classes, not predicted probabilities"
+Future ML validation,Fit normalization on training data only to prevent temporal data leakage

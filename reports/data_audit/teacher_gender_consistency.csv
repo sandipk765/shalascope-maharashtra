@@ -1,0 +1,9 @@
+﻿academic_year,source_file,rows_scanned,school_id_available,gender_columns_found,missing_gender_columns,gender_rows_checked,matched_rows,mismatched_rows,incomplete_rows,blank_rows,malformed_rows,status,mismatch_examples
+2018-19,127_tch.csv,109942,True,total;male;female;transgender,,109942,109942,0,0,0,0,PASS,
+2019-20,127_tch.csv,110229,True,total;male;female;transgender,,110229,110229,0,0,0,0,PASS,
+2020-21,127_tch.csv,110114,True,total;male;female;transgender,,110114,110114,0,0,0,0,PASS,
+2021-22,127_tch.csv,109605,True,total;male;female;transgender,,109605,109605,0,0,0,0,PASS,
+2022-23,27_tch.csv,108451,True,total;male;female;transgender,,108451,108451,0,0,0,0,PASS,
+2023-24,27_tch.csv,108237,True,total;male;female;transgender,,108237,108237,0,0,0,0,PASS,
+2024-25,27_tch.csv,108250,True,total;male;female;transgender,,108250,108250,0,0,0,0,PASS,
+2025-26,27_tch.csv,108139,True,total;male;female;transgender,,108139,108139,0,0,0,0,PASS,

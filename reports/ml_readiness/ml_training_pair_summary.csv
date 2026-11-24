@@ -1,0 +1,6 @@
+﻿prediction,target_column,description,possible_transitions,target_available,complete_feature_rows,model_ready_rows,rows_excluded,status
+student_enrollment,enrollment_reported_student_total,Next academic year's reported student total,252,252,252,252,0,READY FOR MODEL DESIGN
+teacher_forecast,score_teacher_total_derived,Next academic year's teacher headcount,252,252,252,252,0,READY FOR MODEL DESIGN
+infrastructure_toilet,functional_toilet_pct_raw,Next academic year's functional toilet percentage,252,252,252,252,0,READY FOR MODEL DESIGN
+infrastructure_classroom,good_classroom_pct_raw,Next academic year's good-condition classroom percentage,252,252,252,252,0,READY FOR MODEL DESIGN
+digital_readiness,digital_devices_per_school_raw,Next academic year's digital devices per reporting school,252,252,252,252,0,READY FOR MODEL DESIGN

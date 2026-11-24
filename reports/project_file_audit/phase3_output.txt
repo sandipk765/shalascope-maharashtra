@@ -1,0 +1,136 @@
+
+[1/7] ZIP integrity audit ...
+  [OK] 2018-19 | enrolment_data_1_Maharashtra_2018-19.zip             |   9.82 MB | entries=1
+  [OK] 2018-19 | enrolment_data_2_Maharashtra_2018-19.zip             |  10.37 MB | entries=1
+  [OK] 2018-19 | facility_data_Maharashtra_2018-19.zip                |   2.08 MB | entries=1
+  [OK] 2018-19 | profile_data_1_Maharashtra_2018-19.zip               |   3.60 MB | entries=1
+  [OK] 2018-19 | profile_data_2_Maharashtra_2018-19.zip               |   1.63 MB | entries=1
+  [OK] 2018-19 | teacher_data_Maharashtra_2018-19.zip                 |   1.57 MB | entries=1
+  [OK] 2019-20 | enrolment_data_1_Maharashtra_2019-20.zip             |  10.50 MB | entries=1
+  [OK] 2019-20 | enrolment_data_2_Maharashtra_2019-20.zip             |  10.28 MB | entries=1
+  [OK] 2019-20 | facility_data_Maharashtra_2019-20.zip                |   2.10 MB | entries=1
+  [OK] 2019-20 | profile_data_1_Maharashtra_2019-20.zip               |   4.49 MB | entries=1
+  [OK] 2019-20 | profile_data_2_Maharashtra_2019-20.zip               |   1.47 MB | entries=1
+  [OK] 2019-20 | teacher_data_Maharashtra_2019-20.zip                 |   1.54 MB | entries=1
+  [OK] 2020-21 | enrolment_data_1_Maharashtra_2020-21.zip             |  10.98 MB | entries=1
+  [OK] 2020-21 | enrolment_data_2_Maharashtra_2020-21.zip             |  10.15 MB | entries=1
+  [OK] 2020-21 | facility_data_Maharashtra_2020-21.zip                |   2.11 MB | entries=1
+  [OK] 2020-21 | profile_data_1_Maharashtra_2020-21.zip               |   4.51 MB | entries=1
+  [OK] 2020-21 | profile_data_2_Maharashtra_2020-21.zip               |   1.49 MB | entries=1
+  [OK] 2020-21 | teacher_data_Maharashtra_2020-21.zip                 |   1.50 MB | entries=1
+  [OK] 2021-22 | enrolment_data_1_Maharashtra_2021-22.zip             |  10.33 MB | entries=1
+  [OK] 2021-22 | enrolment_data_2_Maharashtra_2021-22.zip             |  10.21 MB | entries=1
+  [OK] 2021-22 | facility_data_Maharashtra_2021-22.zip                |   2.09 MB | entries=1
+  [OK] 2021-22 | profile_data_1_Maharashtra_2021-22.zip               |   4.30 MB | entries=1
+  [OK] 2021-22 | profile_data_2_Maharashtra_2021-22.zip               |   1.44 MB | entries=1
+  [OK] 2021-22 | teacher_data_Maharashtra_2021-22.zip                 |   1.50 MB | entries=1
+  [OK] 2022-23 | enrolment_data_1_MAHARASHTRA_2022-23.zip             |   6.08 MB | entries=1
+  [OK] 2022-23 | enrolment_data_2_MAHARASHTRA_2022-23.zip             |   6.11 MB | entries=1
+  [OK] 2022-23 | facility_data_MAHARASHTRA_2022-23.zip                |   2.53 MB | entries=1
+  [OK] 2022-23 | profile_data_1_MAHARASHTRA_2022-23.zip               |   3.68 MB | entries=1
+  [OK] 2022-23 | profile_data_2_MAHARASHTRA_2022-23.zip               |   1.01 MB | entries=1
+  [OK] 2022-23 | teacher_data_MAHARASHTRA_2022-23.zip                 |   1.58 MB | entries=1
+  [OK] 2023-24 | enrolment_data_1_MAHARASHTRA_2023-24.zip             |   6.42 MB | entries=1
+  [OK] 2023-24 | enrolment_data_2_MAHARASHTRA_2023-24.zip             |   6.16 MB | entries=1
+  [OK] 2023-24 | facility_data_MAHARASHTRA_2023-24.zip                |   2.57 MB | entries=1
+  [OK] 2023-24 | profile_data_1_MAHARASHTRA_2023-24.zip               |   3.73 MB | entries=1
+  [OK] 2023-24 | profile_data_2_MAHARASHTRA_2023-24.zip               |   1.03 MB | entries=1
+  [OK] 2023-24 | teacher_data_MAHARASHTRA_2023-24.zip                 |   1.57 MB | entries=1
+  [OK] 2024-25 | enrolment_data_1_MAHARASHTRA_2024-25.zip             |   6.39 MB | entries=1
+  [OK] 2024-25 | enrolment_data_2_MAHARASHTRA_2024-25.zip             |   6.13 MB | entries=1
+  [OK] 2024-25 | facility_data_MAHARASHTRA_2024-25.zip                |   2.57 MB | entries=1
+  [OK] 2024-25 | profile_data_1_MAHARASHTRA_2024-25.zip               |   3.54 MB | entries=1
+  [OK] 2024-25 | profile_data_2_MAHARASHTRA_2024-25.zip               |   1.04 MB | entries=1
+  [OK] 2024-25 | teacher_data_MAHARASHTRA_2024-25.zip                 |   1.61 MB | entries=1
+  [OK] 2025-26 | enrolment_data_1_MAHARASHTRA_2025-26.zip             |   7.49 MB | entries=1
+  [OK] 2025-26 | enrolment_data_2_MAHARASHTRA_2025-26 (1).zip         |   6.72 MB | entries=1
+  [OK] 2025-26 | facility_data_MAHARASHTRA_2025-26.zip                |   2.97 MB | entries=1
+  [OK] 2025-26 | profile_data_1_MAHARASHTRA_2025-26 (1).zip           |   4.21 MB | entries=1
+  [OK] 2025-26 | profile_data_2_MAHARASHTRA_2025-26.zip               |   1.03 MB | entries=1
+  [OK] 2025-26 | safety_MAHARASHTRA_2025-26.zip                       |   0.89 MB | entries=1
+  [OK] 2025-26 | teacher_data_MAHARASHTRA_2025-26 (1).zip             |   1.62 MB | entries=1
+
+  ZIP summary: 49 OK | 0 FAIL out of 49
+
+[2/7] Extracted CSV schema audit ...
+  Found 49 extracted CSV files
+  [PASS] 2018-19 | 127_enr1.csv                                  | rows=1,429,246 | cols=28 | missing_cols=0 | dups=0
+  [PASS] 2018-19 | 127_enr2.csv                                  | rows=2,198,840 | cols=28 | missing_cols=0 | dups=0
+  [PASS] 2018-19 | 127_fac.csv                                   | rows=109,942 | cols=41 | missing_cols=0 | dups=0
+  [PASS] 2018-19 | 127_prof1.csv                                 | rows=109,942 | cols=53 | missing_cols=10 | dups=0
+  [PASS] 2018-19 | 127_prof2.csv                                 | rows=109,942 | cols=63 | missing_cols=0 | dups=0
+  [PASS] 2018-19 | 127_tch.csv                                   | rows=109,942 | cols=32 | missing_cols=0 | dups=0
+  [PASS] 2019-20 | 127_enr1.csv                                  | rows=1,543,206 | cols=28 | missing_cols=0 | dups=0
+  [PASS] 2019-20 | 127_enr2.csv                                  | rows=2,204,580 | cols=28 | missing_cols=0 | dups=0
+  [PASS] 2019-20 | 127_fac.csv                                   | rows=110,229 | cols=41 | missing_cols=0 | dups=0
+  [PASS] 2019-20 | 127_prof1.csv                                 | rows=110,229 | cols=53 | missing_cols=7 | dups=0
+  [PASS] 2019-20 | 127_prof2.csv                                 | rows=110,229 | cols=63 | missing_cols=0 | dups=0
+  [PASS] 2019-20 | 127_tch.csv                                   | rows=110,229 | cols=32 | missing_cols=0 | dups=0
+  [PASS] 2020-21 | 127_enr1.csv                                  | rows=1,651,710 | cols=28 | missing_cols=0 | dups=0
+  [PASS] 2020-21 | 127_enr2.csv                                  | rows=2,202,280 | cols=28 | missing_cols=0 | dups=0
+  [PASS] 2020-21 | 127_fac.csv                                   | rows=110,114 | cols=41 | missing_cols=0 | dups=0
+  [PASS] 2020-21 | 127_prof1.csv                                 | rows=110,114 | cols=53 | missing_cols=8 | dups=0
+  [PASS] 2020-21 | 127_prof2.csv                                 | rows=110,114 | cols=63 | missing_cols=0 | dups=0
+  [PASS] 2020-21 | 127_tch.csv                                   | rows=110,114 | cols=32 | missing_cols=0 | dups=0
+  [PASS] 2021-22 | 127_enr1.csv                                  | rows=1,534,470 | cols=28 | missing_cols=0 | dups=0
+  [PASS] 2021-22 | 127_enr2.csv                                  | rows=2,192,100 | cols=28 | missing_cols=1 | dups=0
+  [PASS] 2021-22 | 127_fac.csv                                   | rows=109,605 | cols=41 | missing_cols=0 | dups=0
+  [PASS] 2021-22 | 127_prof1.csv                                 | rows=109,605 | cols=54 | missing_cols=8 | dups=0
+  [PASS] 2021-22 | 127_prof2.csv                                 | rows=109,605 | cols=63 | missing_cols=0 | dups=0
+  [PASS] 2021-22 | 127_tch.csv                                   | rows=109,605 | cols=32 | missing_cols=0 | dups=0
+  [PASS] 2022-23 | 27_enr1.csv                                   | rows=640,096 | cols=29 | missing_cols=0 | dups=0
+  [PASS] 2022-23 | 27_enr2.csv                                   | rows=795,670 | cols=29 | missing_cols=0 | dups=0
+  [PASS] 2022-23 | 27_fac.csv                                    | rows=108,451 | cols=70 | missing_cols=0 | dups=0
+  [PASS] 2022-23 | 27_prof1.csv                                  | rows=108,451 | cols=38 | missing_cols=5 | dups=0
+  [PASS] 2022-23 | 27_prof2.csv                                  | rows=108,451 | cols=17 | missing_cols=0 | dups=0
+  [PASS] 2022-23 | 27_tch.csv                                    | rows=108,451 | cols=38 | missing_cols=0 | dups=0
+  [PASS] 2023-24 | 27_enr1.csv                                   | rows=682,557 | cols=29 | missing_cols=0 | dups=0
+  [PASS] 2023-24 | 27_enr2.csv                                   | rows=803,239 | cols=29 | missing_cols=0 | dups=0
+  [PASS] 2023-24 | 27_fac.csv                                    | rows=108,237 | cols=70 | missing_cols=0 | dups=0
+  [PASS] 2023-24 | 27_prof1.csv                                  | rows=108,237 | cols=38 | missing_cols=5 | dups=0
+  [PASS] 2023-24 | 27_prof2.csv                                  | rows=108,237 | cols=17 | missing_cols=0 | dups=0
+  [PASS] 2023-24 | 27_tch.csv                                    | rows=108,237 | cols=38 | missing_cols=0 | dups=0
+  [PASS] 2024-25 | 27_enr1.csv                                   | rows=679,513 | cols=29 | missing_cols=0 | dups=0
+  [PASS] 2024-25 | 27_enr2.csv                                   | rows=803,392 | cols=29 | missing_cols=0 | dups=0
+  [PASS] 2024-25 | 27_fac.csv                                    | rows=108,250 | cols=70 | missing_cols=0 | dups=0
+  [PASS] 2024-25 | 27_prof1.csv                                  | rows=108,250 | cols=38 | missing_cols=6 | dups=0
+  [PASS] 2024-25 | 27_prof2.csv                                  | rows=108,250 | cols=17 | missing_cols=0 | dups=0
+  [PASS] 2024-25 | 27_tch.csv                                    | rows=108,250 | cols=38 | missing_cols=0 | dups=0
+  [PASS] 2025-26 | 27_enr1.csv                                   | rows=715,544 | cols=42 | missing_cols=0 | dups=0
+  [PASS] 2025-26 | 27_enr2.csv                                   | rows=808,216 | cols=42 | missing_cols=0 | dups=0
+  [PASS] 2025-26 | 27_fac.csv                                    | rows=108,139 | cols=82 | missing_cols=1 | dups=0
+  [PASS] 2025-26 | 27_prof1.csv                                  | rows=108,139 | cols=49 | missing_cols=5 | dups=0
+  [PASS] 2025-26 | 27_prof2.csv                                  | rows=108,139 | cols=17 | missing_cols=0 | dups=0
+  [PASS] 2025-26 | 27_safety.csv                                 | rows=108,139 | cols=22 | missing_cols=0 | dups=0
+  [PASS] 2025-26 | 27_tch.csv                                    | rows=108,139 | cols=38 | missing_cols=0 | dups=0
+
+[3/7] District-year coverage from processed master ...
+  2018-19: 36 districts | PASS
+  2019-20: 36 districts | PASS
+  2020-21: 36 districts | PASS
+  2021-22: 36 districts | PASS
+  2022-23: 36 districts | PASS
+  2023-24: 36 districts | PASS
+  2024-25: 36 districts | PASS
+  2025-26: 36 districts | PASS
+
+[4/7] Writing audit reports ...
+  Reports written.
+
+=================================================================
+PHASE 3 RAW DATA AUDIT - FINAL SUMMARY
+=================================================================
+ZIP files checked         : 49
+ZIP OK                    : 49
+ZIP FAIL/CORRUPT          : 0
+Extracted CSVs checked    : 49
+CSV READ ERRORS           : 0
+CSV WARNINGS              : 0
+CSV PASS                  : 49
+Total missing-value cols  : 56
+Files with duplicate rows : 0
+Invalid value records     : 0
+Coverage years checked    : 8
+
+Report folder: c:\Users\userp\Desktop\ShalaScope_Maharashtra\reports\data_audit
+STATUS: PHASE 3 COMPLETE

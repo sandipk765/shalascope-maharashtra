@@ -1,0 +1,9 @@
+﻿academic_year,source_file,school_id_column,total_records,unique_school_ids,missing_school_ids,missing_percentage,duplicate_id_count,duplicate_rows,duplicate_excess_rows,malformed_rows,status
+2018-19,127_tch.csv,psuedocode,109942,109942,0,0.0,0,0,0,0,PASS
+2019-20,127_tch.csv,psuedocode,110229,110229,0,0.0,0,0,0,0,PASS
+2020-21,127_tch.csv,psuedocode,110114,110114,0,0.0,0,0,0,0,PASS
+2021-22,127_tch.csv,psuedocode,109605,109605,0,0.0,0,0,0,0,PASS
+2022-23,27_tch.csv,pseudocode,108451,108451,0,0.0,0,0,0,0,PASS
+2023-24,27_tch.csv,pseudocode,108237,108237,0,0.0,0,0,0,0,PASS
+2024-25,27_tch.csv,pseudocode,108250,108250,0,0.0,0,0,0,0,PASS
+2025-26,27_tch.csv,pseudocode,108139,108139,0,0.0,0,0,0,0,PASS
