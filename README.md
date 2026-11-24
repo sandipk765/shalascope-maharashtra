@@ -109,45 +109,6 @@ Train: 2018-19 → 2023-24 (216 rows) · Test: 2024-25 (36 rows)
 
 ---
 
-## Quick Start
-
-> Requires Python 3.11 · Windows PowerShell.
-
-```powershell
-git clone https://github.com/sandipk765/shalascope-maharashtra.git
-cd shalascope-maharashtra
-
-python -m venv .venv
-.venv\Scripts\Activate.ps1
-pip install -r requirements.txt
-
-python -m pytest tests/ -v          # expect: 60 passed, 1 warning
-streamlit run dashboard/app.py
-```
-
-> `data/extracted/` is excluded from the repo via `.gitignore`.
-> The dashboard reads from `data/processed/district_year/` which is included.
-
----
-
-## Project Structure
-
-```
-shalascope-maharashtra/
-├── dashboard/      Streamlit app — 6 pages, 2 189 lines
-├── data/           processed/district_year/ only (extracted/ excluded)
-├── docs/           data_log.md/.xlsx — column audit (14 available, 12 missing)
-├── models/         5 × .joblib artifacts (M1–M5)
-├── notebooks/      01–05 exploratory notebooks
-├── reports/        explainability/, models/, score_design/
-├── src/            aggregation/, core/, features/, models/, explainability/,
-│                   prescriptive.py, features.py
-├── tests/          60 tests across test_regions, test_score_v2, test_prescriptive
-└── requirements.txt
-```
-
----
-
 ## Limitations
 
 - **No learning outcome data.** NAS/ASER/GER/dropout are absent from UDISE+. M2 and M5 use documented proxies.
