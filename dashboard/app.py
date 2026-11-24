@@ -1016,139 +1016,33 @@ st.html(
     '</div>'
 )
 
+# PAGE: OVERVIEW
 # ===========================================================================
-# PAGE: HOME
-# ===========================================================================
-if page == "Home":
+if page == "Overview":
 
-    # ── Full-width hero banner ────────────────────────────────────────────
+    # ── Hero banner ───────────────────────────────────────────────────────
     st.html(
-        '<div style="'
-        'background:linear-gradient(135deg,#0D1424 0%,#0F1E38 55%,#091628 100%);'
-        'border:1px solid #1E2D45;border-radius:12px;'
-        'padding:36px 40px 32px;margin-bottom:4px;">'
-
-        '<div style="font-size:9px;letter-spacing:3px;font-weight:700;'
-        'color:#38BDF8;text-transform:uppercase;margin-bottom:12px">'
+        '<div style="background:linear-gradient(135deg,#0D1424 0%,#0F1E38 55%,#091628 100%);'
+        'border:1px solid #1E2D45;border-radius:12px;padding:28px 36px 22px;margin-bottom:4px;">'
+        '<div style="font-size:9px;letter-spacing:3px;font-weight:700;color:#38BDF8;text-transform:uppercase;margin-bottom:10px">'
         'Maharashtra School Education Intelligence</div>'
-
-        '<h1 style="font-size:clamp(28px,4vw,46px);font-weight:800;'
-        'color:#F1F5F9;line-height:1.1;margin:0 0 14px;letter-spacing:-.6px">'
+        '<h1 style="font-size:clamp(22px,3vw,36px);font-weight:800;color:#F1F5F9;line-height:1.1;margin:0 0 10px;letter-spacing:-.5px">'
         'ShalaScope Maharashtra</h1>'
-
-        '<p style="font-size:14px;color:#94A3B8;line-height:1.65;'
-        'max-width:680px;margin:0 0 20px">'
-        'District-level school education analytics for all 36 Maharashtra districts, '
+        '<p style="font-size:13px;color:#94A3B8;line-height:1.6;max-width:680px;margin:0 0 14px">'
+        'District-level education analytics for all 36 Maharashtra districts, '
         'built on official UDISE+ government data (2018&#8209;19 to 2025&#8209;26). '
-        'Real data only &mdash; no synthetic values, no source mutation.'
+        'Real data only &mdash; no synthetic values.'
         '</p>'
-
-        '<div style="display:flex;gap:8px;flex-wrap:wrap">'
-        '<span style="background:rgba(56,189,248,.12);border:1px solid rgba(56,189,248,.30);'
-        'color:#38BDF8;border-radius:6px;padding:5px 13px;font-size:10.5px;font-weight:700;letter-spacing:.3px">'
-        '36 Districts</span>'
-        '<span style="background:rgba(56,189,248,.12);border:1px solid rgba(56,189,248,.30);'
-        'color:#38BDF8;border-radius:6px;padding:5px 13px;font-size:10.5px;font-weight:700;letter-spacing:.3px">'
-        '4 Regions</span>'
-        '<span style="background:rgba(52,211,153,.12);border:1px solid rgba(52,211,153,.30);'
-        'color:#34D399;border-radius:6px;padding:5px 13px;font-size:10.5px;font-weight:700;letter-spacing:.3px">'
-        'Real Data Only</span>'
-        '<span style="background:rgba(251,191,36,.12);border:1px solid rgba(251,191,36,.30);'
-        'color:#FBBF24;border-radius:6px;padding:5px 13px;font-size:10.5px;font-weight:700;letter-spacing:.3px">'
-        '5 ML Models &amp; SHAP</span>'
-        '<span style="background:rgba(129,140,248,.12);border:1px solid rgba(129,140,248,.30);'
-        'color:#818CF8;border-radius:6px;padding:5px 13px;font-size:10.5px;font-weight:700;letter-spacing:.3px">'
-        '2019&#8209;20 &ndash; 2024&#8209;25 Spec Window</span>'
+        '<div style="display:flex;gap:7px;flex-wrap:wrap">'
+        '<span style="background:rgba(56,189,248,.12);border:1px solid rgba(56,189,248,.30);color:#38BDF8;border-radius:5px;padding:4px 11px;font-size:10px;font-weight:700">36 Districts</span>'
+        '<span style="background:rgba(56,189,248,.12);border:1px solid rgba(56,189,248,.30);color:#38BDF8;border-radius:5px;padding:4px 11px;font-size:10px;font-weight:700">4 Regions</span>'
+        '<span style="background:rgba(52,211,153,.12);border:1px solid rgba(52,211,153,.30);color:#34D399;border-radius:5px;padding:4px 11px;font-size:10px;font-weight:700">Real Data Only</span>'
+        '<span style="background:rgba(251,191,36,.12);border:1px solid rgba(251,191,36,.30);color:#FBBF24;border-radius:5px;padding:4px 11px;font-size:10px;font-weight:700">5 ML Models &amp; SHAP</span>'
+        '<span style="background:rgba(129,140,248,.12);border:1px solid rgba(129,140,248,.30);color:#818CF8;border-radius:5px;padding:4px 11px;font-size:10px;font-weight:700">2019&#8209;20 &ndash; 2024&#8209;25 Spec Window</span>'
         '</div>'
-
         '</div>'
     )
 
-    # ── Live KPI strip ────────────────────────────────────────────────────
-    _k1, _k2, _k3, _k4, _k5 = st.columns(5, gap="medium")
-    _ts  = year_data["school_count"].sum()                      if "school_count"                      in year_data.columns else np.nan
-    _te  = year_data["enrollment_reported_student_total"].sum() if "enrollment_reported_student_total" in year_data.columns else np.nan
-    _tt  = year_data["score_teacher_total_derived"].sum()       if "score_teacher_total_derived"       in year_data.columns else np.nan
-    _ptr = safe_mean(year_data, "ptr_students_per_teacher_raw")
-    with _k1: metric_card("Districts",  "36",                                           "Maharashtra",   ACCENT)
-    with _k2: metric_card("Schools",    f"{int(_ts):,}" if pd.notna(_ts) else "—",      selected_year,   BLUE)
-    with _k3: metric_card("Enrolment",  f"{int(_te):,}" if pd.notna(_te) else "—",      "Total",         WARNING)
-    with _k4: metric_card("Teachers",   f"{int(_tt):,}" if pd.notna(_tt) else "—",      "M + F + T",     SUCCESS)
-    with _k5: metric_card("Avg. PTR",   fmt(_ptr, 1),
-                          "Above RTE norm" if pd.notna(_ptr) and _ptr > 30 else "Within RTE norm",
-                          DANGER if pd.notna(_ptr) and _ptr > 30 else SUCCESS)
-
-    # ── v2 score strip ────────────────────────────────────────────────────
-    if historical_v2 is not None and "shala_score_v2" in historical_v2.columns:
-        _v2yr  = historical_v2[historical_v2["academic_year"] == selected_year]
-        _v2avg = safe_mean(_v2yr, "shala_score_v2")
-        if "risk_tier_v2" in _v2yr.columns:
-            _tc    = _v2yr["risk_tier_v2"].value_counts()
-            _crit  = int(_tc.get("Critical", 0))
-            _tier_note = (
-                f"{_crit} Critical  |  {int(_tc.get('At-Risk',0))} At-Risk  "
-                f"|  {int(_tc.get('Stable',0))} Stable  |  {int(_tc.get('Thriving',0))} Thriving"
-            )
-        else:
-            _tier_note, _crit = "v2 score active", 0
-        _va, _vb = st.columns(2, gap="medium")
-        with _va: metric_card("Avg. Shala Score v2", fmt(_v2avg, 1), "5-pillar weighted  |  Learning = MISSING_IN_SOURCE", ACCENT)
-        with _vb: metric_card("Risk Tier Distribution", _tier_note,
-                              "Shala Score v2 quartile bands  |  72 districts per tier",
-                              DANGER if _crit > 0 else WARNING)
-
-    st.divider()
-
-    # ── Navigation guide ──────────────────────────────────────────────────
-    heading("Dashboard pages", "Choose any page from the left sidebar.")
-    _NAV_INFO = [
-        ("Overview",                  "State-wide KPIs, priority matrix, district map, Shala Score v2 badges.",       ACCENT),
-        ("Region Comparison",         "Konkan / W. Maharashtra / Marathwada / Vidarbha -- scores, tiers, pillars.",    BLUE),
-        ("District Explorer",         "Full district profile: v2 risk tier, SHAP top driver, ratio bars, forecast.",   WARNING),
-        ("Predictive Intelligence",   "M1-M5 model outputs + non-destructive What-If simulator (6 scenarios).",        SUCCESS),
-        ("Education Analytics",       "Per-indicator bar / trend charts and relationship explorer.",                   INFO),
-        ("Data Quality & Methodology","AVAILABLE vs MISSING_IN_SOURCE audit, coverage heatmap, methodology.",          TEXT_LO),
-        ("Risk Factor Analysis",      "Random Forest feature importance for Shala Score prediction.",                  TERRA),
-        ("District Grouping",         "K-Means clusters, elbow/silhouette, cluster profiles.",                         BLUE),
-        ("Educational Audit",         "District diagnostic report card vs state benchmarks.",                          DANGER),
-    ]
-    _nc = st.columns(3, gap="medium")
-    for i, (pg, desc, col) in enumerate(_NAV_INFO):
-        with _nc[i % 3]:
-            st.html(
-                f'<div class="insight-card" style="--accent:{col};margin-bottom:8px">'
-                f'<div class="insight-title" style="font-size:10px">{escape(pg)}</div>'
-                f'<div class="insight-text" style="font-size:12px">{escape(desc)}</div>'
-                f'</div>'
-            )
-
-    st.divider()
-
-    # ── Data principles ───────────────────────────────────────────────────
-    heading("Data principles & guardrails")
-    _left_p, _right_p = st.columns(2, gap="large")
-    _PRINCIPLES_L = [
-        ("Real Government Data",       "Every value comes from the official UDISE+ extract. No synthetic or imputed data."),
-        ("No Source Mutation",         "Raw and processed CSVs are read-only during all dashboard runs and What-If simulations."),
-        ("No Double-Counting",         "facility_classrooms_good_condition_pct is in Infrastructure pillar only. Learning Outcomes = MISSING_IN_SOURCE."),
-    ]
-    _PRINCIPLES_R = [
-        ("Leakage-Free Models",        "Chronological split: train 2018-24, test 2024-25. Forecast horizon 2025-26/2026-27 never seen."),
-        ("Proportional Redistribution","When a pillar's data is absent, its weight is redistributed across available pillars -- not a fixed rescale."),
-        ("M2 / M5 Proxy Labels",       "M2 uses classroom-quality trend as SUBSTITUTE_PROXY. M5 = Classroom Infrastructure Quality Trend (Documented Proxy)."),
-    ]
-    with _left_p:
-        for _pt, _pb in _PRINCIPLES_L:
-            st.html(f'<div class="step"><div class="step-no">OK</div><div class="step-body"><b>{escape(_pt)}.</b> {escape(_pb)}</div></div>')
-    with _right_p:
-        for _pt, _pb in _PRINCIPLES_R:
-            st.html(f'<div class="step"><div class="step-no">OK</div><div class="step-body"><b>{escape(_pt)}.</b> {escape(_pb)}</div></div>')
-
-
-# ===========================================================================
-# PAGE: OVERVIEW
-# ===========================================================================
-elif page == "Overview":
     heading("Maharashtra at a glance",
             "The big picture for the selected academic year.")
 
@@ -1347,6 +1241,23 @@ elif page == "Overview":
     else:
         st.info("GeoJSON not found at assets/maharashtra_districts.geojson")
 
+    # ── Data principles (anchor the overview page) ────────────────────────
+    st.divider()
+    heading("Data principles & guardrails")
+    _lp2, _rp2 = st.columns(2, gap="large")
+    for _pt, _pb in [
+        ("Real Government Data", "Every value comes from the official UDISE+ extract. No synthetic or imputed data."),
+        ("No Source Mutation",   "Raw and processed CSVs are read-only during all dashboard runs and What-If simulations."),
+        ("No Double-Counting",   "facility_classrooms_good_condition_pct is in Infrastructure pillar only. Learning Outcomes = MISSING_IN_SOURCE."),
+    ]:
+        with _lp2: st.html(f'<div class="step"><div class="step-no">OK</div><div class="step-body"><b>{escape(_pt)}.</b> {escape(_pb)}</div></div>')
+    for _pt, _pb in [
+        ("Leakage-Free Models",        "Chronological split: train 2018-24, test 2024-25. Forecast horizon 2025-26/2026-27 never seen."),
+        ("Proportional Redistribution","When a pillar is absent, its weight redistributes across available pillars."),
+        ("M2 / M5 Proxy Labels",       "M2 uses classroom-quality trend as SUBSTITUTE_PROXY. M5 = Classroom Infrastructure Quality Trend (Documented Proxy)."),
+    ]:
+        with _rp2: st.html(f'<div class="step"><div class="step-no">OK</div><div class="step-body"><b>{escape(_pt)}.</b> {escape(_pb)}</div></div>')
+
 # ===========================================================================
 # PAGE: DISTRICT EXPLORER
 # ===========================================================================
@@ -1527,6 +1438,61 @@ elif page == "District Explorer":
             st.caption("Enrollment/Teachers/Toilets/Classrooms: Persistence baseline. Digital: district trend. Experimental only.")
 
         st.divider()
+        heading("District Diagnostic & Concerns Heatmap",
+                "Indicator flags across all years and a per-district report card.")
+
+        _ea_rc = load_csv(ROOT / "reports/rootcause/educational_rootcause_indicators.csv")
+        _ea_bench = load_csv(ROOT / "reports/rootcause/rootcause_state_benchmarks.csv")
+        if _ea_rc is not None:
+            _ea_rc["value"]      = numeric(_ea_rc["value"])
+            _ea_rc["state_mean"] = numeric(_ea_rc["state_mean"])
+            _ea_concern = _ea_rc[_ea_rc["status"].isin(["CONCERN","CRITICAL"])].copy()
+            _hm_data = (_ea_concern.groupby(["academic_year","indicator"])["district"]
+                        .count().reset_index().rename(columns={"district":"count"}))
+            if not _hm_data.empty:
+                _hm_piv = _hm_data.pivot(index="indicator", columns="academic_year", values="count").fillna(0)
+                _yr_s = sorted(_hm_piv.columns,
+                               key=lambda x: int(str(x)[:4]) if re.match(r"^\d{4}", str(x)) else 0)
+                fig_hm = px.imshow(_hm_piv[_yr_s], aspect="auto", text_auto=True,
+                                   color_continuous_scale=["#0A0F1E","#F97316","#F87171"])
+                fig_hm.update_xaxes(side="top")
+                show(fig_hm, 280)
+                st.caption("Deeper colour = more districts flagged. Zero (pale) = all adequate.")
+
+            # District-specific audit card for the selected/chosen district
+            _aud_dist = focus if not dc.empty else (district_choice if not is_all else None)
+            if _aud_dist:
+                _aud_rows = _ea_rc[
+                    (_ea_rc["district"].astype(str) == str(_aud_dist)) &
+                    (_ea_rc["academic_year"].astype(str) == str(selected_year))
+                ].copy()
+                if not _aud_rows.empty:
+                    _SC_a = {"ADEQUATE":SUCCESS,"CONCERN":WARNING,"CRITICAL":DANGER,"DATA MISSING":TEXT_LO}
+                    _nc2  = int((_aud_rows["status"]=="CRITICAL").sum())
+                    _nco  = int((_aud_rows["status"]=="CONCERN").sum())
+                    _nad  = int((_aud_rows["status"]=="ADEQUATE").sum())
+                    _ov   = "CRITICAL" if _nc2>0 else "CONCERN" if _nco>0 else "ADEQUATE"
+                    st.html(f'<div class="insight-card" style="--accent:{_SC_a[_ov]}">'
+                            f'<div class="insight-title">{escape(_aud_dist)} {escape(selected_year)} -- {escape(_ov)}</div>'
+                            f'<div class="insight-text">{_nad} adequate  {_nco} concern  {_nc2} critical</div></div>')
+                    for _, _ir in _aud_rows.iterrows():
+                        _ac2 = _SC_a.get(str(_ir["status"]), TEXT_LO)
+                        _sm2 = numeric(pd.Series([_ir["state_mean"]])).iloc[0]
+                        _vs  = f"{_ir['value']:.2f} {_ir['unit']}" if pd.notna(_ir["value"]) else "Data not available"
+                        st.html(f'<div class="insight-card" style="--accent:{_ac2}">'
+                                f'<div class="insight-title">{escape(str(_ir["indicator"]))} -- {escape(str(_ir["status"]))}</div>'
+                                f'<div class="insight-text"><b>{escape(_vs)}</b>'
+                                + (f'<br>State mean: {_sm2:.2f} {_ir["unit"]}' if pd.notna(_sm2) else "")
+                                + f'<br><span style="color:{TEXT_LO}">{escape(str(_ir["explanation"]))}</span></div></div>')
+            if _ea_bench is not None:
+                st.divider()
+                heading("State benchmark reference")
+                for _bc in ["state_mean","state_median","state_p10","state_p90"]:
+                    if _bc in _ea_bench.columns: _ea_bench[_bc] = numeric(_ea_bench[_bc]).round(3)
+                st.dataframe(_ea_bench.drop(columns=["column"],errors="ignore"), hide_index=True)
+            st.caption("These diagnostics flag potential infrastructure and staffing concerns. Not predictions of student dropout.")
+
+        st.divider()
         heading("Compare districts", "Up to 5 districts side by side.")
         pick = st.multiselect("Districts", districts, default=[focus] if focus in districts else [], max_selections=5, key="compare_districts")
         if pick:
@@ -1549,113 +1515,6 @@ elif page == "District Explorer":
                             color_continuous_scale=["#0A0F1E","#1E2D45","#0EA5E9","#38BDF8","#7DD3FC"])
             fig.update_xaxes(side="top")
             show(fig, max(380, 24*len(hm)+100))
-
-# ===========================================================================
-# PAGE: EDUCATION ANALYTICS
-# ===========================================================================
-elif page == "Education Analytics":
-    heading("Education Analytics", "One indicator at a time, plus a relationship explorer.")
-
-    indicator_options = {
-        "Teacher Strength score":           ("pillar_teacher_strength",           True,  "Score 0-100 for teacher staffing."),
-        "Infrastructure score":             ("pillar_infrastructure",             True,  "Score 0-100 for toilets and classrooms."),
-        "Digital Readiness score":          ("pillar_digital_readiness",          True,  "Score 0-100 for digital devices."),
-        "Reported student enrolment":       ("enrollment_reported_student_total", True,  "Total students reported by schools."),
-        "Total teachers (derived)":         ("score_teacher_total_derived",       True,  "Number of teachers in the district."),
-        "Students per teacher":             ("ptr_students_per_teacher_raw",      False, "Lower = more attention per student."),
-        "Functional toilets (%)":           ("functional_toilet_pct_raw",         True,  "Share of toilets that are working."),
-        "Good-condition classrooms (%)":    ("good_classroom_pct_raw",            True,  "Share of classrooms in good condition."),
-        "Digital devices / reporting school":("digital_devices_per_school_raw",   True,  "Average devices in schools that report."),
-        "School count":                     ("school_count",                      True,  "Number of schools in the district."),
-    }
-    available = {k: v for k, v in indicator_options.items() if v[0] in year_data.columns}
-
-    if not available:
-        st.warning("No supported indicators found in the dataset.")
-    else:
-        c_a, c_b = st.columns([1.4, 1], gap="large")
-        with c_a:
-            chosen_label = st.selectbox("Choose an indicator", list(available), key="analytics_indicator")
-        with c_b:
-            view_mode = st.radio("Show", ["Best 10","Weakest 10","All"], horizontal=True, key="analytics_view")
-        chosen_col, higher_better, meaning = available[chosen_label]
-
-        tmp = year_data[["district", chosen_col]].copy()
-        tmp["district"] = tmp["district"].astype(str)
-        tmp[chosen_col] = numeric(tmp[chosen_col])
-        tmp = tmp.dropna(subset=[chosen_col]).sort_values(chosen_col, ascending=not higher_better)
-
-        if tmp.empty:
-            st.info("No valid values for this indicator.")
-        else:
-            st.caption(meaning)
-            best, worst = tmp.iloc[0], tmp.iloc[-1]
-            k1,k2,k3,k4 = st.columns(4, gap="medium")
-            with k1: metric_card("Maharashtra avg", fmt(tmp[chosen_col].mean(),2), chosen_label, ACCENT)
-            with k2: metric_card("Best district",   str(best["district"]),         fmt(best[chosen_col],2),  SUCCESS)
-            with k3: metric_card("Needs support",   str(worst["district"]),        fmt(worst[chosen_col],2), DANGER)
-            with k4: metric_card("Districts w/ data", f"{len(tmp):,}", f"Year {selected_year}", BLUE)
-
-            n = len(tmp); third = max(1, n//3)
-            tmp["_rank"] = range(1,n+1)
-            tmp["Group"] = np.where(tmp["_rank"]<=third, "Strongest", np.where(tmp["_rank"]>n-third, "Weakest", "Middle"))
-            shown = (tmp.head(10) if view_mode=="Best 10" else tmp.tail(10) if view_mode=="Weakest 10" else tmp).copy()
-            shown = shown.sort_values(chosen_col, ascending=higher_better)
-            shown["Group"] = np.where(shown["district"]==highlight, "Selected", shown["Group"])
-
-            fig = px.bar(shown, x=chosen_col, y="district", orientation="h", text=chosen_col, color="Group",
-                         color_discrete_map={"Strongest":SUCCESS,"Middle":WARNING,"Weakest":DANGER,"Selected":ACCENT},
-                         labels={chosen_col: chosen_label, "district":""})
-            fig.update_traces(texttemplate="%{text:,.2f}", textposition="outside", cliponaxis=False, marker_line_width=0)
-            xmax = float(shown[chosen_col].max())
-            fig.update_layout(xaxis_range=[min(0.0, float(shown[chosen_col].min())), xmax*1.2 if xmax>0 else 1], bargap=0.3)
-            fig.add_vline(x=float(tmp[chosen_col].mean()), line_dash="dot", line_color=TEXT_LO, line_width=1.5,
-                          annotation_text="Maharashtra mean", annotation_font_color=TEXT_LO)
-            if chosen_col == "ptr_students_per_teacher_raw":
-                fig.add_vline(x=30, line_dash="dash", line_color=DANGER, line_width=2,
-                              annotation_text="RTE Norm 30:1", annotation_font_color=DANGER)
-            show(fig, max(400, 28*len(shown)+100), horizontal=True)
-
-            heading("Trend over time")
-            t = historical.groupby("academic_year", as_index=False)[chosen_col].mean()
-            fig2 = go.Figure()
-            fig2.add_trace(go.Scatter(x=t["academic_year"], y=t[chosen_col], mode="lines+markers",
-                                      name="Maharashtra avg", line=dict(color=ACCENT, width=3),
-                                      marker=dict(size=8, color=WARNING, line=dict(color=OBS_BG,width=2))))
-            if not is_all:
-                dd = historical[historical["district"]==district_choice].sort_values("_year_order")
-                fig2.add_trace(go.Scatter(x=dd["academic_year"], y=dd[chosen_col], mode="lines+markers",
-                                          name=district_choice, line=dict(color=WARNING, width=3),
-                                          marker=dict(size=8, color=WARNING)))
-            fig2.update_xaxes(categoryorder="array", categoryarray=years)
-            show(fig2, 320, horizontal=True)
-
-        st.divider()
-        heading("Relationship explorer", "How two indicators relate across districts.")
-        labels = list(available)
-        r1, r2 = st.columns(2, gap="large")
-        with r1: x_label = st.selectbox("Horizontal axis", labels, index=0, key="rel_x")
-        with r2: y_label = st.selectbox("Vertical axis",   labels, index=min(1,len(labels)-1), key="rel_y")
-        xc, yc = available[x_label][0], available[y_label][0]
-        if xc == yc:
-            st.info("Choose two different indicators.")
-        else:
-            rel = year_data[["district",xc,yc]].copy()
-            rel["district"] = rel["district"].astype(str)
-            rel[xc] = numeric(rel[xc]); rel[yc] = numeric(rel[yc])
-            rel = rel.dropna()
-            if len(rel) < 3:
-                st.info("Not enough districts with both values.")
-            else:
-                r = float(np.corrcoef(rel[xc], rel[yc])[0,1])
-                rel["Group"] = np.where(rel["district"]==highlight, "Selected", "Other")
-                fig3 = px.scatter(rel, x=xc, y=yc, color="Group", hover_name="district",
-                                  color_discrete_map={"Other": ACCENT, "Selected": WARNING},
-                                  labels={xc:x_label, yc:y_label})
-                fig3.update_traces(marker=dict(size=12, line=dict(color=OBS_BG,width=1.5)))
-                show(fig3, 420, horizontal=True)
-                strength = "strong" if abs(r)>=0.6 else "moderate" if abs(r)>=0.3 else "weak"
-                st.caption(f"r = {r:.2f} ({strength} {'positive' if r>=0 else 'negative'} relationship, {len(rel)} districts). Correlation is not causation.")
 
 # ===========================================================================
 # PAGE: PREDICTIVE INTELLIGENCE
@@ -2123,59 +1982,6 @@ elif page == "Data Quality & Methodology":
         st.markdown(f"- {item}")
 
 # ===========================================================================
-# PAGE: RISK FACTOR ANALYSIS
-# ===========================================================================
-elif page == "Risk Factor Analysis":
-    heading("Risk Factor Analysis",
-            "Random Forest feature importance for predicting Shala Score. Statistical association only -- not causal.")
-
-    RF_DIR = ROOT / "reports/rf_risk_factor"
-    rf_fi  = load_csv(RF_DIR / "rf_feature_importance.csv")
-    rf_eval= load_csv(RF_DIR / "rf_evaluation.csv")
-    _rf_meta = {}
-    _rf_meta_p = RF_DIR / "rf_metadata.json"
-    if _rf_meta_p.exists():
-        import json as _json
-        try: _rf_meta = _json.loads(_rf_meta_p.read_text(encoding="utf-8"))
-        except Exception: pass
-
-    if rf_fi is None:
-        st.info("Random Forest outputs not found. Run `src/models/run_rf_risk_factor_analysis.py` to generate them.")
-    else:
-        _cv_mae = _rf_meta.get("cv_mean_mae", np.nan)
-        _cv_r2  = _rf_meta.get("cv_mean_r2",  np.nan)
-        kc1,kc2,kc3,kc4 = st.columns(4, gap="medium")
-        with kc1: metric_card("Target Variable",    "Shala Score",           "Educational condition index 0-100", ACCENT)
-        with kc2: metric_card("CV MAE",  f"{_cv_mae:.2f}" if pd.notna(_cv_mae) else "NA", "Mean Absolute Error", BLUE)
-        with kc3: metric_card("CV R2",   f"{_cv_r2:.4f}" if pd.notna(_cv_r2)  else "NA", "5-fold KFold", SUCCESS)
-        with kc4: metric_card("Samples", f"{_rf_meta.get('n_samples',288)}",  f"{_rf_meta.get('n_features',12)} features", INFO)
-
-        heading("Feature importance ranking")
-        fi = rf_fi.copy()
-        FEAT_LBL = {
-            "good_classroom_pct_raw":"Good-Condition Classrooms (%)",
-            "facility_classrooms_needing_repair_pct":"Classrooms Needing Repair (%)",
-            "functional_toilet_pct_raw":"Functional Toilet Coverage (%)",
-            "ptr_students_per_teacher_raw":"Pupil-Teacher Ratio",
-            "digital_devices_per_school_raw":"Digital Devices / School",
-            "district_female_teacher_pct":"Female Teacher Share (%)",
-            "school_count":"Number of Schools",
-            "enrollment_reported_student_total":"Student Enrolment",
-            "score_teacher_total_derived":"Total Teachers",
-        }
-        fi["label"] = fi["feature"].astype(str).map(FEAT_LBL).fillna(fi["feature"])
-        fi = fi.sort_values("importance", ascending=True)
-        fi["_top"] = fi["importance"] >= fi["importance"].nlargest(5).min()
-        fig = px.bar(fi, x="importance", y="label", orientation="h", text="importance",
-                     color="_top", color_discrete_map={True: ACCENT, False: TEXT_LO},
-                     labels={"importance":"Feature Importance","label":""})
-        fig.update_traces(texttemplate="%{text:.4f}", textposition="outside", cliponaxis=False, marker_line_width=0)
-        fig.update_layout(showlegend=False, bargap=0.3)
-        show(fig, max(380, 30*len(fi)+80), horizontal=True)
-        st.caption("Accent bars = top 5. This predicts Shala Score (infrastructure index) -- not student dropout. No dropout data exists in UDISE+.")
-        st.info("**Important:** These findings indicate statistical association, not causal relationships. No dropout data exists in UDISE+. This model predicts an infrastructure-quality composite score.")
-
-# ===========================================================================
 # PAGE: DISTRICT GROUPING
 # ===========================================================================
 elif page == "District Grouping":
@@ -2246,86 +2052,6 @@ elif page == "District Grouping":
                         f'<div class="insight-text">{escape(", ".join(sorted(grp["district"].astype(str).tolist())))}</div></div>')
 
         st.info("Cluster labels are assigned by ranked mean Shala Score after clustering -- descriptive categories, not official risk grades.")
-
-# ===========================================================================
-# PAGE: EDUCATIONAL AUDIT
-# ===========================================================================
-elif page == "Educational Audit":
-    heading("Educational Audit",
-            "District diagnostic: observed indicators vs state benchmarks. Not confirmed dropout causes.")
-
-    RC_DIR  = ROOT / "reports/rootcause"
-    rc_df   = load_csv(RC_DIR / "educational_rootcause_indicators.csv")
-    bench_df= load_csv(RC_DIR / "rootcause_state_benchmarks.csv")
-
-    if rc_df is None:
-        st.info("Root-cause outputs not found. Run `src/models/build_rootcause_indicators.py` to generate them.")
-    else:
-        rc_df["value"]          = numeric(rc_df["value"])
-        rc_df["state_mean"]     = numeric(rc_df["state_mean"])
-        rc_df["delta_vs_state"] = numeric(rc_df["delta_vs_state"])
-
-        heading("Maharashtra Education Overview", f"State-wide totals for {selected_year}.")
-        ok1,ok2,ok3,ok4,ok5 = st.columns(5, gap="medium")
-        with ok1: metric_card("Districts",    str(year_data["district"].nunique()), "Maharashtra", ACCENT)
-        with ok2: metric_card("Avg Schools",  fmt(safe_mean(year_data,"school_count"),0),         "Per district", BLUE)
-        _te2 = year_data["enrollment_reported_student_total"].sum() if "enrollment_reported_student_total" in year_data.columns else np.nan
-        _tt2 = year_data["score_teacher_total_derived"].sum()       if "score_teacher_total_derived"       in year_data.columns else np.nan
-        with ok3: metric_card("Total Enrolment", f"{_te2:,.0f}" if pd.notna(_te2) else "NA", f"{selected_year}", WARNING)
-        with ok4: metric_card("Total Teachers",  f"{_tt2:,.0f}" if pd.notna(_tt2) else "NA", "M+F+T", SUCCESS)
-        with ok5: metric_card("State PTR",       fmt(safe_mean(year_data,"ptr_students_per_teacher_raw"),1), "Students per teacher", AMBER)
-
-        st.divider()
-        heading("Districts with concerns by indicator and year")
-        rc_concern = rc_df[rc_df["status"].isin(["CONCERN","CRITICAL"])].copy()
-        hm_data = (rc_concern.groupby(["academic_year","indicator"])["district"].count().reset_index().rename(columns={"district":"count"}))
-        if not hm_data.empty:
-            hm_pivot = hm_data.pivot(index="indicator", columns="academic_year", values="count").fillna(0)
-            yr_sorted = sorted(hm_pivot.columns, key=lambda x: int(str(x)[:4]) if re.match(r"^\d{4}", str(x)) else 0)
-            hm_pivot = hm_pivot[yr_sorted]
-            fig = px.imshow(hm_pivot, aspect="auto", text_auto=True,
-                            color_continuous_scale=["#0A0F1E","#F97316","#F87171"])
-            fig.update_xaxes(side="top")
-            show(fig, 280)
-            st.caption("Deeper colour = more districts flagged.")
-
-        st.divider()
-        heading("District diagnostic report card")
-        audit_district = (
-            st.selectbox("Choose district", districts, index=districts.index(district_choice) if district_choice in districts else 0, key="audit_ds")
-            if is_all else district_choice
-        )
-        audit_rows = rc_df[(rc_df["district"].astype(str)==str(audit_district)) & (rc_df["academic_year"].astype(str)==str(selected_year))].copy()
-        if audit_rows.empty:
-            st.info(f"No diagnostic data for {audit_district} in {selected_year}.")
-        else:
-            SC = {"ADEQUATE":SUCCESS,"CONCERN":WARNING,"CRITICAL":DANGER,"DATA MISSING":TEXT_LO}
-            n_crit = int((audit_rows["status"]=="CRITICAL").sum())
-            n_conc = int((audit_rows["status"]=="CONCERN").sum())
-            n_adq  = int((audit_rows["status"]=="ADEQUATE").sum())
-            overall = "CRITICAL" if n_crit>0 else "CONCERN" if n_conc>0 else "ADEQUATE"
-            bc = SC[overall]
-            st.html(f'<div class="insight-card" style="--accent:{bc}">'
-                    f'<div class="insight-title">{escape(audit_district)} {escape(selected_year)} -- OVERALL: {escape(overall)}</div>'
-                    f'<div class="insight-text">{n_adq} adequate  {n_conc} concern  {n_crit} critical</div></div>')
-            for _, irow in audit_rows.iterrows():
-                acc     = SC.get(str(irow["status"]), TEXT_LO)
-                val_str = f"{irow['value']:.2f} {irow['unit']}" if pd.notna(irow["value"]) else "Data not available"
-                _sm     = irow["state_mean"]
-                st.html(f'<div class="insight-card" style="--accent:{acc}">'
-                        f'<div class="insight-title">{escape(str(irow["indicator"]))} -- {escape(str(irow["status"]))}</div>'
-                        f'<div class="insight-text"><b>{escape(val_str)}</b>'
-                        + (f'<br>State mean: {_sm:.2f} {irow["unit"]}' if pd.notna(_sm) else "")
-                        + f'<br><span style="color:{TEXT_LO}">{escape(str(irow["explanation"]))}</span></div></div>')
-
-        if bench_df is not None:
-            st.divider()
-            heading("State benchmark reference")
-            for c in ["state_mean","state_median","state_p10","state_p90"]:
-                if c in bench_df.columns: bench_df[c] = numeric(bench_df[c]).round(3)
-            st.dataframe(bench_df.drop(columns=["column"],errors="ignore"), hide_index=True)
-
-        st.info("These diagnostics flag potential infrastructure and staffing concerns. They are not predictions of student dropout. Thresholds are project-defined.")
 
 # ===========================================================================
 # PAGE: REGION COMPARISON
