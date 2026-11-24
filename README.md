@@ -1,269 +1,263 @@
 # ShalaScope Maharashtra
 
-District-level school education intelligence and predictive analytics for
-Maharashtra's 36 districts, built entirely on the UDISE+ public dataset
-(2018-19 to 2025-26).
+**District-Level School Education Intelligence · UDISE+ Real Government Data**
+
+> *Every number traceable. Every gap declared.*
+
+![Python](https://img.shields.io/badge/Python-3.11-blue)
+![Tests](https://img.shields.io/badge/tests-60%20passed-brightgreen)
+![Streamlit](https://img.shields.io/badge/Streamlit-1.56-red)
+![License](https://img.shields.io/badge/data-UDISE%2B-orange)
+![No Synthetic Data](https://img.shields.io/badge/data-real%20only-green)
 
 ---
 
-## What this project does
+## The Idea
 
-- Computes **Shala Score v2** (5-pillar weighted composite, 0-100) for every
-  district-year, with proportional weight redistribution when a pillar's source
-  data is absent.
-- Maps all 36 districts to Maharashtra's four geographic regions
-  (Konkan, Western Maharashtra, Marathwada, Vidarbha).
-- Runs five prediction modules (M1-M5) with strict chronological splits and
-  zero future leakage.
-- Produces SHAP explanations for the two Random Forest models (M4, M5).
-- Serves an interactive 10-tab Streamlit dashboard (tabs 00 Home through
-  09 Region Comparison).
+Maharashtra has 36 districts with very different school conditions.
+Planners need one transparent, comparable view of where support is needed first.
+ShalaScope builds that view entirely from official UDISE+ data — no synthetic
+values, no fabricated numbers, no mutation of source files.
 
 ---
 
-## Data principles
+## At a Glance
 
-| Rule | Detail |
+| Item | Value |
 |---|---|
-| No synthetic data | Every number comes from the UDISE+ extract. Missing columns are documented as `MISSING_IN_SOURCE`, never imputed or fabricated. |
-| No source file mutation | Raw CSVs in `data/extracted/` are never touched. All derived outputs land in `data/processed/` or `reports/`. |
-| No double-counting | `facility_classrooms_good_condition_pct` is in the **Infrastructure pillar only** and is not reused in the Learning pillar. |
-| Leakage guard | Temporal split: train 2018-19 to 2023-24 (216 rows), test 2024-25 (36 rows). Forecast horizon: 2025-26 / 2026-27. |
-| M2 substitute | No NAS/ASER/GER/dropout data exists in UDISE+. M2 uses `pillar2_infrastructure` as a documented proxy, clearly labelled `SUBSTITUTE_PROXY` in every output. |
-| M5 label | M5 is labelled "Classroom Infrastructure Quality Trend (Documented Proxy)" -- not a learning-outcome or dropout predictor. |
+| Districts | 36 |
+| Regions | Konkan · Western Maharashtra · Marathwada · Vidarbha |
+| Academic years | 2018-19 to 2025-26 (288 district-year rows) |
+| Spec / modelling window | 2019-20 to 2024-25 |
+| Edge years | 2018-19 (anchors trends) · 2025-26 (provisional) |
+| Dashboard pages | 6 |
+| Unit tests | **60 passed** |
+| Learning Outcomes pillar | **MISSING\_IN\_SOURCE** — no NAS/ASER/GER data in UDISE+ |
 
 ---
 
-## Year scope
+## Key Findings
 
-| Scope | Years | Rows | Notes |
+All findings read directly from `reports/`.
+
+- **Vidarbha leads, Marathwada lags.** In 2025-26, the top 3 ranked
+  districts (Nagpur 70.3, Wardha 64.6, Chandrapur 62.0) are all in
+  Vidarbha; the bottom 3 (Palghar 37.5, Jalna 37.9, Buldana 39.8) span
+  Konkan and Marathwada.
+  *Source: `reports/score_design/shala_score_v2_latest_ranking.csv`*
+
+- **State average has risen steadily.** Mean Shala Score v2 increased from
+  42.8 (2018-19) to 50.8 (2025-26), with the Critical tier shrinking from
+  19 districts to 3 over the same period.
+  *Source: `reports/score_design/shala_score_v2_yearwise_summary.csv`*
+
+- **Student participation drives risk classification.** The top SHAP driver
+  for the M5 risk-tier model is `pillar2_participation` (mean |SHAP| = 0.072),
+  followed by `pillar2_infrastructure` (0.057) and `pillar2_digital` (0.048).
+  *Source: `reports/explainability/m5_shap_feature_ranking.csv`*
+
+- **Teacher shortage is linked to enrolment size, not region.** The top SHAP
+  driver for the M4 teacher-shortage model is
+  `enrollment_reported_student_total` (mean |SHAP| = 0.148) — larger districts
+  face proportionally higher PTR risk regardless of region.
+  *Source: `reports/explainability/m4_shap_feature_ranking.csv`*
+
+- **Total enrolment forecast is highly stable (R²=0.997).** Holt-Winters
+  per-district time-series forecasts for M3 achieve near-perfect hold-out
+  accuracy, confirming strong intra-district enrolment continuity.
+  *Source: `reports/models/all_modules_metrics_summary.csv`*
+
+---
+
+## How It Works
+
+```mermaid
+graph LR
+    A[UDISE+ Raw CSVs<br/>data/extracted/] --> B[Aggregation<br/>src/aggregation/]
+    B --> C[District-Year Master<br/>288 rows × 688 cols]
+    C --> D[Shala Score v2<br/>src/features/build_shala_score_v2.py]
+    C --> E[Prediction Models M1-M5<br/>src/models/]
+    D --> F[Streamlit Dashboard<br/>dashboard/app.py]
+    E --> F
+    E --> G[SHAP Explainability<br/>src/explainability/]
+    G --> F
+```
+
+---
+
+## Methodology in 3 Lines
+
+1. **Chronological split** — train 2018-19 to 2023-24 (216 rows), test 2024-25
+   (36 rows), forecast horizon 2025-26 / 2026-27 (never seen during training).
+2. **Proportional weight redistribution** — when a pillar's source data is
+   absent, `eff_w_i = nominal_w_i / Σ(nominal_w_j for available j)`.
+   Learning Outcomes pillar weight = 0% (MISSING\_IN\_SOURCE, constant across
+   all 288 rows).
+3. **Proxy labelling** — M2 uses `pillar2_infrastructure` as a
+   `SUBSTITUTE_PROXY`; M5 is labelled "Classroom Infrastructure Quality Trend
+   (Documented Proxy)" — neither is a learning-outcome or dropout predictor.
+
+---
+
+## Shala Score v2 — Pillar Design
+
+| Pillar | Nominal weight | Effective weight | Source columns |
 |---|---|---|---|
-| Full dataset | 2018-19 to 2025-26 | 288 | Complete UDISE+ extract available |
-| Spec primary window | 2019-20 to 2024-25 | 216 | Core modelling and reporting window |
-| Edge years | 2018-19 and 2025-26 | 72 | 2018-19 anchors trend models; 2025-26 is provisional |
+| Teacher PTR | 25% | **29.4%** | `ptr_students_per_teacher_raw` |
+| Infrastructure | 25% | **29.4%** | `functional_toilet_pct_raw`, `good_classroom_pct_raw` |
+| Participation | 20% | **23.5%** | Boys + Girls enrolment, SC/ST/OBC breakdown |
+| Digital Readiness | 15% | **17.6%** | `facility_avg_digital_devices_per_reporting_school` |
+| **Learning Outcomes** | **15%** | **0% — MISSING\_IN\_SOURCE** | No NAS/ASER/GER/dropout data in UDISE+ |
 
-Modelling split: **train** 2018-19 to 2023-24 (216 rows), **test** 2024-25 (36 rows),
-**forecast** horizon 2025-26 and 2026-27 (never in train or test).
+Score range observed: **24.9 – 72.2** across 288 district-years.
+Four equal-size risk tiers: Critical · At-Risk · Stable · Thriving (72 each).
 
----
-
-## 36 Districts and 4 regions
-
-| Region | n | Districts |
-|---|---|---|
-| Konkan | 7 | Mumbai II, Thane, Palghar, Raigad, Ratnagiri, Sindhudurg, Mumbai (Suburban) |
-| Western Maharashtra | 10 | Pune, Nashik, Ahilyanagar, Solapur, Satara, Sangli, Kolhapur, Dhule, Nandurbar, Jalgaon |
-| Marathwada | 8 | Chhatrapati Sambhajinagar, Jalna, Beed, Latur, Dharashiv, Nanded, Hingoli, Parbhani |
-| Vidarbha | 11 | Nagpur, Wardha, Yavatmal, Amravati, Akola, Washim, Buldhana, Chandrapur, Gadchiroli, Gondia, Bhandara |
-
-District names use current official names (Ahilyanagar not Ahmednagar,
-Chhatrapati Sambhajinagar not Aurangabad, Dharashiv not Osmanabad, etc.).
-Verified 0 unmapped districts in `src/core/regions.py`.
-
-GPI range: 0.80-0.98. Marginalised enrolment: 12.9-96.2%.
+> No double-counting: `facility_classrooms_good_condition_pct` appears in
+> Infrastructure only and is never reused in the Learning pillar.
 
 ---
 
-## Shala Score v2 -- pillar design
+## Prediction Modules
 
-| Pillar | Nominal weight | Effective weight (this dataset) | Source columns |
-|---|---|---|---|
-| Teacher PTR | 25% | 29.4% (redistributed) | `ptr_students_per_teacher_raw` |
-| Infrastructure | 25% | 29.4% (redistributed) | `facility_functional_toilet_pct`, `facility_classrooms_good_condition_pct` |
-| Participation | 25% | 23.5% (redistributed) | Boys + Girls enrolment totals, SC/ST/OBC breakdown |
-| Digital | 25% | 17.6% (redistributed) | `facility_avg_digital_devices_per_reporting_school` |
-| Learning | 15% | **0% -- MISSING_IN_SOURCE** | No NAS/ASER/GER/dropout data in UDISE+ |
-
-Redistribution formula: `eff_weight_i = nominal_i / sum(nominal_j for available j)`.
-Weights sum to 1.0 per row after redistribution.
-
-Score range: **24.90 to 72.16** across 288 district-years.
-Four equal-size risk tiers (72 districts each):
-
-| Tier | Meaning |
-|---|---|
-| Thriving | Top quartile Shala Score v2 |
-| Stable | Second quartile |
-| At-Risk | Third quartile |
-| Critical | Bottom quartile |
-
----
-
-## Five prediction modules
-
-| ID | Model | Target | Metric | Notes |
+| ID | Model | Target | Test metric | Leakage guard |
 |---|---|---|---|---|
-| M1 | LinearRegression | Total student enrolment | R2=0.7784 | District-year trend |
-| M2 | Ridge | `pillar2_infrastructure` | R2=0.5204 | **SUBSTITUTE_PROXY** -- Learning MISSING_IN_SOURCE |
-| M3 | Holt-Winters per district | `enrollment_reported_student_total` | R2=0.9967 | 36/36 districts fitted; 2-year forecast |
-| M4 | RandomForestClassifier | PTR > 30 (teacher shortage) | Acc=0.972 F1=0.973 | RTE norm; PTR not in feature set |
-| M5 | RandomForestClassifier | `risk_tier_v2` | Acc=0.694 F1=0.671 | Classroom Infra Quality Trend proxy -- NOT learning outcome |
+| M1 | LinearRegression | Total enrolment | R²=0.778 | PTR excluded |
+| M2 | Ridge | `pillar2_infrastructure` **(SUBSTITUTE\_PROXY)** | R²=0.520 | No learning data fabricated |
+| M3 | Holt-Winters per district | Total enrolment | R²=0.997 | Fitted on train history only |
+| M4 | RandomForest | PTR > 30 (teacher shortage) | Acc=0.972 · F1=0.973 | PTR is target, not feature |
+| M5 | RandomForest | `risk_tier_v2` **(Classroom Infra Proxy)** | Acc=0.694 · F1=0.671 | `shala_score_v2` excluded |
 
-Temporal split: train 2018-19 to 2023-24 (216 rows), test 2024-25 (36 rows).
-Forecast horizon: 2025-26 and 2026-27.
-
-**Leakage guards:**
-- M1: PTR not in feature set.
-- M3: each district model fitted on its own train history only.
-- M4: PTR used as target threshold, not as feature.
-- M5: `shala_score_v2` (composite) excluded from features.
+Train: 2018-19 to 2023-24 · Test: 2024-25 · Forecast: 2025-26 / 2026-27
 
 ---
 
-## SHAP explainability
+## Dashboard Pages
 
-TreeExplainer applied to M4 and M5 on the 2024-25 test slice (36 district-rows).
+`streamlit run dashboard/app.py` — 6 pages, left-sidebar navigation:
 
-| Model | Top 3 global drivers (mean |SHAP|) |
+| # | Page | Key content |
+|---|---|---|
+| 1 | **Overview** | Hero KPIs, top/bottom 10, score trend, choropleth map, data principles |
+| 2 | **Region Comparison** | Konkan / W. Mah / Marathwada / Vidarbha — scores, risk tiers, pillar heatmap |
+| 3 | **District Explorer** | v2 risk tier badge, SHAP top driver, ratio bars, forecast, indicator analytics, audit heatmap |
+| 4 | **District Grouping** | K-Means 4-cluster profiles (Thriving/Stable/At-Risk/Critical), elbow/silhouette |
+| 5 | **Predictive Intelligence** | M1-M5 outputs, SHAP feature drivers, What-If simulator, Auto-Optimize Top 3 |
+| 6 | **Data & Methodology** | AVAILABLE vs MISSING\_IN\_SOURCE audit, coverage heatmap, score formula |
+
+---
+
+## Screenshots
+
+> **TODO — capture and place these files before submission:**
+
+| File | Page to capture |
 |---|---|
-| M4 Teacher Shortage Risk | enrollment_reported_student_total, pillar2_infrastructure, pillar2_participation |
-| M5 Classroom Infra Proxy | pillar2_participation, pillar2_infrastructure, pillar2_digital |
-
-Output files in `reports/explainability/`:
-
-```
-m4_shap_values.csv           m5_shap_values.csv
-m4_shap_feature_ranking.csv  m5_shap_feature_ranking.csv
-m4_shap_top_driver.csv       m5_shap_top_driver.csv
-shap_status.csv
-```
-
-The dashboard (Tab 02 District Explorer) shows each district's M5 top SHAP driver.
-Fallback: if SHAP is unavailable a status notice is shown instead of raising.
+| `docs/screenshots/01_overview.png` | Overview page (choropleth map visible) |
+| `docs/screenshots/02_region_comparison.png` | Region Comparison — risk tier stacked bar |
+| `docs/screenshots/03_district_explorer.png` | District Explorer — PUNE, ratio bars visible |
+| `docs/screenshots/04_district_grouping.png` | District Grouping — cluster radar chart |
+| `docs/screenshots/05_predictive_intelligence.png` | Predictive Intelligence — M1-M5 metrics tab |
+| `docs/screenshots/06_data_methodology.png` | Data & Methodology — coverage heatmap |
 
 ---
 
-## 10-tab dashboard
+## Integrity by Design
 
-`dashboard/app.py` (3395 lines, 10 tabs):
-
-| Tab | Contents |
+| Rule | Implementation |
 |---|---|
-| 00 Home | Scope badges, live KPIs, v2 score strip, tab navigation cards, data-principle steps |
-| 01 Overview | Maharashtra KPIs, priority matrix, state trend, choropleth map, v2 score strip |
-| 02 District Explorer | v2 risk tier badge, M5 SHAP top driver, ratio bars, score history, forecast |
-| 03 Education Analytics | Single-indicator bar/trend, relationship explorer (scatter + correlation) |
-| 04 Predictive Intelligence | M1-M5 model output sub-tabs + non-destructive What-If simulator |
-| 05 Data Quality & Methodology | AVAILABLE vs MISSING_IN_SOURCE audit, coverage heatmap, score methodology |
-| 06 Risk Factor Analysis | Random Forest feature importance predicting Shala Score |
-| 07 District Grouping | K-Means clusters, elbow/silhouette chart, cluster profiles and radar |
-| 08 Educational Audit | District diagnostic report card vs state benchmarks |
-| 09 Region Comparison | Konkan/W.Mah/Marathwada/Vidarbha KPIs, trends, risk tier stacked bar, pillar heatmap |
+| **No synthetic data** | All numbers from UDISE+; missing columns documented as `MISSING_IN_SOURCE` |
+| **No source mutation** | `data/extracted/` and `data/processed/` are read-only; outputs land in `reports/` |
+| **No double-counting** | Classroom quality in Infrastructure pillar only |
+| **No future leakage** | Strict chronological train/test split; forecast horizon never seen |
+| **Proxy transparency** | M2 `SUBSTITUTE_PROXY` label; M5 "Classroom Infra Quality Trend (Documented Proxy)" label |
 
 ---
 
-## Project structure
+## Quick Start
+
+> Requires Python 3.11, Windows PowerShell (or equivalent).
+
+```powershell
+# 1. Clone
+git clone https://github.com/sandipk765/shalascope-maharashtra.git
+cd shalascope-maharashtra
+
+# 2. Create and activate virtual environment
+python -m venv .venv
+.venv\Scripts\Activate.ps1
+
+# 3. Install dependencies
+pip install -r requirements.txt
+
+# 4. Run unit tests (expect: 60 passed, 1 warning)
+python -m pytest tests/ -v
+
+# 5. Launch dashboard
+streamlit run dashboard/app.py
+```
+
+> **Note:** `data/extracted/` (raw UDISE+ CSVs) is excluded from the
+> repository via `.gitignore`. The dashboard reads from
+> `data/processed/district_year/` which is included.
+
+---
+
+## Project Structure
 
 ```
-ShalaScope_Maharashtra/
-├── data/
-│   ├── extracted/              raw UDISE+ CSVs (never modified)
-│   └── processed/
-│       └── district_year/      scored CSVs (v1 288x677, v2 288x688, forecast)
-├── src/
-│   ├── core/
-│   │   └── regions.py          36-district region map, GPI, marginalised %
-│   ├── features/
-│   │   ├── build_shala_score_v2.py   5-pillar Shala Score v2
-│   │   └── build_data_log.py         column availability audit
-│   ├── models/
-│   │   └── run_prediction_modules.py M1-M5 prediction modules
-│   └── explainability/
-│       └── shap_explainer.py         SHAP for M4 and M5
-├── models/                     saved joblib artifacts
-│   ├── m1_enrolment_trend.joblib
-│   ├── m2_learning_proxy.joblib
-│   ├── m3_total_enrolment_hw.joblib
-│   ├── m4_teacher_shortage_rf.joblib
-│   └── m5_risk_class_rf.joblib
-├── reports/
-│   ├── models/                 per-module CSVs + all_modules_metrics_summary.csv
-│   ├── explainability/         SHAP values, rankings, top drivers, shap_status.csv
-│   └── score_design/           v2 weights, normalization params, PCA, ranking
+shalascope-maharashtra/
 ├── dashboard/
-│   └── app.py                  Streamlit dashboard (10 tabs)
-├── notebooks/
-│   ├── 01_audit_and_cleaning.ipynb
-│   ├── 02_shala_score_v2.ipynb
-│   ├── 03_region_analysis.ipynb
-│   ├── 04_prediction_models.ipynb
-│   └── 05_models_and_shap.ipynb
-├── tests/
-│   ├── test_regions.py         14 tests -- region map, GPI, marginalised %
-│   └── test_score_v2.py        14 tests -- shape, range, tiers, no fabrication
+│   └── app.py                   Streamlit app (2 189 lines, 6 pages)
+├── data/
+│   └── processed/district_year/ Scored CSVs: v1 (677 cols), v2 (688 cols), forecast
 ├── docs/
-│   ├── data_log.md             9-section column audit with year scope
-│   └── data_log.xlsx           4-sheet machine-readable version
+│   ├── data_log.md / .xlsx      Column availability audit (14 available, 12 missing)
+│   └── screenshots/             TODO: add before submission
+├── models/                      5 × .joblib artifacts (M1-M5)
+├── notebooks/                   01-05 exploratory notebooks
+├── reports/
+│   ├── explainability/          SHAP values, rankings, top-driver CSVs
+│   ├── models/                  Per-module CSVs + all_modules_metrics_summary.csv
+│   └── score_design/            Normalization params, weights, PCA, ranking
+├── src/
+│   ├── core/regions.py          36-district region map, GPI, marginalised %
+│   ├── features/                build_shala_score_v1/v2, data log
+│   ├── models/                  M1-M5, K-Means, RF risk factor, rootcause
+│   ├── explainability/          SHAP wrapper (graceful fallback)
+│   ├── features.py              Column name constants (single source of truth)
+│   └── prescriptive.py          validate_temporal_forecast, recommend_top_interventions
+├── tests/
+│   ├── test_regions.py          14 tests — region map, GPI, marginalised %
+│   ├── test_score_v2.py         14 tests — shape, range, tiers, no fabrication
+│   └── test_prescriptive.py     32 tests — forecast, interventions, tier boundaries
 └── requirements.txt
 ```
 
 ---
 
-## Running the pipeline
+## Limitations
 
-All commands run from the project root with the virtual environment active.
-
-```powershell
-# Activate virtual environment
-.venv\Scripts\Activate.ps1
-
-# Step 1 -- build column availability audit (docs/data_log.md + .xlsx)
-python src/features/build_data_log.py
-
-# Step 2 -- build Shala Score v2 (data/processed/district_year/..._v2.csv)
-python src/features/build_shala_score_v2.py
-
-# Step 3 -- run all 5 prediction modules (models/*.joblib + reports/models/*.csv)
-$env:PYTHONIOENCODING="utf-8"
-python src/models/run_prediction_modules.py
-
-# Step 4 -- run SHAP explainability (reports/explainability/*.csv)
-python src/explainability/shap_explainer.py
-
-# Step 5 -- run unit tests (must be 28/28)
-python -m pytest tests/ -v
-
-# Step 6 -- launch dashboard
-streamlit run dashboard/app.py
-```
-
-Expected test output: `28 passed, 1 warning` (the warning is expected: GPI
-with zero boys enrollment triggers a UserWarning by design).
+- **No learning outcome data.** NAS, ASER, GER, and dropout rate are absent
+  from the UDISE+ extract. M2 and M5 use infrastructure proxies, clearly labelled.
+- **Small N.** 36 districts × 6 train years = 216 training rows. M4/M5
+  classifier generalisation is limited; treat results as indicative.
+- **2025-26 is provisional.** That year's values should be re-verified once
+  UDISE+ officially releases the data.
+- **Shala Score is not a government-certified ranking.** It is an analytical
+  index for research purposes only.
+- **SHAP values indicate statistical association, not causation.**
 
 ---
 
-## Requirements
+## Project Info
 
-Key packages (see `requirements.txt` for full list):
-
-```
-streamlit
-pandas
-numpy
-plotly
-scikit-learn
-statsmodels>=0.14
-shap>=0.44
-joblib
-scipy
-openpyxl
-pytest
-```
-
----
-
-## Limitations and disclaimers
-
-- Shala Score is an **analytical index**, not a government-certified ranking.
-- **M2** uses a classroom-quality proxy (`pillar2_infrastructure`) because no
-  learning outcome data (NAS/ASER/GER/dropout) exists in UDISE+. It is labelled
-  `SUBSTITUTE_PROXY` in every output file.
-- **M5** predicts `risk_tier_v2`, which is derived from pillar scores that
-  include classroom quality. It is labelled "Classroom Infrastructure Quality
-  Trend (Documented Proxy)" -- not a dropout or learning outcome predictor.
-- M4 and M5 are trained on 36-district cross-sections across 6 years.
-  Small N limits generalisation beyond Maharashtra.
-- Forecast outputs are experimental estimates, not official government projections.
-- SHAP values indicate statistical association, not causal direction.
-- 2025-26 data is provisional/partial; treat values as indicative until
-  officially confirmed by UDISE+.
+| Field | Value |
+|---|---|
+| **Title** | ShalaScope Maharashtra — District-Level School Education Intelligence |
+| **Data source** | UDISE+ (Unified District Information System for Education Plus), Government of India |
+| **Institution** | *[TODO: fill in]* |
+| **Programme** | *[TODO: fill in]* |
+| **Guide / Supervisor** | *[TODO: fill in]* |
+| **Author** | *[TODO: fill in]* |
+| **Repository** | https://github.com/sandipk765/shalascope-maharashtra |
+| **Year** | 2026 |
