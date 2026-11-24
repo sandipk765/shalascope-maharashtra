@@ -155,24 +155,19 @@ html,body,[class*="css"] {
 }
 
 /* ── Sidebar ── */
+/* ── Sidebar — light surface, dark ink ── */
 [data-testid="stSidebar"] {
-  background: var(--surface) !important;
-  border-right: 1px solid var(--border) !important;
+  background: #FAF8F6 !important;
+  border-right: 1px solid #E8D5DB !important;
 }
-[data-testid="stSidebar"], [data-testid="stSidebar"] * { color: var(--med) !important; }
-[data-testid="stSidebar"] h1,[data-testid="stSidebar"] h2,
-[data-testid="stSidebar"] h3,[data-testid="stSidebar"] strong {
-  color: var(--hi) !important;
+[data-testid="stSidebar"], [data-testid="stSidebar"] * {
+  color: #1E1B18 !important;
 }
-[data-testid="stSidebar"] [data-baseweb="select"]>div {
-  background: var(--raised) !important;
-  border-color: var(--border) !important;
-  color: var(--hi) !important;
+[data-testid="stSidebar"] h1, [data-testid="stSidebar"] h2,
+[data-testid="stSidebar"] h3, [data-testid="stSidebar"] strong {
+  color: #1E1B18 !important;
 }
-[data-testid="stSidebar"] [data-baseweb="option"] {
-  background: var(--surface) !important;
-  color: var(--med) !important;
-}
+/* sidebar selectbox: light-theme override applied below in the dedicated block */
 
 /* ── Sidebar nav rail (button-based, zero native widgets) ── */
 
@@ -200,7 +195,7 @@ html,body,[class*="css"] {
   border: none !important;
   border-left: 3px solid transparent !important;
   background: transparent !important;
-  color: #94A3B8 !important;
+  color: #4A3540 !important;
   font-size: 11.5px !important;
   font-weight: 500 !important;
   line-height: 1.2 !important;
@@ -241,13 +236,13 @@ html,body,[class*="css"] {
 
 /* Hover */
 [data-testid="stSidebar"] .stButton > button:hover {
-  background: rgba(56,189,248,.07) !important;
-  color: #CBD5E1 !important;
-  border-left-color: rgba(56,189,248,.30) !important;
+  background: rgba(92,29,61,.07) !important;
+  color: #5C1D3D !important;
+  border-left-color: rgba(92,29,61,.30) !important;
 }
 [data-testid="stSidebar"] .stButton > button:hover p,
 [data-testid="stSidebar"] .stButton > button:hover span {
-  color: #CBD5E1 !important;
+  color: #5C1D3D !important;
 }
 
 /* Kill focus ring */
@@ -268,27 +263,76 @@ html,body,[class*="css"] {
   display: block;
 }
 
-/* ── Sidebar selectbox ── */
+/* ── Sidebar selectbox & filter labels — light theme, crisp ink ── */
+
+/* Filter section label */
+[data-testid="stSidebar"] .obs-filter-label {
+  font-size: 9px;
+  letter-spacing: 1.8px;
+  font-weight: 700;
+  color: #5C1D3D;
+  text-transform: uppercase;
+  padding: 8px 0 4px;
+  display: block;
+}
+
+/* Streamlit label above each selectbox */
+[data-testid="stSidebar"] label,
+[data-testid="stSidebar"] [data-testid="stWidgetLabel"] p {
+  color: #1E1B18 !important;
+  font-weight: 600 !important;
+  font-size: 12px !important;
+}
+
+/* The selectbox control surface */
 [data-testid="stSidebar"] [data-baseweb="select"] > div {
-  background: #1A2236 !important;
-  border: 1px solid #1E2D45 !important;
+  background: #FFFFFF !important;
+  border: 1px solid #D6C5C9 !important;
   border-radius: 7px !important;
-  color: #E2E8F0 !important;
+  color: #1E1B18 !important;
   font-size: 12.5px !important;
 }
+
+/* The displayed selected value text */
+[data-testid="stSidebar"] [data-baseweb="select"] [data-testid="stSelectboxValue"],
+[data-testid="stSidebar"] [data-baseweb="select"] > div > div > div {
+  color: #1E1B18 !important;
+  font-weight: 600 !important;
+}
+
+/* Typeahead input inside the select */
 [data-testid="stSidebar"] [data-baseweb="select"] input {
-  color: #E2E8F0 !important;
+  color: #1E1B18 !important;
 }
+
+/* Dropdown arrow */
 [data-testid="stSidebar"] [data-baseweb="select"] svg {
-  fill: #38BDF8 !important;
+  fill: #5C1D3D !important;
 }
+
+/* Dropdown option list */
 [data-testid="stSidebar"] [data-baseweb="option"] {
-  background: #111827 !important;
-  color: #CBD5E1 !important;
+  background: #FFFFFF !important;
+  color: #1E1B18 !important;
   font-size: 12.5px !important;
 }
 [data-testid="stSidebar"] [data-baseweb="option"]:hover {
-  background: #1A2236 !important;
+  background: #FAF0F4 !important;
+  color: #5C1D3D !important;
+}
+/* Selected option in dropdown */
+[data-testid="stSidebar"] [data-baseweb="option"][aria-selected="true"] {
+  background: #F3E0E7 !important;
+  color: #5C1D3D !important;
+  font-weight: 700 !important;
+}
+
+/* Sidebar footer note */
+[data-testid="stSidebar"] .obs-sidebar-footer {
+  font-size: 10px;
+  color: #7B6B72;
+  padding: 10px 4px 2px;
+  line-height: 1.6;
 }
 
 /* ── Type ── */
@@ -869,14 +913,14 @@ with st.sidebar:
     # Brand block
     st.html(
         '<div style="padding:16px 4px 10px 4px">'
-        '<div style="font-size:20px;font-weight:800;color:#38BDF8;'
+        '<div style="font-size:20px;font-weight:800;color:#5C1D3D;'
         'letter-spacing:-.6px;line-height:1">ShalaScope</div>'
         '<div style="font-size:8.5px;letter-spacing:3px;font-weight:700;'
-        'color:#334155;text-transform:uppercase;margin-top:3px">'
+        'color:#7B6B72;text-transform:uppercase;margin-top:3px">'
         'Maharashtra &nbsp; Education</div>'
         '</div>'
     )
-    st.html('<div style="height:1px;background:linear-gradient(90deg,#38BDF8 0%,transparent 70%);margin:0 0 8px"></div>')
+    st.html('<div style="height:1px;background:linear-gradient(90deg,#5C1D3D 0%,transparent 70%);margin:0 0 8px"></div>')
 
     # Nav label
     st.html('<span class="obs-filter-label">Navigate</span>')
@@ -933,7 +977,7 @@ with st.sidebar:
     page = _active_page
 
     # ── Global Filters (immediately below nav, always visible) ───────────
-    st.html('<div style="height:1px;background:#1E2D45;margin:10px 0 4px"></div>')
+    st.html('<div style="height:1px;background:#E8D5DB;margin:10px 0 4px"></div>')
     st.html('<span class="obs-filter-label">Filters</span>')
 
     districts_all = sorted(historical["district"].dropna().astype(str).unique().tolist())
@@ -952,35 +996,9 @@ with st.sidebar:
     is_all    = district_choice == ALL
     highlight = None if is_all else district_choice
 
-    # CSV uploader (collapsed by default to save space)
-    st.html('<div style="height:1px;background:#1E2D45;margin:10px 0 4px"></div>')
-    with st.expander("Upload New Year CSV"):
-        st.caption("Upload a district-year CSV matching the Shala Score schema to add to the session.")
-        uploaded_csv = st.file_uploader("Choose CSV", type=["csv"], key="sidebar_csv_upload")
-        if uploaded_csv is not None:
-            try:
-                up_df = pd.read_csv(uploaded_csv, low_memory=False)
-                if "district" in up_df.columns and "academic_year" in up_df.columns:
-                    up_df["district"] = up_df["district"].astype("string").str.strip()
-                    up_df["academic_year"] = up_df["academic_year"].astype(str).str.strip()
-                    before = len(up_df)
-                    up_df  = up_df.drop_duplicates(subset=["district","academic_year"], keep="first")
-                    up_df  = prepare_data(up_df)
-                    historical = pd.concat([historical, up_df], ignore_index=True)
-                    years = sorted(
-                        historical["academic_year"].dropna().unique(),
-                        key=lambda x: int(str(x)[:4]) if re.match(r"^\d{4}", str(x)) else 0,
-                    )
-                    districts_all = sorted(historical["district"].dropna().astype(str).unique().tolist())
-                    st.success(f"Loaded {len(up_df)} rows ({before - len(up_df)} dupes removed).")
-                else:
-                    st.error("CSV must have 'district' and 'academic_year' columns.")
-            except Exception as exc:
-                st.error(f"Could not read CSV: {exc}")
-
     # Footer
     st.html(
-        f'<div style="padding:10px 4px 2px;font-size:10px;color:#334155;line-height:1.6">'
+        f'<div class="obs-sidebar-footer">'
         f'{years[0]} &ndash; {years[-1]} &nbsp;|&nbsp; 36 districts'
         f'</div>'
     )
