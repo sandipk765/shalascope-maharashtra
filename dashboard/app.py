@@ -488,6 +488,30 @@ hr { border-color: var(--border); margin: 14px 0; }
 """
 st.markdown(CSS, unsafe_allow_html=True)
 
+# Bootstrap Icons CDN (graceful offline fallback: icons degrade to empty spans)
+st.html(
+    '<link rel="stylesheet" '
+    'href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" '
+    'crossorigin="anonymous">'
+    '<style>'
+    # Icon badge in KPI card top-right
+    '.kpi-icon{'
+    'position:absolute;top:10px;right:11px;'
+    'width:34px;height:34px;border-radius:10px;'
+    'display:flex;align-items:center;justify-content:center;'
+    'font-size:17px;line-height:1;'
+    '}'
+    '.metric-card{position:relative;}'  # ensure badge is positioned inside card
+    # Nav icon sizing
+    '[data-testid="stSidebar"] .bi{'
+    'font-size:13px;margin-right:7px;vertical-align:-1px;flex-shrink:0;'
+    '}'
+    # Brand icon
+    '.brand-icon{font-size:22px;margin-right:8px;vertical-align:-3px;'
+    'filter:drop-shadow(0 0 6px rgba(192,132,252,.55));}'
+    '</style>'
+)
+
 # ---------------------------------------------------------------------------
 # HELPERS
 # ---------------------------------------------------------------------------
@@ -558,11 +582,18 @@ def normalize_district(value):
     return " ".join(value.split())
 
 
-def metric_card(label, value, caption="", accent=None):
+def metric_card(label, value, caption="", accent=None, icon=""):
     if accent is None:
         accent = ACCENT
+    # Icon badge: alternates between violet and sky tints via caller
+    icon_html = (
+        f'<div class="kpi-icon" style="background:{accent}1A;color:{accent}">'
+        f'<i class="bi {escape(icon)}"></i></div>'
+        if icon else ""
+    )
     st.html(
         f'<div class="metric-card" style="--accent:{accent}">'
+        f'{icon_html}'
         f'<div class="metric-label">{escape(str(label))}</div>'
         f'<div class="metric-value">{escape(str(value))}</div>'
         f'<div class="metric-caption">{escape(str(caption))}</div></div>'
@@ -786,12 +817,15 @@ with st.sidebar:
 
     # Brand block
     st.html(
-        '<div style="padding:16px 4px 10px 4px">'
-        '<div style="font-size:20px;font-weight:800;color:#5C1D3D;'
+        '<div style="padding:16px 4px 10px 4px;display:flex;align-items:center;gap:0">'
+        '<i class="bi bi-bank2 brand-icon" style="color:#C084FC"></i>'
+        '<div>'
+        '<div style="font-size:20px;font-weight:800;color:#C084FC;'
         'letter-spacing:-.6px;line-height:1">ShalaScope</div>'
         '<div style="font-size:8.5px;letter-spacing:3px;font-weight:700;'
-        'color:#7B6B72;text-transform:uppercase;margin-top:3px">'
+        'color:#6B6A9A;text-transform:uppercase;margin-top:3px">'
         'Maharashtra &nbsp; Education</div>'
+        '</div>'
         '</div>'
     )
     st.html('<div style="height:1px;background:linear-gradient(90deg,#C084FC 0%,transparent 70%);margin:0 0 8px"></div>')
@@ -816,6 +850,33 @@ with st.sidebar:
         "Predictive Intelligence":"Predictive Intelligence",
         "Data & Methodology":     "Data Quality & Methodology",
     }
+
+    # CSS ::before icons for each nav button (Bootstrap Icons Unicode code points)
+    # bi-grid=F4A6  bi-map=F47E  bi-compass=F284  bi-diagram-3=F31F
+    # bi-cpu=F2D8   bi-database-check=F7F6
+    _NAV_ICONS = {
+        "Overview":               ("\\F4A6", "#C084FC"),   # bi-grid
+        "Region Comparison":      ("\\F47E", "#7DD3FC"),   # bi-map
+        "District Explorer":      ("\\F284", "#C084FC"),   # bi-compass
+        "District Grouping":      ("\\F31F", "#7DD3FC"),   # bi-diagram-3
+        "Predictive Intelligence":("\\F2D8", "#C084FC"),   # bi-cpu
+        "Data & Methodology":     ("\\F7F6", "#7DD3FC"),   # bi-database-check
+    }
+    _icon_css = "<style>"
+    for _lbl, (_code, _col) in _NAV_ICONS.items():
+        _icon_css += (
+            f'[data-testid="stSidebar"] button[aria-label="{_lbl}"]::before {{'
+            f'  font-family: "bootstrap-icons" !important;'
+            f'  content: "{_code}";'
+            f'  color: {_col};'
+            f'  margin-right: 8px;'
+            f'  font-size: 13px;'
+            f'  vertical-align: -1px;'
+            f'  flex-shrink: 0;'
+            f'}}'
+        )
+    _icon_css += "</style>"
+    st.html(_icon_css)
     _VALID_PAGES = set(_LABEL_TO_PAGE.values())
 
     # Safe fallback: if session_state holds a stale/removed page name, reset to Overview
@@ -950,13 +1011,14 @@ if page == "Overview":
     _ptr_ov         = safe_mean(year_data, "ptr_students_per_teacher_raw")
 
     k1, k2, k3, k4, k5 = st.columns(5, gap="medium")
-    with k1: metric_card("Districts",    str(int(year_data["district"].nunique())), f"Coverage {selected_year}", ACCENT)
-    with k2: metric_card("Schools",      f"{int(_total_schools):,}"  if pd.notna(_total_schools)  else "—", "Reporting", BLUE)
-    with k3: metric_card("Enrolment",    f"{int(_total_enroll):,}"   if pd.notna(_total_enroll)   else "—", "Total students", WARNING)
-    with k4: metric_card("Teachers",     f"{int(_total_teachers):,}" if pd.notna(_total_teachers) else "—", "M+F+T", SUCCESS)
+    with k1: metric_card("Districts",    str(int(year_data["district"].nunique())), f"Coverage {selected_year}", ACCENT, "bi-geo-alt")
+    with k2: metric_card("Schools",      f"{int(_total_schools):,}"  if pd.notna(_total_schools)  else "—", "Reporting", BLUE, "bi-building")
+    with k3: metric_card("Enrolment",    f"{int(_total_enroll):,}"   if pd.notna(_total_enroll)   else "—", "Total students", WARNING, "bi-people")
+    with k4: metric_card("Teachers",     f"{int(_total_teachers):,}" if pd.notna(_total_teachers) else "—", "M+F+T", SUCCESS, "bi-person-badge")
     with k5: metric_card("Avg. PTR",     fmt(_ptr_ov,1),
                          "Above RTE norm" if pd.notna(_ptr_ov) and _ptr_ov > 30 else "Within RTE norm",
-                         DANGER if pd.notna(_ptr_ov) and _ptr_ov > 30 else SUCCESS)
+                         DANGER if pd.notna(_ptr_ov) and _ptr_ov > 30 else SUCCESS,
+                         "bi-graph-up-arrow")
 
     # v2 strip
     if historical_v2 is not None and "shala_score_v2" in historical_v2.columns:
@@ -969,8 +1031,8 @@ if page == "Overview":
         else:
             _tn, _crit = "v2 active", 0
         _va, _vb = st.columns(2, gap="medium")
-        with _va: metric_card("Avg Shala Score v2", fmt(_v2avg,1), "5-pillar weighted", ACCENT)
-        with _vb: metric_card("Risk Tiers (v2)", _tn, "72 districts per tier", DANGER if _crit > 0 else WARNING)
+        with _va: metric_card("Avg Shala Score v2", fmt(_v2avg,1), "5-pillar weighted", ACCENT, "bi-award")
+        with _vb: metric_card("Risk Tiers (v2)", _tn, "72 districts per tier", DANGER if _crit > 0 else WARNING, "bi-shield-exclamation")
 
     heading("What the data says")
     i1, i2, i3 = st.columns(3, gap="medium")
