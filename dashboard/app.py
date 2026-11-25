@@ -488,27 +488,18 @@ hr { border-color: var(--border); margin: 14px 0; }
 """
 st.markdown(CSS, unsafe_allow_html=True)
 
-# Bootstrap Icons CDN (graceful offline fallback: icons degrade to empty spans)
+# Icon structural CSS only — no external font dependency
 st.html(
-    '<link rel="stylesheet" '
-    'href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" '
-    'crossorigin="anonymous">'
     '<style>'
-    # Icon badge in KPI card top-right
     '.kpi-icon{'
     'position:absolute;top:10px;right:11px;'
     'width:34px;height:34px;border-radius:10px;'
     'display:flex;align-items:center;justify-content:center;'
-    'font-size:17px;line-height:1;'
-    '}'
-    '.metric-card{position:relative;}'  # ensure badge is positioned inside card
-    # Nav icon sizing
-    '[data-testid="stSidebar"] .bi{'
-    'font-size:13px;margin-right:7px;vertical-align:-1px;flex-shrink:0;'
-    '}'
-    # Brand icon
-    '.brand-icon{font-size:22px;margin-right:8px;vertical-align:-3px;'
-    'filter:drop-shadow(0 0 6px rgba(192,132,252,.55));}'
+    'line-height:1;}'
+    '.metric-card{position:relative;}'
+    '.brand-icon{display:inline-flex;align-items:center;'
+    'filter:drop-shadow(0 0 5px rgba(125,211,252,.50));'
+    'margin-right:8px;vertical-align:-5px;flex-shrink:0;}'
     '</style>'
 )
 
@@ -582,15 +573,88 @@ def normalize_district(value):
     return " ".join(value.split())
 
 
+# ---------------------------------------------------------------------------
+# Inline SVG icon library (no external font / CDN dependency)
+# All icons are 18×18 viewBox, stroke-width=1.8, fill=none
+# ---------------------------------------------------------------------------
+_SVG_ICONS: dict = {
+    "bi-geo-alt": (
+        '<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 16 16" '
+        'fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">'
+        '<path d="M8 1a5 5 0 0 1 5 5c0 3.5-5 9-5 9S3 9.5 3 6a5 5 0 0 1 5-5z"/>'
+        '<circle cx="8" cy="6" r="1.5"/>'
+        '</svg>'
+    ),
+    "bi-building": (
+        '<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 16 16" '
+        'fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">'
+        '<rect x="2" y="2" width="12" height="12" rx="1"/>'
+        '<path d="M5 2v12M11 2v12M2 7h12M2 11h12"/>'
+        '</svg>'
+    ),
+    "bi-people": (
+        '<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 16 16" '
+        'fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">'
+        '<circle cx="6" cy="5" r="2.5"/>'
+        '<path d="M1 14c0-2.5 2.2-4 5-4s5 1.5 5 4"/>'
+        '<circle cx="12" cy="5" r="2"/>'
+        '<path d="M12 10c1.8.3 3 1.3 3 3"/>'
+        '</svg>'
+    ),
+    "bi-person-badge": (
+        '<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 16 16" '
+        'fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">'
+        '<circle cx="8" cy="5" r="2.5"/>'
+        '<rect x="5" y="2" width="6" height="3" rx="1"/>'
+        '<path d="M3 14c0-2.5 2.2-4 5-4s5 1.5 5 4"/>'
+        '</svg>'
+    ),
+    "bi-graph-up-arrow": (
+        '<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 16 16" '
+        'fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">'
+        '<polyline points="1,12 5,7 9,10 14,4"/>'
+        '<polyline points="11,4 14,4 14,7"/>'
+        '</svg>'
+    ),
+    "bi-award": (
+        '<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 16 16" '
+        'fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">'
+        '<circle cx="8" cy="6" r="4.5"/>'
+        '<path d="M5.5 10.5 4 15l4-2 4 2-1.5-4.5"/>'
+        '</svg>'
+    ),
+    "bi-shield-exclamation": (
+        '<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 16 16" '
+        'fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">'
+        '<path d="M8 1 2 4v5c0 3 2.5 5 6 6 3.5-1 6-3 6-6V4z"/>'
+        '<line x1="8" y1="6" x2="8" y2="9"/>'
+        '<circle cx="8" cy="11" r=".6" fill="currentColor"/>'
+        '</svg>'
+    ),
+    # Sidebar brand icon — 22×22 school/institution
+    "brand": (
+        '<svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" '
+        'fill="none" stroke="#7DD3FC" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">'
+        '<path d="M3 21h18M3 10h18M12 3 2 10h20L12 3z"/>'
+        '<rect x="6" y="10" width="4" height="11"/>'
+        '<rect x="10" y="10" width="4" height="11"/>'
+        '<rect x="14" y="10" width="4" height="11"/>'
+        '</svg>'
+    ),
+}
+
+
 def metric_card(label, value, caption="", accent=None, icon=""):
     if accent is None:
         accent = ACCENT
-    # Icon badge: alternates between violet and sky tints via caller
-    icon_html = (
-        f'<div class="kpi-icon" style="background:{accent}1A;color:{accent}">'
-        f'<i class="bi {escape(icon)}"></i></div>'
-        if icon else ""
-    )
+    if icon and icon in _SVG_ICONS:
+        svg = _SVG_ICONS[icon]
+        icon_html = (
+            f'<div class="kpi-icon" style="background:{accent}1A;color:{accent}">'
+            f'{svg}</div>'
+        )
+    else:
+        icon_html = ""
     st.html(
         f'<div class="metric-card" style="--accent:{accent}">'
         f'{icon_html}'
@@ -815,10 +879,19 @@ for c in forecast.columns:
 # ---------------------------------------------------------------------------
 with st.sidebar:
 
-    # Brand block
+    # Brand block — inline SVG school icon, no CDN dependency
     st.html(
         '<div style="padding:16px 4px 10px 4px;display:flex;align-items:center;gap:0">'
-        '<i class="bi bi-bank2 brand-icon" style="color:#C084FC"></i>'
+        '<span class="brand-icon">'
+        '<svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24"'
+        ' fill="none" stroke="#7DD3FC" stroke-width="1.7"'
+        ' stroke-linecap="round" stroke-linejoin="round">'
+        '<path d="M3 21h18M3 10h18M12 3 2 10h20L12 3z"/>'
+        '<rect x="6" y="10" width="4" height="11"/>'
+        '<rect x="10" y="10" width="4" height="11"/>'
+        '<rect x="14" y="10" width="4" height="11"/>'
+        '</svg>'
+        '</span>'
         '<div>'
         '<div style="font-size:20px;font-weight:800;color:#C084FC;'
         'letter-spacing:-.6px;line-height:1">ShalaScope</div>'
@@ -851,28 +924,27 @@ with st.sidebar:
         "Data & Methodology":     "Data Quality & Methodology",
     }
 
-    # CSS ::before icons for each nav button (Bootstrap Icons Unicode code points)
-    # bi-grid=F4A6  bi-map=F47E  bi-compass=F284  bi-diagram-3=F31F
-    # bi-cpu=F2D8   bi-database-check=F7F6
-    _NAV_ICONS = {
-        "Overview":               ("\\F4A6", "#C084FC"),   # bi-grid
-        "Region Comparison":      ("\\F47E", "#7DD3FC"),   # bi-map
-        "District Explorer":      ("\\F284", "#C084FC"),   # bi-compass
-        "District Grouping":      ("\\F31F", "#7DD3FC"),   # bi-diagram-3
-        "Predictive Intelligence":("\\F2D8", "#C084FC"),   # bi-cpu
-        "Data & Methodology":     ("\\F7F6", "#7DD3FC"),   # bi-database-check
+    # Nav item emoji prefixes — always visible, zero font/CDN dependency
+    # Each emoji is prepended to the button label via a targeted ::before CSS rule
+    # using Unicode characters that render natively in every browser.
+    _NAV_EMOJI = {
+        "Overview":               ("⊞", "#C084FC"),   # grid
+        "Region Comparison":      ("◎", "#7DD3FC"),   # map / region
+        "District Explorer":      ("⊕", "#C084FC"),   # compass / explore
+        "District Grouping":      ("⬡", "#7DD3FC"),   # cluster / grouping
+        "Predictive Intelligence":("◈", "#C084FC"),   # cpu / intelligence
+        "Data & Methodology":     ("⊙", "#7DD3FC"),   # database / method
     }
     _icon_css = "<style>"
-    for _lbl, (_code, _col) in _NAV_ICONS.items():
+    for _lbl, (_em, _col) in _NAV_EMOJI.items():
         _icon_css += (
             f'[data-testid="stSidebar"] button[aria-label="{_lbl}"]::before {{'
-            f'  font-family: "bootstrap-icons" !important;'
-            f'  content: "{_code}";'
+            f'  content: "{_em}\\00a0";'
             f'  color: {_col};'
-            f'  margin-right: 8px;'
-            f'  font-size: 13px;'
-            f'  vertical-align: -1px;'
-            f'  flex-shrink: 0;'
+            f'  font-size: 12px;'
+            f'  font-weight: 400;'
+            f'  margin-right: 1px;'
+            f'  display: inline;'
             f'}}'
         )
     _icon_css += "</style>"
