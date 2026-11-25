@@ -574,93 +574,81 @@ def normalize_district(value):
 
 
 # ---------------------------------------------------------------------------
-# Inline SVG icon library (no external font / CDN dependency)
-# All icons are 18×18 viewBox, stroke-width=1.8, fill=none
+# Inline SVG icon library — 18×18 render, 24-unit viewBox, explicit stroke
+# No currentColor — explicit hex so icons show regardless of CSS inheritance
 # ---------------------------------------------------------------------------
-_SVG_ICONS: dict = {
-    "bi-geo-alt": (
-        '<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 16 16" '
-        'fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">'
-        '<path d="M8 1a5 5 0 0 1 5 5c0 3.5-5 9-5 9S3 9.5 3 6a5 5 0 0 1 5-5z"/>'
-        '<circle cx="8" cy="6" r="1.5"/>'
-        '</svg>'
-    ),
-    "bi-building": (
-        '<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 16 16" '
-        'fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">'
-        '<rect x="2" y="2" width="12" height="12" rx="1"/>'
-        '<path d="M5 2v12M11 2v12M2 7h12M2 11h12"/>'
-        '</svg>'
-    ),
-    "bi-people": (
-        '<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 16 16" '
-        'fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">'
-        '<circle cx="6" cy="5" r="2.5"/>'
-        '<path d="M1 14c0-2.5 2.2-4 5-4s5 1.5 5 4"/>'
-        '<circle cx="12" cy="5" r="2"/>'
-        '<path d="M12 10c1.8.3 3 1.3 3 3"/>'
-        '</svg>'
-    ),
-    "bi-person-badge": (
-        '<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 16 16" '
-        'fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">'
-        '<circle cx="8" cy="5" r="2.5"/>'
-        '<rect x="5" y="2" width="6" height="3" rx="1"/>'
-        '<path d="M3 14c0-2.5 2.2-4 5-4s5 1.5 5 4"/>'
-        '</svg>'
-    ),
-    "bi-graph-up-arrow": (
-        '<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 16 16" '
-        'fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">'
-        '<polyline points="1,12 5,7 9,10 14,4"/>'
-        '<polyline points="11,4 14,4 14,7"/>'
-        '</svg>'
-    ),
-    "bi-award": (
-        '<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 16 16" '
-        'fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">'
-        '<circle cx="8" cy="6" r="4.5"/>'
-        '<path d="M5.5 10.5 4 15l4-2 4 2-1.5-4.5"/>'
-        '</svg>'
-    ),
-    "bi-shield-exclamation": (
-        '<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 16 16" '
-        'fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">'
-        '<path d="M8 1 2 4v5c0 3 2.5 5 6 6 3.5-1 6-3 6-6V4z"/>'
-        '<line x1="8" y1="6" x2="8" y2="9"/>'
-        '<circle cx="8" cy="11" r=".6" fill="currentColor"/>'
-        '</svg>'
-    ),
-    # Sidebar brand icon — 22×22 school/institution
-    "brand": (
-        '<svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" '
-        'fill="none" stroke="#7DD3FC" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">'
-        '<path d="M3 21h18M3 10h18M12 3 2 10h20L12 3z"/>'
-        '<rect x="6" y="10" width="4" height="11"/>'
-        '<rect x="10" y="10" width="4" height="11"/>'
-        '<rect x="14" y="10" width="4" height="11"/>'
-        '</svg>'
-    ),
+def _svg(paths: str, colour: str, w: int = 18, vb: str = "0 0 24 24") -> str:
+    """Return a self-contained inline SVG string."""
+    return (
+        f'<svg xmlns="http://www.w3.org/2000/svg" width="{w}" height="{w}" '
+        f'viewBox="{vb}" fill="none" stroke="{colour}" stroke-width="2" '
+        f'stroke-linecap="round" stroke-linejoin="round">{paths}</svg>'
+    )
+
+_KPI_SVG = {
+    "bi-geo-alt": lambda c: _svg(
+        '<path d="M12 2a7 7 0 0 1 7 7c0 5-7 13-7 13S5 14 5 9a7 7 0 0 1 7-7z"/>'
+        '<circle cx="12" cy="9" r="2.5"/>',
+        c),
+    "bi-building": lambda c: _svg(
+        '<rect x="3" y="3" width="18" height="18" rx="1"/>'
+        '<path d="M9 3v18M15 3v18M3 9h18M3 15h18"/>',
+        c),
+    "bi-people": lambda c: _svg(
+        '<circle cx="9" cy="7" r="4"/>'
+        '<path d="M3 21v-2a4 4 0 0 1 4-4h4a4 4 0 0 1 4 4v2"/>'
+        '<path d="M16 3.13a4 4 0 0 1 0 7.75"/>'
+        '<path d="M21 21v-2a4 4 0 0 0-3-3.87"/>',
+        c),
+    "bi-person-badge": lambda c: _svg(
+        '<circle cx="12" cy="8" r="4"/>'
+        '<rect x="8" y="2" width="8" height="5" rx="1"/>'
+        '<path d="M4 20v-1a8 8 0 0 1 16 0v1"/>',
+        c),
+    "bi-graph-up-arrow": lambda c: _svg(
+        '<polyline points="2,18 8,12 13,15 20,6"/>'
+        '<polyline points="16,6 20,6 20,10"/>',
+        c),
+    "bi-award": lambda c: _svg(
+        '<circle cx="12" cy="9" r="6"/>'
+        '<path d="M8.56 15.37 7 22l5-3 5 3-1.56-6.63"/>',
+        c),
+    "bi-shield-exclamation": lambda c: _svg(
+        '<path d="M12 2 3 6v6c0 5 3.6 8.5 9 10 5.4-1.5 9-5 9-10V6z"/>'
+        '<line x1="12" y1="9" x2="12" y2="13"/>'
+        '<circle cx="12" cy="16.5" r=".8" fill="' + c + '" stroke="none"/>',
+        c),
 }
+
+_BRAND_SVG = _svg(
+    '<path d="M3 22h18M3 12h18M12 2 2 12h20L12 2z"/>'
+    '<rect x="7" y="12" width="3" height="10"/>'
+    '<rect x="10.5" y="12" width="3" height="10"/>'
+    '<rect x="14" y="12" width="3" height="10"/>',
+    "#7DD3FC", w=22,
+)
 
 
 def metric_card(label, value, caption="", accent=None, icon=""):
     if accent is None:
         accent = ACCENT
-    if icon and icon in _SVG_ICONS:
-        svg = _SVG_ICONS[icon]
+    if icon and icon in _KPI_SVG:
+        svg_str = _KPI_SVG[icon](accent)
         icon_html = (
-            f'<div class="kpi-icon" style="background:{accent}1A;color:{accent}">'
-            f'{svg}</div>'
+            f'<div class="kpi-icon" style="background:{accent}1A">'
+            f'{svg_str}</div>'
         )
     else:
         icon_html = ""
-    st.html(
+    # st.markdown renders into the main DOM; st.html renders into a sandboxed
+    # iframe where CSS variables and currentColor do not inherit correctly.
+    st.markdown(
         f'<div class="metric-card" style="--accent:{accent}">'
         f'{icon_html}'
         f'<div class="metric-label">{escape(str(label))}</div>'
         f'<div class="metric-value">{escape(str(value))}</div>'
-        f'<div class="metric-caption">{escape(str(caption))}</div></div>'
+        f'<div class="metric-caption">{escape(str(caption))}</div></div>',
+        unsafe_allow_html=True,
     )
 
 
@@ -879,18 +867,13 @@ for c in forecast.columns:
 # ---------------------------------------------------------------------------
 with st.sidebar:
 
-    # Brand block — inline SVG school icon, no CDN dependency
-    st.html(
+    # Brand block — inline SVG via st.markdown (main DOM, not sandboxed iframe)
+    st.markdown(
         '<div style="padding:16px 4px 10px 4px;display:flex;align-items:center;gap:0">'
-        '<span class="brand-icon">'
-        '<svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24"'
-        ' fill="none" stroke="#7DD3FC" stroke-width="1.7"'
-        ' stroke-linecap="round" stroke-linejoin="round">'
-        '<path d="M3 21h18M3 10h18M12 3 2 10h20L12 3z"/>'
-        '<rect x="6" y="10" width="4" height="11"/>'
-        '<rect x="10" y="10" width="4" height="11"/>'
-        '<rect x="14" y="10" width="4" height="11"/>'
-        '</svg>'
+        '<span style="display:inline-flex;align-items:center;'
+        'filter:drop-shadow(0 0 5px rgba(125,211,252,.55));'
+        'margin-right:8px;vertical-align:-5px;flex-shrink:0">' +
+        _BRAND_SVG +
         '</span>'
         '<div>'
         '<div style="font-size:20px;font-weight:800;color:#C084FC;'
@@ -899,7 +882,8 @@ with st.sidebar:
         'color:#6B6A9A;text-transform:uppercase;margin-top:3px">'
         'Maharashtra &nbsp; Education</div>'
         '</div>'
-        '</div>'
+        '</div>',
+        unsafe_allow_html=True,
     )
     st.html('<div style="height:1px;background:linear-gradient(90deg,#C084FC 0%,transparent 70%);margin:0 0 8px"></div>')
 
