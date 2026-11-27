@@ -288,22 +288,33 @@ hr { border-color: var(--border); margin: 14px 0; }
 .metric-card, .sd-kpi {
   background: var(--raised); border: 1px solid var(--border);
   border-top: 2px solid var(--border);
-  border-radius: var(--radius); padding: 14px 16px; min-height: 86px;
+  border-radius: var(--radius);
+  /* Right padding clears the 34px icon badge (right:11px) + 9px breathing room */
+  padding: 14px 54px 14px 16px;
+  min-height: 100px;
   box-shadow: var(--shadow); margin-bottom: 8px;
   display: flex; flex-direction: column;
   transition: box-shadow .15s ease;
+  box-sizing: border-box;
 }
 .metric-card:hover { box-shadow: var(--glow); }
 .metric-label, .sd-kpi-label {
   font-size: var(--fs-label); letter-spacing: 1.2px; font-weight: 700;
   color: var(--lo); text-transform: uppercase;
+  /* Single line — ellipsis on overflow so tall-label cards don't stretch */
+  white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+  line-height: 1.3;
 }
 .metric-value, .sd-kpi-value {
-  font-size: 22px; font-weight: 700; color: var(--hi);
-  margin-top: 6px; line-height: 1.2; font-variant-numeric: tabular-nums;
+  font-size: 20px; font-weight: 700; color: var(--hi);
+  margin-top: 5px; line-height: 1.2;
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
 }
 .metric-caption, .sd-kpi-caption {
-  font-size: var(--fs-cap); color: var(--lo); margin-top: 5px; font-variant-numeric: tabular-nums;
+  font-size: var(--fs-cap); color: var(--lo); margin-top: 4px;
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
 }
 
 /* ── Insight / info cards ── */
@@ -492,11 +503,12 @@ st.markdown(CSS, unsafe_allow_html=True)
 st.html(
     '<style>'
     '.kpi-icon{'
-    'position:absolute;top:10px;right:11px;'
+    'position:absolute;top:50%;right:12px;'
+    'transform:translateY(-50%);'
     'width:34px;height:34px;border-radius:10px;'
     'display:flex;align-items:center;justify-content:center;'
-    'line-height:1;}'
-    '.metric-card{position:relative;}'
+    'flex-shrink:0;line-height:1;}'
+    '.metric-card{position:relative;overflow:hidden;}'
     '.brand-icon{display:inline-flex;align-items:center;'
     'filter:drop-shadow(0 0 5px rgba(125,211,252,.50));'
     'margin-right:8px;vertical-align:-5px;flex-shrink:0;}'
@@ -1024,25 +1036,38 @@ _digital_prv  = _get(_fd_prev, "pillar_digital_readiness")
 _ptr_cur      = _get(_fd_cur, "ptr_students_per_teacher_raw")
 _ptr_prv      = _get(_fd_prev, "ptr_students_per_teacher_raw")
 
-# Formatted strings
-_enrol_k     = f"{_enrol_cur/1000:.0f}K"   if pd.notna(_enrol_cur)  else "—"
-_teach_k     = f"{_teach_cur/1000:.1f}K"   if pd.notna(_teach_cur)  else "—"
-_infra_10    = f"{_infra_cur/10:.1f}/10"   if pd.notna(_infra_cur)  else "—"
-_infra_pct   = f"{_infra_cur:.0f}% A-Grade" if pd.notna(_infra_cur) else ""
-_ptr_str     = fmt(_ptr_cur, 1)             if pd.notna(_ptr_cur)    else "—"
-_digital_str = f"{_digital_cur:.0f}%"       if pd.notna(_digital_cur) else "—"
+# Formatted strings — clean M/K suffixes, tabular numerics
+def _fmt_count(v):
+    """Format large counts: ≥1M → '1.23M', ≥1K → '12.3K', else integer."""
+    if not pd.notna(v):
+        return "—"
+    v = float(v)
+    if v >= 1_000_000:
+        return f"{v/1_000_000:.2f}M"
+    if v >= 1_000:
+        return f"{v/1_000:.1f}K"
+    return f"{int(v):,}"
 
-# YoY deltas
-_schools_yoy = (f"+{int(_schools_cur - _schools_prv)} YoY"
-                if pd.notna(_schools_cur) and pd.notna(_schools_prv) else "")
-_enrol_yoy   = (f"+{(_enrol_cur - _enrol_prv) / _enrol_prv * 100:.0f}% YoY"
-                if pd.notna(_enrol_cur) and pd.notna(_enrol_prv) and _enrol_prv > 0 else "")
-_teach_yoy   = (f"+{int(_teach_cur - _teach_prv)} YoY"
-                if pd.notna(_teach_cur) and pd.notna(_teach_prv) else "")
+_enrol_k     = _fmt_count(_enrol_cur)
+_teach_k     = _fmt_count(_teach_cur)
+_infra_10    = f"{_infra_cur/10:.1f}/10"    if pd.notna(_infra_cur)   else "—"
+_infra_pct   = f"{_infra_cur:.0f}% A-Grade" if pd.notna(_infra_cur)   else ""
+_ptr_str     = fmt(_ptr_cur, 1)              if pd.notna(_ptr_cur)     else "—"
+_digital_str = f"{_digital_cur:.0f}%"        if pd.notna(_digital_cur) else "—"
+
+# YoY deltas — use % change for all count metrics so deltas are readable regardless of scale
+def _pct_yoy(cur, prv, label="YoY"):
+    if not (pd.notna(cur) and pd.notna(prv) and prv != 0):
+        return ""
+    pct = (cur - prv) / abs(prv) * 100
+    return f"{pct:+.1f}% {label}"
+
+_schools_yoy = _pct_yoy(_schools_cur, _schools_prv)
+_enrol_yoy   = _pct_yoy(_enrol_cur,   _enrol_prv)
+_teach_yoy   = _pct_yoy(_teach_cur,   _teach_prv)
 _ptr_yoy     = (f"{_ptr_cur - _ptr_prv:+.1f} pts"
                 if pd.notna(_ptr_cur) and pd.notna(_ptr_prv) else "")
-_digital_yoy = (f"+{_digital_cur - _digital_prv:.0f}%"
-                if pd.notna(_digital_cur) and pd.notna(_digital_prv) else "")
+_digital_yoy = _pct_yoy(_digital_cur, _digital_prv)
 
 
 # ---------------------------------------------------------------------------
@@ -1080,7 +1105,7 @@ if page == "Overview":
 
     c1,c2,c3,c4,c5,c6 = st.columns(6, gap="small")
     with c1: metric_card("Total Schools",
-                          f"{int(_schools_cur):,}" if pd.notna(_schools_cur) else "—",
+                          _fmt_count(_schools_cur),
                           _schools_yoy, ACCENT, "bi-building")
     with c2: metric_card("Student Enrollment",
                           _enrol_k, _enrol_yoy, INFO, "bi-people")
