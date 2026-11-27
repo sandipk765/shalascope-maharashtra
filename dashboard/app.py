@@ -1010,6 +1010,42 @@ def _yoy_str(cur, prv, fmt_fn=None, reverse=False):
 
 
 # ---------------------------------------------------------------------------
+# SHARED DISTRICT METRICS  (computed once — used by Overview, Teacher, ML pages)
+# ---------------------------------------------------------------------------
+_schools_cur  = _get(_fd_cur, "school_count")
+_schools_prv  = _get(_fd_prev, "school_count")
+_enrol_cur    = _get(_fd_cur, "enrollment_reported_student_total")
+_enrol_prv    = _get(_fd_prev, "enrollment_reported_student_total")
+_teach_cur    = _get(_fd_cur, "score_teacher_total_derived")
+_teach_prv    = _get(_fd_prev, "score_teacher_total_derived")
+_infra_cur    = _get(_fd_cur, "pillar_infrastructure")
+_digital_cur  = _get(_fd_cur, "pillar_digital_readiness")
+_digital_prv  = _get(_fd_prev, "pillar_digital_readiness")
+_ptr_cur      = _get(_fd_cur, "ptr_students_per_teacher_raw")
+_ptr_prv      = _get(_fd_prev, "ptr_students_per_teacher_raw")
+
+# Formatted strings
+_enrol_k     = f"{_enrol_cur/1000:.0f}K"   if pd.notna(_enrol_cur)  else "—"
+_teach_k     = f"{_teach_cur/1000:.1f}K"   if pd.notna(_teach_cur)  else "—"
+_infra_10    = f"{_infra_cur/10:.1f}/10"   if pd.notna(_infra_cur)  else "—"
+_infra_pct   = f"{_infra_cur:.0f}% A-Grade" if pd.notna(_infra_cur) else ""
+_ptr_str     = fmt(_ptr_cur, 1)             if pd.notna(_ptr_cur)    else "—"
+_digital_str = f"{_digital_cur:.0f}%"       if pd.notna(_digital_cur) else "—"
+
+# YoY deltas
+_schools_yoy = (f"+{int(_schools_cur - _schools_prv)} YoY"
+                if pd.notna(_schools_cur) and pd.notna(_schools_prv) else "")
+_enrol_yoy   = (f"+{(_enrol_cur - _enrol_prv) / _enrol_prv * 100:.0f}% YoY"
+                if pd.notna(_enrol_cur) and pd.notna(_enrol_prv) and _enrol_prv > 0 else "")
+_teach_yoy   = (f"+{int(_teach_cur - _teach_prv)} YoY"
+                if pd.notna(_teach_cur) and pd.notna(_teach_prv) else "")
+_ptr_yoy     = (f"{_ptr_cur - _ptr_prv:+.1f} pts"
+                if pd.notna(_ptr_cur) and pd.notna(_ptr_prv) else "")
+_digital_yoy = (f"+{_digital_cur - _digital_prv:.0f}%"
+                if pd.notna(_digital_cur) and pd.notna(_digital_prv) else "")
+
+
+# ---------------------------------------------------------------------------
 # MAIN HEADER  (district-centric, matches reference)
 # ---------------------------------------------------------------------------
 _hdr_district = focus_district.title() if focus_district != ALL else "Maharashtra"
@@ -1035,39 +1071,12 @@ st.html('<div style="height:1px;background:#2A2A4A;margin:4px 0 16px"></div>')
 if page == "Overview":
 
     # ── KPI row ───────────────────────────────────────────────────────────
-    # Wire each metric to real UDISE+ columns for the focus district + selected year
-
-    _schools_cur  = _get(_fd_cur, "school_count")
-    _schools_prv  = _get(_fd_prev, "school_count")
-    _enrol_cur    = _get(_fd_cur, "enrollment_reported_student_total")
-    _enrol_prv    = _get(_fd_prev, "enrollment_reported_student_total")
-    _teach_cur    = _get(_fd_cur, "score_teacher_total_derived")
-    _teach_prv    = _get(_fd_prev, "score_teacher_total_derived")
-    _infra_cur    = _get(_fd_cur, "pillar_infrastructure")   # 0-100 pillar score
-    _digital_cur  = _get(_fd_cur, "pillar_digital_readiness")
-    _digital_prv  = _get(_fd_prev, "pillar_digital_readiness")
-    _ptr_cur      = _get(_fd_cur, "ptr_students_per_teacher_raw")
-    _ptr_prv      = _get(_fd_prev, "ptr_students_per_teacher_raw")
-    _shala_cur    = _get(_fd_cur, "shala_score_v2")
-    _tier_cur     = _get(_fd_cur, "risk_tier_v2", default="—")
-    _toilet_cur   = _get(_fd_cur, "functional_toilet_pct_raw")
-    _class_cur    = _get(_fd_cur, "good_classroom_pct_raw")
-
-    # Format helpers
-    _enrol_k      = f"{_enrol_cur/1000:.0f}K" if pd.notna(_enrol_cur) else "—"
-    _teach_k      = f"{_teach_cur/1000:.1f}K" if pd.notna(_teach_cur) else "—"
-    _infra_10     = f"{_infra_cur/10:.1f}/10" if pd.notna(_infra_cur) else "—"
-    _infra_pct    = f"{_infra_cur:.0f}% A-Grade" if pd.notna(_infra_cur) else ""
-    _ptr_str      = fmt(_ptr_cur, 1) if pd.notna(_ptr_cur) else "—"
-    _digital_str  = f"{_digital_cur:.0f}%" if pd.notna(_digital_cur) else "—"
-
-    # YoY deltas
-    _schools_yoy  = f"+{int(_schools_cur-_schools_prv)} YoY" if pd.notna(_schools_cur) and pd.notna(_schools_prv) else ""
-    _enrol_yoy    = (f"+{(_enrol_cur-_enrol_prv)/_enrol_prv*100:.0f}% YoY"
-                     if pd.notna(_enrol_cur) and pd.notna(_enrol_prv) and _enrol_prv > 0 else "")
-    _teach_yoy    = f"+{int(_teach_cur-_teach_prv)} YoY" if pd.notna(_teach_cur) and pd.notna(_teach_prv) else ""
-    _ptr_yoy      = (f"{_ptr_cur-_ptr_prv:+.1f} pts" if pd.notna(_ptr_cur) and pd.notna(_ptr_prv) else "")
-    _digital_yoy  = (f"+{_digital_cur-_digital_prv:.0f}%" if pd.notna(_digital_cur) and pd.notna(_digital_prv) else "")
+    # ── KPI row — wired to real UDISE+ columns (computed in shared state above) ──
+    # Overview-only extras:
+    _shala_cur  = _get(_fd_cur, "shala_score_v2")
+    _tier_cur   = _get(_fd_cur, "risk_tier_v2", default="—")
+    _toilet_cur = _get(_fd_cur, "functional_toilet_pct_raw")
+    _class_cur  = _get(_fd_cur, "good_classroom_pct_raw")
 
     c1,c2,c3,c4,c5,c6 = st.columns(6, gap="small")
     with c1: metric_card("Total Schools",
